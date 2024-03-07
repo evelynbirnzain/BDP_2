@@ -3,25 +3,23 @@
 ## Part 1 - Batch data ingestion pipeline (weighted factor for grades = 3)
 
 1. The ingestion will be applied to files of data. Design a schema for a set of constraints for data files
-   that `mysimbdp`will support the ingestion. Design a schema for a set of constraints for tenant service agreement.
+   that `mysimbdp` will support the ingestion. Design a schema for a set of constraints for tenant service agreement.
    Explain why you, as a platform provider, decide such constraints. Implement these constraints into simple
    configuration files. Provide two examples (e.g., JSON or YAML) for two different tenants to specify constraints on
    service agreement and files for the tenant. (1 point)
 
 * mysimbdp does not support the ingstion of files?
+* zips - only upload actual data files
 * service level agreement: at least once, at most once, excatly once; how many; GDPR - data retention, data privacy,
   location
 
 2. Each tenant will put the tenant's data files to be ingested into a staging file directory (or a storage
    bucket), `client-staging-input-directory` within `mysimbdp` (the staging directory is managed by the platform). Each
    tenant provides its ingestion programs/pipelines, `clientbatchingestapp`, which will take the tenant's files as
-   input, in `client-staging-input-directory`, and ingest the files into`mysimbdp-coredms`. Any `clientbatchingestapp`
+   input, in `client-staging-input-directory`, and ingest the files into `mysimbdp-coredms`. Any `clientbatchingestapp`
    must perform at least one type of data wrangling to transform data elements in files to another structure for
    ingestion. As a tenant, explain the design of `clientbatchingestapp` and provide one implementation. Note
    that `clientbatchingestapp` follows the guideline of `mysimbdp` given in the next Point 3. (1 point)
-
-* zips - only upload actual data files
-*
 
 3. The `mysimbdp` provider provisions an execution environment for running tenant's ingestion
    pipelines (`clientbatchingestapp`). As the `mysimbdp` provider, design and implement a
@@ -31,16 +29,17 @@
    how `mysimbdp-batchingestmanager` knows the list of `clientbatchingestapp` and decides/schedules the execution
    of `clientbatchingestapp` for different tenants. (1 point)
 
-* dumbass directory
+`mysimbdp-batchingestmanager` is a Python script that uses the "watchdog" library to monitor for uploaded files in each
+tenant's `client-staging-input-directory`. 
+
 
 4. Explain your design for the multi-tenancy model in `mysimbdp`: which parts of `mysimbdp` will be shared for all
-   tenants,
-   which parts will be dedicated for individual tenants so that you, as a platform provider, can add and remove tenants
-   based on the principle of pay-per-use. Develop test `clientbatchingestapp`, test data, and test constraints of files,
-   and test service profiles for tenants according to your deployment. Show the performance of ingestion tests,
-   including failures and exceptions, for 2 different tenants in your test environment and constraints. Demonstrate
-   examples in which data will not be ingested due to a violation of constraints. Present and discuss the maximum amount
-   of data per second you can ingest in your tests. (1 point)
+   tenants, which parts will be dedicated for individual tenants so that you, as a platform provider, can add and remove
+   tenants based on the principle of pay-per-use. Develop test `clientbatchingestapp`, test data, and test constraints
+   of files, and test service profiles for tenants according to your deployment. Show the performance of ingestion
+   tests, including failures and exceptions, for 2 different tenants in your test environment and constraints.
+   Demonstrate examples in which data will not be ingested due to a violation of constraints. Present and discuss the
+   maximum amount of data per second you can ingest in your tests. (1 point)
 
 * directory separate
 * manager for all?
@@ -65,7 +64,7 @@
    per-use. (1 point)
 
 In this implementation, `mysimbdp-messagingsystem` (i.e. a Kafka cluster) is shared among tenants. I would also choose
-to share each individual broker among tenants. Rather, tenants could provision their own topics (e.g. using a dedicated
+to share the individual brokers among tenants. Rather, tenants could provision their own topics (e.g. using a dedicated
 prefix to avoid name collisions); data isolation can be ensured by using ACLs to restrict tenants' access to only their
 own topics, and quotas can be set to ensure that one client doesn't hog all the bandwidth. This setup follows the
 suggestions described [here](https://www.confluent.io/blog/cloud-native-multi-tenant-kafka-with-confluent-cloud/).
@@ -73,27 +72,30 @@ This setup allows for simple management of the cluster on the side of the platfo
 the load balancing by itself) and also allows for scaling out easily by adding more brokers if the load increases over
 time. A tenant can be removed by shutting them out via access control and removing their topics.
 
-For now, I would choose to share both `mysimbdp-streamingestmanager` and `mysimbdp-streamingestmonitor` among tenants
-for efficiency. `mysimbdp-streamingestmanager` shouldn't receive much load anyways since it is only concerned with
-starting and stopping `clientstreamingestapp`s from time to time; `mysimbdp-streamingestmonitor` should also be
+For now, I would also choose to share both `mysimbdp-streamingestmanager` and `mysimbdp-streamingestmonitor` among
+tenants for efficiency. `mysimbdp-streamingestmanager` shouldn't receive much load anyways since it is only concerned
+with starting and stopping `clientstreamingestapp`s from time to time; `mysimbdp-streamingestmonitor` is also
 straightforward to scale out in case the monitoring data load would become too much. `mysimbdp-streamingestmanager`
 should additionally implement access control so that tenants can be easily shut out of starting
 their `clientstreamingestapp` if they're not paying anymore.
 
-For the `mysimbdp-coredms` I would implement exactly the same multitenancy model as discussed above: one database per
-tenant.
+For the `mysimbdp-coredms` I would implement exactly the same multitenancy model as discussed above: each tenant gets
+their own database in the MongoDB cluster; they can create their own collections as they'd like. Like this, tenants
+are isolated from each other in a straightforward way and can be easily removed by deleting their database.
 
 2. Design and implement a component `mysimbdp-streamingestmanager`, which can start and stop `clientstreamingestapp`
    instances on-demand. `mysimbdp` imposes the model that `clientstreamingestapp` has to follow so
    that `mysimbdp-streamingestmanager` can invoke `clientstreamingestapp` as a blackbox. Explain the model w.r.t.
    steps and what the tenant has to do in order to write `clientstreamingestapp`. (1 point)
 
-`mysimbdp-streamingestmanager` is a simple Flask server that allows tenants to upload, list, start, and stop
-their `clientstreamingestapp`s. Tenants can upload their `clientstreamingestapp`s by POSTing them
-to `mysimbdp-streamingestmanager` and start them by POSTing the script name and any arguments that it
-should be invoked with; they will get the process id in return, which they can use to later stop it.
+`mysimbdp-streamingestmanager` is a simple Flask server that allows tenants to list, start, and stop
+their `clientstreamingestapp`s. Tenants can start their `clientstreamingestapp`s by POSTing the script name and any
+arguments that it should be invoked with to `mysimbdp-streamingestmanager`; they will get the process id in return,
+which they can use to later stop it. For now, the scripts must be added manually to the tenant's directory on the
+server.
 
-The `clientstreamingestapp`s should fulfill the following constraints:
+In order for the `mysimbdp-streamingestmanager` to be able to invoke them, the `clientstreamingestapp`s should fulfill
+the following constraints:
 
 * Must be a Python script.
 * Can only use the libraries provided by `mysimbdp` (e.g. kafka-python, pymongo, etc.).
@@ -102,16 +104,29 @@ The `clientstreamingestapp`s should fulfill the following constraints:
 * May take additional parameters as positional command line arguments. Arguments may include e.g. the tenant id, name of
   the database to connect to, or collection name that the data should be ingested into.
 
-Clearly, this model is a horrible idea from a number of perspectives (incl. security, isolation, flexibility,...) but I
-think it serves its purpose as a PoC. In a real environment, I would probably at least have the tenants package
+In a real-life scenario, this model would obviously be a very bad idea from multiple perspectives (e.g. security,
+isolation, flexibility...). If I had the time and skills, I would at least have the tenants package
 their `clientstreamingestapp`s as docker images and as a platform provider, I would orchestrate their execution on
-the `mysimbdp` side.
+the `mysimbdp` side -- but I think the Python script model serves its purpose as a PoC.
 
 3. Develop test ingestion programs (`clientstreamingestapp`), which must include one type of data wrangling (
    transforming the received message to a new structure). Show the performance of ingestion tests, including failures
    and exceptions, for at least 2 different tenants in your test environment. Explain the data used for testing. (1
    point)
-   -> 2 separate ones
+
+The two `clientstreamingestapp`s can be found in the `code/stream_ingestion/streamingingestapp` directory. They each
+come with a `producer` script that simulates the appropriate message production. According to the constraints mentioned
+above, both `clientstreamingestapp`s simple Python scripts that use the env variables provided by the platform.
+
+Tenant 1 is working in an IoT scenario; the producers are sensors that measure weather data and periodically send it to
+`mysimbdp-messagingsystem`. The `clientstreamingestapp` plucks out sensor metadata from the message and stores it in its
+own collection in the `mysimbdp-coredms`; the actual sensor data is stored in a separate collection and only references
+the metadata.
+
+Tenant 2 wants transform their structured data containing information about taxi trips into a semi-structured format.
+They use their `producer` script to stream the data line-by-line to `mysimbdp-messagingsystem`;
+their `clientstreamingestapp` transforms each line into a JSON object, grouping e.g. the location data together into a
+subdocument, and stores it in a collection in `mysimbdp-coredms`.
 
 4. `clientstreamingestapp` decides to report its processing rate, including average ingestion time, total ingestion data
    size, and number of messages to `mysimbdp-streamingestmonitor` within a predefined period of time. Design the report
@@ -128,7 +143,7 @@ about whether `clientstreamingestapp` should actually calculate the metrics by i
 `mysimbdp-streamingestmonitor` which can then aggregate and calculate the required metrics. I think it would make sense
 to do the latter (separation of concerns); however, it sounds like the assignment might be aiming for the first option.
 
-* Fort the first option, `mysimbdp-streamingestmonitor` in its simplest form could be another bare-bones Flask server
+* For the first option, `mysimbdp-streamingestmonitor` in its simplest form could be another bare-bones Flask server
   that exposes an endpoint for sending the required metrics; `clientstreamingestapp` can HTTP POST them at predefined
   intervals.
 * Since `clientstreamingestapp` is already conveniently connected to `mysimbdp-messagingsystem`, another
@@ -170,9 +185,10 @@ origin:
    Implement a feature in `mysimbdp-streamingestmanager` to receive information informed
    by `mysimbdp-streamingestmonitor`. (1 point)
 
-
-
-
+I implemented this s.t. `clientstreamingestapp` will periodically send the tracked metrics to the "metrics" topic in
+`mysimbdp-messagingsystem`. `mysimbdp-streamingestmonitor` is a Kafka consumer that checks the metrics; if the
+`average_ingestion_time` is too high, it will warn the `mysimbdp-streamingestmanager` by POSTing to its "/alerts"
+endpoint.
 
 ## Part 3 - Integration and Extension (weighted factor for grades = 1)
 
@@ -181,16 +197,19 @@ Notes: no software implementation is required for this part
 1. Produce an integrated architecture, with a figure, for the logging and monitoring of both batch and near real-time
    ingestion features (Part 1, Point 5 and Part 2, Points 4-5). Explain how a platform provider could know the amount of
    data ingested and existing errors/performance for individual tenants. (1 point)
-2.
+
 2. In the stream ingestion pipeline, assume that a tenant has to ingest the same data but to different sinks,
    e.g., `mysimbdp-coredms` for storage and a new `mysimbdp-streamdataprocessing` component. What features/solutions can
    you provide and recommend to your tenant? (1 point)
+
 3. Assume that the tenant wants to protect the data during the ingestion by using some encryption mechanisms to encrypt
    data in files. Thus, `clientbatchingestapp` has to deal with encrypted data. Which features/solutions do you
    recommend to the tenants, and which services might you support for this goal? (1 point)
+
 4. In the case of near real-time ingestion, assume that we want to (i) detect the quality of data to ingest only data
    with a predefined quality of data and (ii) store the data quality detected into the platform. Given your
    implementation in Part 2, how would you suggest a design/change for achieving this goal? (1 point)
+
 5. Assume a tenant has multiple `clientbatchingestapp`. Each is suitable for a type of data and has different workloads,
    such as complex transformation or feature engineering (e.g., different CPUs, memory consumption and execution time).
    How would you extend your design and implementation in Part 1 (only explain the concept/design) to support this

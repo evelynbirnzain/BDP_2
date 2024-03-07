@@ -10,17 +10,13 @@ from kafka import KafkaProducer
 dotenv.load_dotenv()
 
 KAFKA_BROKERS = os.getenv('KAFKA_BROKERS')
-INPUT_FILE = os.getenv('DATA_FILE')
+INPUT_FILE = 'data/data.json'
 
-print(KAFKA_BROKERS)
-print(INPUT_FILE)
+logfile = f"logs/producer_tenant1_{os.getppid()}.log"
+logging.basicConfig(level=logging.INFO, handlers=[logging.StreamHandler(sys.stdout), logging.FileHandler(logfile)])
 
-logfile = sys.argv[2] if len(sys.argv) > 2 else 'logs/sensor.log'
-logging.basicConfig(level=logging.INFO,
-                    handlers=[logging.StreamHandler(sys.stdout), logging.FileHandler(logfile)])
-
-if not KAFKA_BROKERS or not INPUT_FILE:
-    raise Exception("KAFKA_BROKERS and DATA_FILE must be set")
+if not KAFKA_BROKERS:
+    raise Exception("KAFKA_BROKERS must be set")
 
 
 def main():
@@ -29,10 +25,7 @@ def main():
     with open(INPUT_FILE) as f:
         messages = json.load(f)
 
-    n = int(sys.argv[1]) if len(sys.argv) > 1 else len(messages)
-
-    logging.info(f"Sending {n} messages")
-    for message in messages[:n]:
+    for message in messages:
         payload = json.dumps(message).encode('utf-8')
         r = producer.send('tenant1_measurements', payload)
         logging.info(f"Sent {message['id']}")

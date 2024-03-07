@@ -1,23 +1,33 @@
+import os
+
 import dask.dataframe as dd
 import dask_mongo
 import logging
 import sys
+import dotenv
 
-filepath = 'data/ajtu-isnz.csv'
-tenant = 'tenant2'
-host = 'localhost'
-port = 27017
-logfile = 'logs/clientbatchingestapp_tenant2.log'
+dotenv.load_dotenv()
 
+MONGO_URL = os.getenv('MONGO_URL')
+
+if not MONGO_URL:
+    raise Exception("MONGO_URL must be set as environment variable")
+
+HOST, PORT = MONGO_URL.split(':')
+
+FILEPATH = sys.argv[1]
+TENANT = sys.argv[1].split('/')[-2]
+
+logfile = f"logs/batchingestapp_{TENANT}.log"
 logging.basicConfig(level=logging.INFO,
                     handlers=[logging.StreamHandler(sys.stdout), logging.FileHandler(logfile)])
 
 logger = logging.getLogger()
 
 
-def ingest_file(filepath, tenant, host, port):
-    df = dd.read_csv(filepath, assume_missing=True)
-    logger.info(f"Read {len(df)} rows from {filepath}")
+def ingest_file():
+    df = dd.read_csv(FILEPATH, assume_missing=True)
+    logger.info(f"Read {len(df)} rows from {FILEPATH}")
 
     col_names = df.columns
     df = df.iloc[:, df.isnull().sum() > 0]
@@ -30,8 +40,8 @@ def ingest_file(filepath, tenant, host, port):
     bag = bag.map(lambda x: dict(zip(col_names, x)))
 
     logger.info(f"Writing to coredms")
-    dask_mongo.to_mongo(bag, tenant, 'measurements', connection_kwargs={'host': host, 'port': port})
+    dask_mongo.to_mongo(bag, TENANT, 'measurements', connection_kwargs={'host': HOST, 'port': PORT})
 
 
 if __name__ == "__main__":
-    ingest_file(filepath, tenant, host, port)
+    ingest_file()

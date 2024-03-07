@@ -35,12 +35,17 @@ db_client = pymongo.MongoClient(MONGO_URL)
 db = db_client[TENANT]
 
 
-
-
 def report_metrics(metrics):
     report = metrics.generate_report()
     logging.info(f"Report: {report}")
     monitoring_producer.send("metrics", json.dumps(report).encode('utf-8'))
+
+
+colnames = ["trip_id", "taxi_id", "trip_start_timestamp", "trip_end_timestamp", "trip_seconds", "trip_miles",
+            "pickup_census_tract", "dropoff_census_tract", "pickup_community_area", "dropoff_community_area", "fare",
+            "tips", "tolls", "extras", "trip_total", "payment_type", "company", "pickup_centroid_latitude",
+            "pickup_centroid_longitude", "pickup_centroid_location", "dropoff_centroid_latitude",
+            "dropoff_centroid_longitude", "dropoff_centroid_location"]
 
 
 def main():
@@ -54,16 +59,20 @@ def main():
     for message in consumer:
         start = time.time()
 
-        data = json.loads(message.value)
+        data = message.value.decode('utf-8')
+        data = data.split(',')
+        data = dict(zip(colnames, data))
 
-        sensor = data.pop('sensor')
-        sensor_ref = db['sensors'].find_one({"id": sensor['id']})
-        if not sensor_ref:
-            sensor_ref = db['sensors'].insert_one(sensor)
+        location = {
+            "area": data.pop('pickup_community_area'),
+            "latitude": data.pop('pickup_centroid_latitude'),
+            "longitude": data.pop('pickup_centroid_longitude'),
+            "location": data.pop('pickup_centroid_location')
+        }
 
-        data.delete('sampling_rate')
-        data['sensor'] = sensor_ref
-        db['measurements'].insert_one(data)
+        data['location'] = location
+
+        db['trips'].insert_one(data)
 
         end = time.time()
         metrics.update(sys.getsizeof(data), end - start)
