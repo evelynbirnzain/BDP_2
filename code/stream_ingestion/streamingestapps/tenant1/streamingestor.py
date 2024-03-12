@@ -34,9 +34,6 @@ monitoring_producer = KafkaProducer(bootstrap_servers=KAFKA_BROKERS)
 db_client = pymongo.MongoClient(MONGO_URL)
 db = db_client[TENANT]
 
-
-
-
 def report_metrics(metrics):
     report = metrics.generate_report()
     logging.info(f"Report: {report}")

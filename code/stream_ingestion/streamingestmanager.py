@@ -1,14 +1,12 @@
 import flask
 import os
-import dotenv
 import subprocess
 
 app = flask.Flask(__name__)
 
-dotenv.load_dotenv()
-STREAMINGESTAPPS_DIR = os.getenv('STREAMINGESTAPPS_DIR')
-
 """ Proper authentication and authorization should be implemented for these endpoints. """
+
+STREAMINGESTAPPS_DIR = "code/stream_ingestion/streamingestapps"
 
 
 @app.route('/<tenant_id>', methods=['GET'])
@@ -82,7 +80,8 @@ def stop():
 def alert():
     """ Receive alerts from the monitoring system """
     data = flask.request.json
-    print(f"Received alert for {data['origin']['tenant']}. Offending streaming app: {data['origin']['streaming_app_id']}")
+    print(
+        f"Received alert for {data['origin']['tenant']}. Offending streaming app: {data['origin']['streaming_app_id']}")
     return flask.jsonify({'status': 'ok', 'message': f"received alert for {data['origin']['tenant']}"})
 
 

@@ -1,0 +1,16 @@
+data_constraints:
+  file_types:
+    - CSV
+    - JSON
+    - XML
+  max_file_size: 50MB
+
+service_agreement:
+  max_throughput: 5MB/s
+  max_concurrent_ingestions: 1
+  storage_space_staging: 50GB
+  max_memory: 2GB
+
+executables:
+  taxi_data: batchingestapp.py
+  some_other_directory: some_other_script.py

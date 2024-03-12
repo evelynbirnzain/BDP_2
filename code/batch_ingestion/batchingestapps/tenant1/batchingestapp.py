@@ -5,6 +5,8 @@ import dask_mongo
 import logging
 import sys
 import dotenv
+import pathlib
+import pymongo
 
 dotenv.load_dotenv()
 
@@ -13,17 +15,20 @@ MONGO_URL = os.getenv('MONGO_URL')
 if not MONGO_URL:
     raise Exception("MONGO_URL must be set as environment variable")
 
-HOST, PORT = MONGO_URL.split(':')
+# mongodb://localhost:27017
+HOST, PORT = MONGO_URL.split('//')[1].split(':')
+PORT = int(PORT)
 
-FILEPATH = sys.argv[1]
-TENANT = sys.argv[1].split('/')[-2]
+FILEPATH = pathlib.Path(sys.argv[1])
+TENANT = FILEPATH.parts[-3]
 
 logfile = f"logs/batchingestapp_{TENANT}.log"
 logging.basicConfig(level=logging.INFO,
                     handlers=[logging.StreamHandler(sys.stdout), logging.FileHandler(logfile)])
 
 logger = logging.getLogger()
-
+logger.info(f"{MONGO_URL}, {HOST}, {PORT}")
+logger.info(f"Starting ingestion of {FILEPATH} for {TENANT}")
 
 def ingest_file():
     df = dd.read_csv(FILEPATH, assume_missing=True)
@@ -38,9 +43,10 @@ def ingest_file():
     logger.info(f"Converting to json")
     bag = df.to_bag()
     bag = bag.map(lambda x: dict(zip(col_names, x)))
+    bag = bag.map(lambda x: {k: v for k, v in x.items() if v is not None})
 
     logger.info(f"Writing to coredms")
-    dask_mongo.to_mongo(bag, TENANT, 'measurements', connection_kwargs={'host': HOST, 'port': PORT})
+    dask_mongo.to_mongo(bag, TENANT, 'measurements', connection_kwargs={'host': HOST, 'port': PORT}, compute=True)
 
 
 if __name__ == "__main__":

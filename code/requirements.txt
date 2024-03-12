@@ -3,3 +3,4 @@ dask-mongo~=2022.5.0
 flask~=3.0.2
 python-dotenv~=1.0.1
 requests~=2.31.0
+watchdog~=4.0.0
