@@ -2,11 +2,11 @@
 
 ## Part 1 - Batch data ingestion pipeline (weighted factor for grades = 3)
 
-1. The ingestion will be applied to files of data. Design a schema for a set of constraints for data files
+1. _The ingestion will be applied to files of data. Design a schema for a set of constraints for data files
    that `mysimbdp` will support the ingestion. Design a schema for a set of constraints for tenant service agreement.
    Explain why you, as a platform provider, decide such constraints. Implement these constraints into simple
    configuration files. Provide two examples (e.g., JSON or YAML) for two different tenants to specify constraints on
-   service agreement and files for the tenant. (1 point)
+   service agreement and files for the tenant. (1 point)_
 
 *Constraints on the data files*
 Since the tenants will provide their own `batchingestapp`s, I think the majority of the decisions about which files can
@@ -80,25 +80,25 @@ service_agreement:
   max_memory: 2GB
 ```
 
-2. Each tenant will put the tenant's data files to be ingested into a staging file directory (or a storage
+2. _Each tenant will put the tenant's data files to be ingested into a staging file directory (or a storage
    bucket), `client-staging-input-directory` within `mysimbdp` (the staging directory is managed by the platform). Each
    tenant provides its ingestion programs/pipelines, `clientbatchingestapp`, which will take the tenant's files as
    input, in `client-staging-input-directory`, and ingest the files into `mysimbdp-coredms`. Any `clientbatchingestapp`
    must perform at least one type of data wrangling to transform data elements in files to another structure for
    ingestion. As a tenant, explain the design of `clientbatchingestapp` and provide one implementation. Note
-   that `clientbatchingestapp` follows the guideline of `mysimbdp` given in the next Point 3. (1 point)
+   that `clientbatchingestapp` follows the guideline of `mysimbdp` given in the next Point 3. (1 point)_
 
 The [clientbatchingestapp](code/batch_ingestion/batchingestapps/tenant1/clientbatchingestapp.py) is a Python script
 that uses Dask and dask-mongo to efficiently ingest CSV files into MongoDB. Each row in the CSV is mapped to a document
 based on the file's header; any fields with missing values are dropped before ingesting into the `coredms`.
 
-3. The `mysimbdp` provider provisions an execution environment for running tenant's ingestion pipelines
+3. _The `mysimbdp` provider provisions an execution environment for running tenant's ingestion pipelines
    (`clientbatchingestapp`). As the `mysimbdp` provider, design and implement a component `mysimbdp-batchingestmanager`
    that invokes tenant's `clientbatchingestapp` to perform the ingestion for available files
    in `client-staging-input-directory`. `mysimbdp` imposes the model that `clientbatchingestapp` has to
    follow but `clientbatchingestapp` is, in principle, a blackbox to `mysimbdp-batchingestmanager`. Explain
    how `mysimbdp-batchingestmanager` knows the list of `clientbatchingestapp` and decides/schedules the execution
-   of `clientbatchingestapp` for different tenants. (1 point)
+   of `clientbatchingestapp` for different tenants. (1 point)_
 
 In this implementation, the [batchingestmanager](code/batch_ingestion/batchingestmanager.py) is a Python script that
 uses the "watchdog" library to monitor each tenant's `client-staging-input-directory` for newly uploaded files.
@@ -106,9 +106,8 @@ uses the "watchdog" library to monitor each tenant's `client-staging-input-direc
 *Scheduling*: For now, the `clientbatchingestapp`s are scheduled on a first-come-first-served basis;
 the `batchingestmanager` will start an appropriate new `clientbatchingestapp` for each new file in the tenants staging
 directories. Ideally, I would like to do the scheduling based on the tenant service agreements (e.g. if a tenant is
-paying
-for a higher throughput, they may be prioritized) and making sure that noone is completely starved of resources because
-of long-running ingestions.
+paying for a higher throughput, they may be prioritized) and making sure that noone is completely starved of resources
+because of long-running ingestions.
 
 *Registration*: For an okay balance between flexibility and ease of implementation, a tenant can register
 one `clientbatchingestapp` per subdirectory in their `client-staging-input-directory`; like this, they can have
@@ -125,13 +124,13 @@ For now, the `clientbatchingestapp`s must follow the following constraints:
   provided by `mysimbdp`.
 * Must take the path to the file to ingest as a positional command line argument.
 
-4. Explain your design for the multi-tenancy model in `mysimbdp`: which parts of `mysimbdp` will be shared for all
+4. _Explain your design for the multi-tenancy model in `mysimbdp`: which parts of `mysimbdp` will be shared for all
    tenants, which parts will be dedicated for individual tenants so that you, as a platform provider, can add and
    remove tenants based on the principle of pay-per-use. Develop test `clientbatchingestapp`, test data, and test
    constraints of files, and test service profiles for tenants according to your deployment. Show the performance of
    ingestion tests, including failures and exceptions, for 2 different tenants in your test environment and constraints.
    Demonstrate examples in which data will not be ingested due to a violation of constraints. Present and discuss
-   the maximum amount of data per second you can ingest in your tests. (1 point)
+   the maximum amount of data per second you can ingest in your tests. (1 point)_
 
 * Each tenant gets their own `client-staging-input-directory` which they can upload their files to. This ensures
   isolation between tenants' data. If a tenant is removed, their directory can be deleted so they can't upload any more
@@ -146,11 +145,11 @@ For now, the `clientbatchingestapp`s must follow the following constraints:
 
 # TODO: performance and constraints tests
 
-5. Implement and provide logging features for capturing successful/failed ingestion as well as metrics about
+5. _Implement and provide logging features for capturing successful/failed ingestion as well as metrics about
    ingestion time, data size, etc., for files which have been ingested into `mysimbdp`. Logging information must be
    stored in separate files, databases or a monitoring system for analytics of ingestion. Explain how `mysimbdp` could
    use such logging information. Show and explain simple statistical data extracted from logs for individual tenants and
-   for the whole platform with your tests. (1 point)
+   for the whole platform with your tests. (1 point)_
 
 The way it is set up now, the `batchingestmanager` submits the appropriate job to a process pool when a file is "
 uploaded". I added a callback for when the process terminates; at that point, some simple metrics like ingestion start
@@ -170,12 +169,12 @@ offers for a "better" (and more expensive) tenant service agreement if they are 
 
 ## Part 2 - Near real-time data ingestion (weighted factor for grades = 3)
 
-1. Tenants will put their data into messages and send the messages to a messaging system. `mysimbdp-messagingsystem` (
+1. _Tenants will put their data into messages and send the messages to a messaging system. `mysimbdp-messagingsystem` (
    provisioned by `mysimbdp`) and tenants will develop ingestion programs, `clientstreamingestapp`, which read data from
    the messaging system and ingest the data into `mysimbdp-coredms`. For near real-time ingestion, explain your design
    for the multi-tenancy model in `mysimbdp`: which parts of the `mysimbdp` will be shared for all tenants, which parts
    will be dedicated for individual tenants so that `mysimbdp` can add and remove tenants based on the
-   principle of pay- per-use. (1 point)
+   principle of pay- per-use. (1 point)_
 
 In this implementation, `mysimbdp-messagingsystem` (i.e. a Kafka cluster) is shared among tenants. I would also
 choose to share the individual brokers among tenants. Rather, tenants could provision their own topics (e.g. using a
@@ -198,10 +197,10 @@ For the `mysimbdp-coredms` I would implement exactly the same multitenancy model
 gets their own database in the `coredms`; they can create their own collections as they'd like. Like this,
 tenants are isolated from each other in a straightforward way and can be easily removed by deleting their database.
 
-2. Design and implement a component `mysimbdp-streamingestmanager`, which can start and stop `clientstreamingestapp`
+2. _Design and implement a component `mysimbdp-streamingestmanager`, which can start and stop `clientstreamingestapp`
    instances on-demand. `mysimbdp` imposes the model that `clientstreamingestapp` has to follow so
    that `mysimbdp-streamingestmanager` can invoke `clientstreamingestapp` as a blackbox. Explain the model w.r.t.
-   steps and what the tenant has to do in order to write `clientstreamingestapp`. (1 point)
+   steps and what the tenant has to do in order to write `clientstreamingestapp`. (1 point)_
 
 `mysimbdp-streamingestmanager` is a simple Flask server that allows tenants to list, start, and stop
 their `clientstreamingestapp`s. Tenants can start their `clientstreamingestapp`s by POSTing the script name and
@@ -224,10 +223,10 @@ isolation, flexibility...). If I had the time and skills, I would at least have 
 their `clientstreamingestapp`s as docker images and as a platform provider, I would orchestrate their execution on
 the `mysimbdp` side -- but I think the Python script model serves its purpose as a PoC.
 
-3. Develop test ingestion programs (`clientstreamingestapp`), which must include one type of data wrangling (
+3. _Develop test ingestion programs (`clientstreamingestapp`), which must include one type of data wrangling (
    transforming the received message to a new structure). Show the performance of ingestion tests, including failures
    and exceptions, for at least 2 different tenants in your test environment. Explain the data used for testing. (1
-   point)
+   point)_
 
 The two `clientstreamingestapp`s can be found in the `code/stream_ingestion/streamingingestapp` directory. They each
 come with a `producer` script that simulates the appropriate message production. According to the constraints
@@ -246,9 +245,9 @@ into a subdocument, and stores it in a collection in `mysimbdp-coredms`.
 
 # TODO: performance tests
 
-4. `clientstreamingestapp` decides to report its processing rate, including average ingestion time, total
+4. _`clientstreamingestapp` decides to report its processing rate, including average ingestion time, total
    ingestion data size, and number of messages to `mysimbdp-streamingestmonitor` within a predefined period of time.
-   Design the report format and explain possible components, flows and the mechanism for reporting. (1 point)
+   Design the report format and explain possible components, flows and the mechanism for reporting. (1 point)_
 
 I think the mechanism depends on whether we put the responsibility for reporting the metrics with
 the `clientstreamingestapp` or not. Usually I would say that they shouldn't be (if the tenant decides to not
@@ -299,11 +298,11 @@ sent in a JSON format which allows for flexibility with what metrics are reporte
 
 ```
 
-5. Implement a feature in `mysimbdp-streamingestmonitor` to receive the report from `clientstreamingestapp`. Based on
+5. _Implement a feature in `mysimbdp-streamingestmonitor` to receive the report from `clientstreamingestapp`. Based on
    the report from `clientstreamingestapp`, when the performance is below a threshold, e.g., average ingestion time is
    too low, `mysimbdp-streamingestmonitor` decides to inform `mysimbdp-streamingestmanager` about the situation.
    Implement a feature in `mysimbdp-streamingestmanager` to receive information informed
-   by `mysimbdp-streamingestmonitor`. (1 point)
+   by `mysimbdp-streamingestmonitor`. (1 point)_
 
 I implemented this s.t. `clientstreamingestapp` will periodically send the tracked metrics to the "metrics" topic in
 `mysimbdp-messagingsystem`. `mysimbdp-streamingestmonitor` is a Kafka consumer that checks the metrics; if the
@@ -372,6 +371,8 @@ architecture is shown below, with the interaction used for getting logs and metr
    such as complex transformation or feature engineering (e.g., different CPUs, memory consumption and execution time).
    How would you extend your design and implementation in Part 1 (only explain the concept/design) to support this
    requirement? (1 point)
+
+-> look at architectures atc for batch processing
    
 
 

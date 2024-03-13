@@ -52,7 +52,7 @@ class Metrics:
         self.metrics['average_ingestion_time'] = sum(self.ingestion_times) / len(self.ingestion_times)
         self.metrics['processing_rate'] = 1 / self.metrics['average_ingestion_time']
         self.metrics['throughput'] = self.metrics['total_ingestion_data_size'] / (
-                    self.metrics['measurement_end_time'] - self.metrics['measurement_start_time']).total_seconds()
+                self.metrics['measurement_end_time'] - self.metrics['measurement_start_time']).total_seconds()
 
 
 def set_interval(func, sec):

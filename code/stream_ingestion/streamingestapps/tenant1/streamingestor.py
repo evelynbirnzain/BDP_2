@@ -9,7 +9,7 @@ import dotenv
 
 from kafka import KafkaConsumer, KafkaProducer
 
-from code.stream_ingestion.streamingestapps.metrics import Metrics, set_interval
+from ..metrics import Metrics
 
 dotenv.load_dotenv()
 KAFKA_BROKERS = os.getenv('KAFKA_BROKERS')
@@ -33,6 +33,7 @@ monitoring_producer = KafkaProducer(bootstrap_servers=KAFKA_BROKERS)
 
 db_client = pymongo.MongoClient(MONGO_URL)
 db = db_client[TENANT]
+
 
 def report_metrics(metrics):
     report = metrics.generate_report()

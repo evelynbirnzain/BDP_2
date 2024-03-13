@@ -13,7 +13,8 @@ KAFKA_BROKERS = os.getenv('KAFKA_BROKERS')
 INPUT_FILE = 'data/data.json'
 
 logfile = f"logs/producer_tenant1_{os.getppid()}.log"
-logging.basicConfig(level=logging.INFO, handlers=[logging.StreamHandler(sys.stdout), logging.FileHandler(logfile)])
+logging.basicConfig(format='%(asctime)s %(levelname)-8s %(message)s',
+                    level=logging.INFO, handlers=[logging.StreamHandler(sys.stdout), logging.FileHandler(logfile)])
 
 if not KAFKA_BROKERS:
     raise Exception("KAFKA_BROKERS must be set")

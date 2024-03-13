@@ -23,12 +23,14 @@ FILEPATH = pathlib.Path(sys.argv[1])
 TENANT = FILEPATH.parts[-3]
 
 logfile = f"logs/batchingestapp_{TENANT}.log"
-logging.basicConfig(level=logging.INFO,
+logging.basicConfig(format='%(asctime)s %(levelname)-8s %(message)s',
+                    level=logging.INFO,
                     handlers=[logging.StreamHandler(sys.stdout), logging.FileHandler(logfile)])
 
 logger = logging.getLogger()
 logger.info(f"{MONGO_URL}, {HOST}, {PORT}")
 logger.info(f"Starting ingestion of {FILEPATH} for {TENANT}")
+
 
 def ingest_file():
     df = dd.read_csv(FILEPATH, assume_missing=True)

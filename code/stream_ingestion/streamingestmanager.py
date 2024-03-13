@@ -1,6 +1,10 @@
 import flask
 import os
 import subprocess
+import logging
+import dotenv
+
+dotenv.load_dotenv()
 
 app = flask.Flask(__name__)
 
@@ -8,10 +12,16 @@ app = flask.Flask(__name__)
 
 STREAMINGESTAPPS_DIR = "code/stream_ingestion/streamingestapps"
 
+logging.basicConfig(format='%(asctime)s %(levelname)-8s %(message)s',
+                    level=logging.INFO,
+                    handlers=[logging.StreamHandler(), logging.FileHandler('logs/streamingestmanager.log')])
+
+PYTHON = os.getenv('PYTHON_EXECUTABLE')
 
 @app.route('/<tenant_id>', methods=['GET'])
 def list_ingestapps(tenant_id):
     """ Check which streamingestapps are available for a tenant """
+    logging.info(f"Listing streamingestapps for {tenant_id}")
     p = os.path.join(STREAMINGESTAPPS_DIR, tenant_id)
     apps = [f for f in os.listdir(p) if f.endswith('.py')]
     return flask.jsonify({'status': 'ok', 'message': apps})
@@ -21,6 +31,8 @@ def list_ingestapps(tenant_id):
 def upload(tenant_id):
     """ Upload a new streamingestapp for a tenant """
     f = flask.request.files['file']
+
+    logging.info(f"Uploading streamingestapp {f.filename} for {tenant_id}")
 
     if not f.filename.endswith('.py'):
         return flask.jsonify({'status': 'error', 'message': 'file must be a python file'})
@@ -42,11 +54,13 @@ def start():
     name = flask.request.json['name']
     args = flask.request.json['args']
 
+    logging.info(f"Starting streamingestapp {name} for {tenant_id}")
+
     p = os.path.join(STREAMINGESTAPPS_DIR, tenant_id, name)
     if not os.path.exists(p):
         return flask.jsonify({'status': 'error', 'data': f'{name} does not exist'})
 
-    proc = subprocess.Popen(['venv\\Scripts\\python.exe', p, *args], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    proc = subprocess.Popen([PYTHON, p, *args], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
     # check if the process started successfully
     try:
@@ -66,6 +80,8 @@ def stop():
     """ Stop a streamingestapp """
     pid = flask.request.json['pid']
 
+    logging.info(f"Stopping process {pid}")
+
     try:
         os.kill(int(pid), 9)
     except ProcessLookupError:
@@ -80,8 +96,8 @@ def stop():
 def alert():
     """ Receive alerts from the monitoring system """
     data = flask.request.json
-    print(
-        f"Received alert for {data['origin']['tenant']}. Offending streaming app: {data['origin']['streaming_app_id']}")
+    logging.warning(f"Received alert for {data['origin']['tenant']}")
+
     return flask.jsonify({'status': 'ok', 'message': f"received alert for {data['origin']['tenant']}"})
 
 

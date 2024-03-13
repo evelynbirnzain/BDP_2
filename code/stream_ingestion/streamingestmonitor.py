@@ -16,8 +16,9 @@ print(STREAM_INGEST_MANAGER_URL)
 if not KAFKA_BROKERS or not STREAM_INGEST_MANAGER_URL:
     raise Exception("KAFKA_BROKERS and STREAMINGESTMANAGER_URL must be set as environment variables")
 
-logging.basicConfig(level=logging.INFO, handlers=[logging.StreamHandler(sys.stdout), logging.FileHandler(
-    f'logs/streamingestmonitor.log')])
+logging.basicConfig(format='%(asctime)s %(levelname)-8s %(message)s',
+                    level=logging.INFO,
+                    handlers=[logging.StreamHandler(sys.stdout), logging.FileHandler(f'logs/streamingestmonitor.log')])
 
 consumer = KafkaConsumer("metrics", bootstrap_servers=KAFKA_BROKERS, group_id="monitor")
 

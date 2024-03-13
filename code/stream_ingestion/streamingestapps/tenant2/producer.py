@@ -1,8 +1,6 @@
-import json
 import logging
 import os
 import sys
-from time import sleep
 
 import dotenv
 from kafka import KafkaProducer
@@ -13,7 +11,8 @@ KAFKA_BROKERS = os.getenv('KAFKA_BROKERS')
 INPUT_FILE = 'data/ajtu-isnz.csv'
 
 logfile = f"logs/producer_tenant2_{os.getppid()}.log"
-logging.basicConfig(level=logging.INFO, handlers=[logging.StreamHandler(sys.stdout), logging.FileHandler(logfile)])
+logging.basicConfig(format='%(asctime)s %(levelname)-8s %(message)s', level=logging.INFO,
+                    handlers=[logging.StreamHandler(sys.stdout), logging.FileHandler(logfile)])
 
 if not KAFKA_BROKERS:
     raise Exception("KAFKA_BROKERS must be set")

@@ -9,7 +9,7 @@ import dotenv
 
 from kafka import KafkaConsumer, KafkaProducer
 
-from code.stream_ingestion.streamingestapps.metrics import Metrics, set_interval
+from ..metrics import Metrics, set_interval
 
 dotenv.load_dotenv()
 KAFKA_BROKERS = os.getenv('KAFKA_BROKERS')

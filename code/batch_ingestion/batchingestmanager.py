@@ -14,7 +14,8 @@ if not os.path.exists('logs/batchingestion_metrics.log'):
     with open('logs/batchingestion_metrics.log', 'w') as f:
         f.write("tenant,file,file_size,ingestion_start_time,ingestion_end_time,ingestion_time,success\n")
 
-logging.basicConfig(level=logging.INFO,
+logging.basicConfig(format='%(asctime)s %(levelname)-8s %(message)s',
+                    level=logging.INFO,
                     handlers=[logging.StreamHandler(), logging.FileHandler('logs/batchingestmanager.log')])
 
 metrics = logging.getLogger('metrics')
@@ -30,6 +31,7 @@ if not PYTHON:
 BATCHINGESTAPPS_DIR = 'code/batch_ingestion/batchingestapps'
 
 running = {}
+
 
 def on_complete(tenant, file, file_size, ingestion_start_time, success):
     end_time = datetime.datetime.now()
