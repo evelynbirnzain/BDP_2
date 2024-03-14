@@ -156,7 +156,7 @@ uploaded". I added a callback for when the process terminates; at that point, so
 time, end time, and duration, and the input data size are logged to a separate file (
 e.g. [logs/batchingestion_metrics.log](../logs/batchingestion_metrics.log)). It also logs whether the job terminated
 successfully (based on return status code). The data is directly logged in a csv format so that it's easy to parse and
-aggregate when doing analytics.
+aggregate when doing analytics. All other logs written to the "regular" log file, one for each tenant.
 
 `mysimbdp` could use those logs e.g. for rate limiting the tenants based on their usage, monitoring the performance and
 health state of the platform (if suddenly many pipelines start failing something is wrong), notifying the tenants about
@@ -313,9 +313,9 @@ endpoint.
 
 Notes: no software implementation is required for this part
 
-1. Produce an integrated architecture, with a figure, for the logging and monitoring of both batch and near real-time
+1. _Produce an integrated architecture, with a figure, for the logging and monitoring of both batch and near real-time
    ingestion features (Part 1, Point 5 and Part 2, Points 4-5). Explain how a platform provider could know the amount of
-   data ingested and existing errors/performance for individual tenants. (1 point)
+   data ingested and existing errors/performance for individual tenants. (1 point)_
 
 The current architecture in shown in the figure below. For near real-time ingestion, the client ingestors are
 responsible for logging and producing the required metrics to the `messagingsystem`/Kafka; the `streamingestmonitor`
@@ -344,35 +344,61 @@ architecture is shown below, with the interaction used for getting logs and metr
 
 ![future](future.png)
 
-2. In the stream ingestion pipeline, assume that a tenant has to ingest the same data but to different sinks,
+2. _In the stream ingestion pipeline, assume that a tenant has to ingest the same data but to different sinks,
    e.g., `mysimbdp-coredms` for storage and a new `mysimbdp-streamdataprocessing` component. What features/solutions can
-   you provide and recommend to your tenant? (1 point)
-   Since the `messagingsystem` is Kafka, nothing keeps the tenants from consuming messages from the same topic using
-   multiple different ingestor apps. I would recommend them creating one ingestor app that consumes from
-   "/example-topic" and registers itself as part of consumer group e.g. "example-consumer-group-coredms" and takes care
-   of moving the data to the `coredms`; the same thing in parallel for another app that ingests
-   into `streamdataprocessing`. Using consumer groups also enables them to run multiple of each ingestor in parallel
-   while ensuring that each message is only ingested into the `coredms` once. For this to work efficiently, the tenant
-   should create an appropriate amount of partitions in their topic (each partition will only be consumed by one
-   worker - so if they only have one partition it will be handled by one consumer in the group and the others will stand
-   by idly).
+   you provide and recommend to your tenant? (1 point)_
 
-3. Assume that the tenant wants to protect the data during the ingestion by using some encryption mechanisms to encrypt
+Since the `messagingsystem` is Kafka, nothing keeps the tenants from consuming messages from the same topic using
+multiple different ingestor apps. I would recommend them creating one ingestor app that consumes from"/example-topic"
+and registers itself as part of consumer group e.g. "example-consumer-group-coredms" and takes care
+of moving the data to the `coredms`; the same thing in parallel for another app that ingests
+into `streamdataprocessing`. Using consumer groups also enables them to run multiple of each ingestor in parallel while
+ensuring that each message is only ingested into the `coredms` once. For this to work efficiently, the tenant
+should create an appropriate amount of partitions in their topic (each partition will only be consumed by one
+worker - so if they only have one partition it will be handled by one consumer in the group and the others will stand
+by idly).
+
+3. _Assume that the tenant wants to protect the data during the ingestion by using some encryption mechanisms to encrypt
    data in files. Thus, `clientbatchingestapp` has to deal with encrypted data. Which features/solutions do you
-   recommend to the tenants, and which services might you support for this goal? (1 point)
+   recommend to the tenants, and which services might you support for this goal? (1 point)_
 
+Looking e.g. at [this article](https://www.mongodb.com/products/capabilities/security/encryption) about data encryption
+in MongoDB I think, as a platform provider, there are two main areas that I could provide support for:
 
-4. In the case of near real-time ingestion, assume that we want to (i) detect the quality of data to ingest only data
+* **Encryption in transit**: Sending the data via secure (e.g. TLS-encrypted) channels while being moved within the
+  platform. This would concern e.g. the data flow between client staging directory, the ingestor apps, and the coredms.
+* **Encryption at rest**: Using MongoDB features to store the data in an encrypted format within the coredms.
+
+There is also the possibility that the client encrypts their data before uploading it to the staging directory. The
+ingestor app then needs to be able to decrypt the data and will need the appropriate key for that. As a platform
+provider, I could e.g. provide an integrated **key management service**, that allows the clients to easily and securely
+manage their encryption keys.
+
+4. _In the case of near real-time ingestion, assume that we want to (i) detect the quality of data to ingest only data
    with a predefined quality of data and (ii) store the data quality detected into the platform. Given your
-   implementation in Part 2, how would you suggest a design/change for achieving this goal? (1 point)
+   implementation in Part 2, how would you suggest a design/change for achieving this goal? (1 point)_
 
+I think in the lecture we discussed two approaches for doing quality control: in-process and out-process. For
+in-process, the tenant does light-weight quality checking themselves during the ingestion using e.g. basic libraries
+that support quality control. In that case, the design wouldn't need to change and the tenant is responsible for
+everything from doing the quality check to storing the quality data.
 
-5. Assume a tenant has multiple `clientbatchingestapp`. Each is suitable for a type of data and has different workloads,
-   such as complex transformation or feature engineering (e.g., different CPUs, memory consumption and execution time).
-   How would you extend your design and implementation in Part 1 (only explain the concept/design) to support this
-   requirement? (1 point)
+For more comprehensive quality control, the platform could provide a quality control service that the tenant can call
+from within their ingestor app to do the analytics (i.e. doing the quality control out-process). In the lecture we
+discussed e.g. Deequ which is build on top of Spark. To support this and also the changes in the next point I would
+start building the platform atop Spark, which would not only provide a scalable way to do quality control but also
+provide a much better ability for other, more heavy-weight processing.
 
--> look at architectures atc for batch processing
+5. _Assume a tenant has multiple `clientbatchingestapp`. Each is suitable for a type of data and has different
+   workloads, such as complex transformation or feature engineering (e.g., different CPUs, memory consumption and
+   execution time). How would you extend your design and implementation in Part 1 (only explain the concept/design) to
+   support this requirement? (1 point)_
+
+As I already started motivating in the previous point, I would switch to building my platform around a framework that
+supports high-performance stream- and batch-processing, like e.g. Apache Spark. For now, all the ingestion and
+transformation is running on one bare-metal node; a framework like Spark comes with the ability to run an entire cluster
+and gives much better and more fine-grained support for managing ingestion pipelines, scheduling jobs, constraining
+resources, load balancing, and so on.
    
 
 

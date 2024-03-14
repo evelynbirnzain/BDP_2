@@ -31,9 +31,9 @@ logger.info(f"{MONGO_URL}, {HOST}, {PORT}")
 logger.info(f"Starting ingestion of {FILEPATH} for {TENANT}")
 
 
-def ingest_file():
-    df = dd.read_csv(FILEPATH, assume_missing=True)
-    logger.info(f"Read {len(df)} rows from {FILEPATH}")
+def ingest_file(file_path: str, tenant: str):
+    df = dd.read_csv(file_path, assume_missing=True)
+    logger.info(f"Read {len(df)} rows from {file_path}")
 
     col_names = df.columns
     df = df.iloc[:, df.isnull().sum() > 0]
@@ -47,8 +47,8 @@ def ingest_file():
     bag = bag.map(lambda x: {k: v for k, v in x.items() if v is not None})
 
     logger.info(f"Writing to coredms")
-    dask_mongo.to_mongo(bag, TENANT, 'measurements', connection_kwargs={'host': HOST, 'port': PORT}, compute=True)
+    dask_mongo.to_mongo(bag, tenant, 'measurements', connection_kwargs={'host': HOST, 'port': PORT}, compute=True)
 
 
 if __name__ == "__main__":
-    ingest_file()
+    ingest_file(FILEPATH, TENANT)

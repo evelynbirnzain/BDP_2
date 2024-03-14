@@ -41,7 +41,10 @@ def on_complete(tenant, file, file_size, ingestion_start_time, success):
     running[tenant] -= 1
     if success:
         logging.info(f"Removing {file}")
-        os.remove(file)
+        try:
+            os.remove(file)
+        except Exception as e:
+            logging.error(f"Failed to remove {file}: {e}")
     else:
         logging.error(f"Ingestion of {file} failed")
 
@@ -68,6 +71,24 @@ def ingest_file(event):
         logging.info(f"Config: {config}")
         logging.info(f"Subdir: {subdir}")
 
+        # wait while file is being "uploaded" (only needed for the tests)
+        fs = os.path.getsize(src_path)
+        while True:
+            time.sleep(1)
+            fs_new = os.path.getsize(src_path)
+            if fs == fs_new:
+                break
+            fs = fs_new
+
+        total_size = sum(os.path.getsize(f) for f in src_path.parent.glob('**/*') if os.path.isfile(f))
+        logging.info(list(src_path.parent.glob('**/*')))
+        allowed = float(config['service_agreement']['storage_space_staging'][:-2]) * 1024 * 1024 * 1024
+        if total_size > allowed:
+            logging.error(
+                f"Too much data in staging directory. Allowed: {allowed}, Current: {total_size}. Removing {src_path}.")
+            os.remove(src_path)
+            return
+
         if subdir not in config['executables']:
             logging.error(
                 f"Subdir {subdir} does not have an executable for {tenant}. Registered: {config['executables']}")
@@ -76,19 +97,28 @@ def ingest_file(event):
         filetype = src_path.suffix[1:].upper()
         if filetype not in config['data_constraints']['file_types']:
             logging.error(
-                f"Filetype {filetype} not supported for {tenant}. Supported filetypes: {config['data_constraints']['file_types']}")
+                f"Filetype {filetype} not supported for {tenant}. Supported filetypes: {config['data_constraints']['file_types']}. Removing {src_path}")
+            os.remove(src_path)
             return
 
-        filesize = os.path.getsize(event.src_path)
-        max_filesize = int(config['data_constraints']['max_file_size'][:-2]) * 1024 * 1024
+        filesize = os.path.getsize(src_path)
+        max_filesize = int(config['data_constraints']['max_file_size'][:-2])
+        if config['data_constraints']['max_file_size'].endswith('GB'):
+            max_filesize *= 1024 * 1024 * 1024
+        elif config['data_constraints']['max_file_size'].endswith('MB'):
+            max_filesize *= 1024 * 1024
+
+        logging.info(f"Filesize: {filesize}, Max filesize: {max_filesize}")
         if filesize > max_filesize:
             logging.error(
-                f"File {event.src_path} is too large ({filesize} > {config['data_constraints']['max_file_size']})")
+                f"File {src_path} is too large ({filesize} > {config['data_constraints']['max_file_size']}). Removing {src_path}")
+            os.remove(src_path)
             return
 
         if tenant in running and running[tenant] >= config['service_agreement']['max_concurrent_ingestions']:
             logging.error(
-                f"Too many concurrent ingestions for {tenant}. Max: {config['service_agreement']['max_concurrent_ingestions']}")
+                f"Too many concurrent ingestions for {tenant}. Max: {config['service_agreement']['max_concurrent_ingestions']} Current: {running[tenant]}. Removing {src_path}")
+            os.remove(src_path)
             return
 
         executable = pathlib.Path(BATCHINGESTAPPS_DIR, tenant, config['executables'][subdir])
@@ -96,9 +126,10 @@ def ingest_file(event):
             logging.info(f"Executing {executable}")
             running[tenant] = 1 if tenant not in running else running[tenant] + 1
             cmd = f'{PYTHON} {executable} "{src_path}"'
+            start_time = datetime.datetime.now()
             f = pool.submit(subprocess.call, cmd, shell=True)
             f.add_done_callback(
-                lambda f: on_complete(tenant, src_path, filesize, datetime.datetime.now(), f.result() == 0))
+                lambda f: on_complete(tenant, src_path, filesize, start_time, f.result() == 0))
         else:
             logging.error(f"Executable {executable} does not exist")
 
@@ -109,7 +140,7 @@ class EventHandler(FileSystemEventHandler):
 
 
 if __name__ == "__main__":
-    pool = Pool(max_workers=4)
+    pool = Pool()
 
     path = 'data/client-staging-input-directories'
     logging.info(f"Watching {path}")
