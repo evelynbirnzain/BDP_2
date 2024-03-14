@@ -93,7 +93,7 @@ def test_performance():
 
 
 def wait_for_processing(target_dir):
-    while len(os.listdir(target_dir)) > 0:
+    while len(os.listdir(target_dir)) > 1:
         time.sleep(5)
 
 

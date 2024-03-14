@@ -3523,3 +3523,41 @@
 2024-03-14 23:59:46,775 INFO     Event: created data/client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv
 2024-03-14 23:59:46,776 INFO     New file uploaded: data/client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv
 2024-03-14 23:59:46,776 INFO     Checking config for tenant2 at code\batch_ingestion\batchingestapps\tenant2\config.yaml
+2024-03-14 23:59:48,782 INFO     Filesize: 107029978, Max filesize: 367001600
+2024-03-14 23:59:48,783 INFO     Executing code\batch_ingestion\batchingestapps\tenant2\batchingestapp.py
+2024-03-14 23:59:48,784 INFO     Event: created data/client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv
+2024-03-14 23:59:48,785 INFO     New file uploaded: data/client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv
+2024-03-14 23:59:48,785 INFO     Checking config for tenant2 at code\batch_ingestion\batchingestapps\tenant2\config.yaml
+2024-03-14 23:59:49,788 INFO     Filesize: 107029978, Max filesize: 367001600
+2024-03-14 23:59:49,788 INFO     Executing code\batch_ingestion\batchingestapps\tenant2\batchingestapp.py
+2024-03-14 23:59:49,789 INFO     Event: created data/client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv
+2024-03-14 23:59:49,789 INFO     New file uploaded: data/client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv
+2024-03-14 23:59:49,789 INFO     Checking config for tenant2 at code\batch_ingestion\batchingestapps\tenant2\config.yaml
+2024-03-14 23:59:50,791 INFO     Filesize: 107029978, Max filesize: 367001600
+2024-03-14 23:59:50,791 ERROR    Constraint violation for tenant2: Too many concurrent ingestions for tenant2. Max: 2 Current: 2.
+2024-03-14 23:59:50,792 INFO     tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.
+2024-03-15 00:00:02,668 INFO     tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:59:48.783103,2024-03-15 00:00:02.668636,0:00:13.885533,True
+2024-03-15 00:00:02,668 INFO     Ingestion of data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv complete in 0:00:13.885533
+2024-03-15 00:00:02,669 INFO     Ingestions still running for this tenant: 1
+2024-03-15 00:00:02,669 INFO     Ingestion of data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv successful
+2024-03-15 00:00:02,669 INFO     Removing data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv.
+2024-03-15 00:00:04,172 INFO     tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:59:49.789325,2024-03-15 00:00:04.172011,0:00:14.382686,True
+2024-03-15 00:00:04,173 INFO     Ingestion of data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv complete in 0:00:14.382686
+2024-03-15 00:00:04,173 INFO     Ingestions still running for this tenant: 0
+2024-03-15 00:00:04,173 INFO     Ingestion of data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv successful
+2024-03-15 00:00:04,173 INFO     Removing data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv.
+2024-03-15 00:00:06,988 INFO     Event: created data/client-staging-input-directories\tenant2\taxi_data\taxi-data-2-0.csv
+2024-03-15 00:00:06,988 INFO     New file uploaded: data/client-staging-input-directories\tenant2\taxi_data\taxi-data-2-0.csv
+2024-03-15 00:00:06,988 INFO     Checking config for tenant2 at code\batch_ingestion\batchingestapps\tenant2\config.yaml
+2024-03-15 00:00:09,085 ERROR    Constraint violation for tenant2: Too much data in staging directory. Allowed: 512.0 MB. Current: 612.4290046691895 MB
+2024-03-15 00:00:09,085 INFO     tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2-0.csv,321089178,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 612.4290046691895 MB
+2024-03-15 00:00:09,112 INFO     Event: created data/client-staging-input-directories\tenant2\taxi_data\taxi-data-2-1.csv
+2024-03-15 00:00:09,112 INFO     New file uploaded: data/client-staging-input-directories\tenant2\taxi_data\taxi-data-2-1.csv
+2024-03-15 00:00:09,112 INFO     Checking config for tenant2 at code\batch_ingestion\batchingestapps\tenant2\config.yaml
+2024-03-15 00:00:10,114 INFO     Filesize: 321089178, Max filesize: 367001600
+2024-03-15 00:00:10,115 INFO     Executing code\batch_ingestion\batchingestapps\tenant2\batchingestapp.py
+2024-03-15 00:00:38,014 INFO     tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2-1.csv,321089178,2024-03-15 00:00:10.115379,2024-03-15 00:00:38.014462,0:00:27.899083,True
+2024-03-15 00:00:38,014 INFO     Ingestion of data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2-1.csv complete in 0:00:27.899083
+2024-03-15 00:00:38,014 INFO     Ingestions still running for this tenant: 0
+2024-03-15 00:00:38,014 INFO     Ingestion of data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2-1.csv successful
+2024-03-15 00:00:38,015 INFO     Removing data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2-1.csv.
