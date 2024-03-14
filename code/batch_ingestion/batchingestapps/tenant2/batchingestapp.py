@@ -14,7 +14,6 @@ MONGO_URL = os.getenv('MONGO_URL')
 if not MONGO_URL:
     raise Exception("MONGO_URL must be set as environment variable")
 
-# mongodb://localhost:27017
 HOST, PORT = MONGO_URL.split('//')[1].split(':')
 PORT = int(PORT)
 
@@ -27,7 +26,6 @@ logging.basicConfig(format='%(asctime)s %(levelname)-8s %(message)s',
                     handlers=[logging.StreamHandler(sys.stdout), logging.FileHandler(logfile)])
 
 logger = logging.getLogger()
-logger.info(f"{MONGO_URL}, {HOST}, {PORT}")
 logger.info(f"Starting ingestion of {FILEPATH} for {TENANT}")
 
 
@@ -39,7 +37,7 @@ def ingest_file(file_path: str, tenant: str):
     df = df.iloc[:, df.isnull().sum() > 0]
     logger.info(f"Dropped {len(col_names) - len(df.columns)} empty columns")
     logger.info(f"Dropped columns: {set(col_names) - set(df.columns)}")
-    logger.info(f"Remaining columns: {df.columns}")
+    logger.info(f"{len(df.columns)} columns remaining")
 
     logger.info(f"Converting to json")
     bag = df.to_bag()

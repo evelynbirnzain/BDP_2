@@ -3,6 +3,7 @@ import os
 import subprocess
 import logging
 import dotenv
+import pathlib
 
 dotenv.load_dotenv()
 
@@ -22,29 +23,9 @@ PYTHON = os.getenv('PYTHON_EXECUTABLE')
 def list_ingestapps(tenant_id):
     """ Check which streamingestapps are available for a tenant """
     logging.info(f"Listing streamingestapps for {tenant_id}")
-    p = os.path.join(STREAMINGESTAPPS_DIR, tenant_id)
+    p = pathlib.Path(STREAMINGESTAPPS_DIR, tenant_id)
     apps = [f for f in os.listdir(p) if f.endswith('.py')]
     return flask.jsonify({'status': 'ok', 'message': apps})
-
-
-@app.route('/<tenant_id>', methods=['PUT'])
-def upload(tenant_id):
-    """ Upload a new streamingestapp for a tenant """
-    f = flask.request.files['file']
-
-    logging.info(f"Uploading streamingestapp {f.filename} for {tenant_id}")
-
-    if not f.filename.endswith('.py'):
-        return flask.jsonify({'status': 'error', 'message': 'file must be a python file'})
-
-    p = os.path.join(STREAMINGESTAPPS_DIR, tenant_id, f.filename)
-
-    if not os.path.exists(os.path.dirname(p)):
-        os.makedirs(os.path.dirname(p))
-
-    f.save(p)
-
-    return flask.jsonify({'status': 'ok', 'message': f'uploaded streamingestapp {f.filename}'})
 
 
 @app.route('/start', methods=['POST'])
@@ -56,11 +37,13 @@ def start():
 
     logging.info(f"Starting streamingestapp {name} for {tenant_id}")
 
-    p = os.path.join(STREAMINGESTAPPS_DIR, tenant_id, name)
-    if not os.path.exists(p):
+    p = pathlib.Path(STREAMINGESTAPPS_DIR, tenant_id, name)
+    if not p.exists():
         return flask.jsonify({'status': 'error', 'data': f'{name} does not exist'})
 
-    proc = subprocess.Popen([PYTHON, p, *args], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    p = p.with_suffix('').as_posix()
+    p = p.replace('/', '.')
+    proc = subprocess.Popen([PYTHON, "-m", p, *args], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
     # check if the process started successfully
     try:
@@ -72,6 +55,7 @@ def start():
         pass
 
     pid = proc.pid
+
     return flask.jsonify({'status': 'ok', 'message': f'started streamingestapp {name}', 'pid': pid})
 
 

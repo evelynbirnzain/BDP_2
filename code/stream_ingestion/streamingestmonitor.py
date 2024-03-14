@@ -7,20 +7,20 @@ from kafka import KafkaConsumer
 import requests
 
 dotenv.load_dotenv()
-KAFKA_BROKERS = os.getenv('KAFKA_BROKERS')
+KAFKA_BROKER = os.getenv('KAFKA_BROKER')
 STREAM_INGEST_MANAGER_URL = os.getenv('STREAMINGESTMANAGER_URL')
 
-print(KAFKA_BROKERS)
+print(KAFKA_BROKER)
 print(STREAM_INGEST_MANAGER_URL)
 
-if not KAFKA_BROKERS or not STREAM_INGEST_MANAGER_URL:
-    raise Exception("KAFKA_BROKERS and STREAMINGESTMANAGER_URL must be set as environment variables")
+if not KAFKA_BROKER or not STREAM_INGEST_MANAGER_URL:
+    raise Exception("KAFKA_BROKER and STREAMINGESTMANAGER_URL must be set as environment variables")
 
 logging.basicConfig(format='%(asctime)s %(levelname)-8s %(message)s',
                     level=logging.INFO,
                     handlers=[logging.StreamHandler(sys.stdout), logging.FileHandler(f'logs/streamingestmonitor.log')])
 
-consumer = KafkaConsumer("metrics", bootstrap_servers=KAFKA_BROKERS, group_id="monitor")
+consumer = KafkaConsumer("metrics", bootstrap_servers=KAFKA_BROKER, group_id="monitor")
 
 
 def main():

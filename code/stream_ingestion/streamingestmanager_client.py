@@ -28,9 +28,11 @@ class StreamingestManagerClient:
 if __name__ == "__main__":
     client = StreamingestManagerClient('localhost', 5000)
     if sys.argv[1] == 'list':
-        print(client.list_ingestapps('tenant1'))
+        tenant = sys.argv[2]
+        print(client.list_ingestapps(tenant))
     if sys.argv[1] == 'start':
-        response = client.start('tenant1', 'streamingestor.py', ["tenant1", "tenant1_measurements"])
+        tenant = sys.argv[2]
+        response = client.start(tenant, 'streamingestor.py', [tenant, f"{tenant}_measurements"])
         print(response)
     if sys.argv[1] == 'stop':
         pid = sys.argv[2]

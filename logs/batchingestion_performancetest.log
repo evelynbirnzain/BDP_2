@@ -1,0 +1,28 @@
+2024-03-14 23:34:08,459 INFO     Start testing performance
+2024-03-14 23:34:08,459 INFO     Testing 1 concurrent ingestions
+2024-03-14 23:36:19,823 INFO     Testing 2 concurrent ingestions
+2024-03-14 23:37:51,086 INFO     Testing 4 concurrent ingestions
+2024-03-14 23:38:42,541 INFO     Testing 8 concurrent ingestions
+2024-03-14 23:39:13,585 INFO     Testing 12 concurrent ingestions
+2024-03-14 23:40:07,270 INFO     Testing 16 concurrent ingestions
+2024-03-14 23:41:21,810 INFO     Testing 20 concurrent ingestions
+2024-03-14 23:42:47,962 INFO     Testing 24 concurrent ingestions
+2024-03-14 23:44:04,995 INFO     Start testing constraints
+2024-03-14 23:44:04,998 INFO     Testing illegal file type
+2024-03-14 23:44:05,015 INFO     Testing too large file size
+2024-03-14 23:44:10,348 INFO     Testing too many concurrent ingestions
+2024-03-14 23:44:25,501 INFO     Testing not enough storage space in staging directory
+2024-03-14 23:49:06,798 INFO     Start testing performance
+2024-03-14 23:49:06,798 INFO     Testing 1 concurrent ingestions
+2024-03-14 23:51:07,584 INFO     Testing 2 concurrent ingestions
+2024-03-14 23:52:28,372 INFO     Testing 4 concurrent ingestions
+2024-03-14 23:53:19,210 INFO     Testing 8 concurrent ingestions
+2024-03-14 23:53:55,110 INFO     Testing 12 concurrent ingestions
+2024-03-14 23:55:12,887 INFO     Testing 16 concurrent ingestions
+2024-03-14 23:56:36,533 INFO     Testing 20 concurrent ingestions
+2024-03-14 23:57:38,138 INFO     Testing 24 concurrent ingestions
+2024-03-14 23:59:41,138 INFO     Start testing constraints
+2024-03-14 23:59:41,138 INFO     Testing illegal file type
+2024-03-14 23:59:41,157 INFO     Testing too large file size
+2024-03-14 23:59:46,773 INFO     Testing too many concurrent ingestions
+2024-03-15 00:00:06,985 INFO     Testing not enough storage space in staging directory

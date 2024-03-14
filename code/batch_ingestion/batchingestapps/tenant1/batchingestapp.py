@@ -27,7 +27,6 @@ logging.basicConfig(format='%(asctime)s %(levelname)-8s %(message)s',
                     handlers=[logging.StreamHandler(sys.stdout), logging.FileHandler(logfile)])
 
 logger = logging.getLogger()
-logger.info(f"{MONGO_URL}, {HOST}, {PORT}")
 logger.info(f"Starting ingestion of {FILEPATH} for {TENANT}")
 
 
@@ -39,7 +38,7 @@ def ingest_file():
     df = df.iloc[:, df.isnull().sum() > 0]
     logger.info(f"Dropped {len(col_names) - len(df.columns)} empty columns")
     logger.info(f"Dropped columns: {set(col_names) - set(df.columns)}")
-    logger.info(f"Remaining columns: {df.columns}")
+    logger.info(f"{len(df.columns)} columns remaining")
 
     logger.info(f"Converting to json")
     bag = df.to_bag()

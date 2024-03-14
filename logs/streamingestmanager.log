@@ -1,0 +1,187 @@
+2024-03-14 23:17:29,979 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2024-03-14 23:17:29,980 INFO     [33mPress CTRL+C to quit[0m
+2024-03-14 23:17:40,816 WARNING  Received alert for tenant1
+2024-03-14 23:17:40,816 INFO     127.0.0.1 - - [14/Mar/2024 23:17:40] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:17:42,850 WARNING  Received alert for tenant1
+2024-03-14 23:17:42,851 INFO     127.0.0.1 - - [14/Mar/2024 23:17:42] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:17:57,934 WARNING  Received alert for tenant1
+2024-03-14 23:17:57,936 INFO     127.0.0.1 - - [14/Mar/2024 23:17:57] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:18:07,878 WARNING  Received alert for tenant1
+2024-03-14 23:18:07,880 INFO     127.0.0.1 - - [14/Mar/2024 23:18:07] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:18:26,492 INFO     Starting streamingestapp streamingestor.py for tenant1
+2024-03-14 23:18:27,510 INFO     127.0.0.1 - - [14/Mar/2024 23:18:27] "POST /start HTTP/1.1" 200 -
+2024-03-14 23:18:39,162 WARNING  Received alert for tenant1
+2024-03-14 23:18:39,170 INFO     127.0.0.1 - - [14/Mar/2024 23:18:39] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:18:49,154 WARNING  Received alert for tenant1
+2024-03-14 23:18:49,155 INFO     127.0.0.1 - - [14/Mar/2024 23:18:49] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:18:56,319 INFO     Starting streamingestapp streamingestor.py for tenant2
+2024-03-14 23:18:57,336 INFO     127.0.0.1 - - [14/Mar/2024 23:18:57] "POST /start HTTP/1.1" 200 -
+2024-03-14 23:18:59,120 WARNING  Received alert for tenant1
+2024-03-14 23:18:59,121 INFO     127.0.0.1 - - [14/Mar/2024 23:18:59] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:19:09,047 WARNING  Received alert for tenant2
+2024-03-14 23:19:09,050 INFO     127.0.0.1 - - [14/Mar/2024 23:19:09] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:19:11,127 WARNING  Received alert for tenant1
+2024-03-14 23:19:11,128 INFO     127.0.0.1 - - [14/Mar/2024 23:19:11] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:19:19,043 WARNING  Received alert for tenant2
+2024-03-14 23:19:19,044 INFO     127.0.0.1 - - [14/Mar/2024 23:19:19] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:19:21,102 WARNING  Received alert for tenant1
+2024-03-14 23:19:21,110 INFO     127.0.0.1 - - [14/Mar/2024 23:19:21] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:19:29,023 WARNING  Received alert for tenant2
+2024-03-14 23:19:29,024 INFO     127.0.0.1 - - [14/Mar/2024 23:19:29] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:19:31,072 WARNING  Received alert for tenant1
+2024-03-14 23:19:31,072 INFO     127.0.0.1 - - [14/Mar/2024 23:19:31] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:19:39,046 WARNING  Received alert for tenant2
+2024-03-14 23:19:39,046 INFO     127.0.0.1 - - [14/Mar/2024 23:19:39] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:19:41,078 WARNING  Received alert for tenant1
+2024-03-14 23:19:41,080 INFO     127.0.0.1 - - [14/Mar/2024 23:19:41] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:19:49,056 WARNING  Received alert for tenant2
+2024-03-14 23:19:49,058 INFO     127.0.0.1 - - [14/Mar/2024 23:19:49] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:19:51,115 WARNING  Received alert for tenant1
+2024-03-14 23:19:51,115 INFO     127.0.0.1 - - [14/Mar/2024 23:19:51] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:19:59,045 WARNING  Received alert for tenant2
+2024-03-14 23:19:59,046 INFO     127.0.0.1 - - [14/Mar/2024 23:19:59] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:20:01,071 WARNING  Received alert for tenant1
+2024-03-14 23:20:01,071 INFO     127.0.0.1 - - [14/Mar/2024 23:20:01] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:20:09,057 WARNING  Received alert for tenant2
+2024-03-14 23:20:09,058 INFO     127.0.0.1 - - [14/Mar/2024 23:20:09] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:20:11,115 WARNING  Received alert for tenant1
+2024-03-14 23:20:11,116 INFO     127.0.0.1 - - [14/Mar/2024 23:20:11] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:20:19,054 WARNING  Received alert for tenant2
+2024-03-14 23:20:19,054 INFO     127.0.0.1 - - [14/Mar/2024 23:20:19] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:20:21,103 WARNING  Received alert for tenant1
+2024-03-14 23:20:21,104 INFO     127.0.0.1 - - [14/Mar/2024 23:20:21] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:20:29,098 WARNING  Received alert for tenant2
+2024-03-14 23:20:29,099 INFO     127.0.0.1 - - [14/Mar/2024 23:20:29] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:20:31,149 WARNING  Received alert for tenant1
+2024-03-14 23:20:31,149 INFO     127.0.0.1 - - [14/Mar/2024 23:20:31] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:20:39,087 WARNING  Received alert for tenant2
+2024-03-14 23:20:39,088 INFO     127.0.0.1 - - [14/Mar/2024 23:20:39] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:20:41,114 WARNING  Received alert for tenant1
+2024-03-14 23:20:41,115 INFO     127.0.0.1 - - [14/Mar/2024 23:20:41] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:20:49,073 WARNING  Received alert for tenant2
+2024-03-14 23:20:49,074 INFO     127.0.0.1 - - [14/Mar/2024 23:20:49] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:20:51,124 WARNING  Received alert for tenant1
+2024-03-14 23:20:51,125 INFO     127.0.0.1 - - [14/Mar/2024 23:20:51] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:20:59,081 WARNING  Received alert for tenant2
+2024-03-14 23:20:59,082 INFO     127.0.0.1 - - [14/Mar/2024 23:20:59] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:21:01,119 WARNING  Received alert for tenant1
+2024-03-14 23:21:01,120 INFO     127.0.0.1 - - [14/Mar/2024 23:21:01] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:21:09,087 WARNING  Received alert for tenant2
+2024-03-14 23:21:09,088 INFO     127.0.0.1 - - [14/Mar/2024 23:21:09] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:21:11,115 WARNING  Received alert for tenant1
+2024-03-14 23:21:11,117 INFO     127.0.0.1 - - [14/Mar/2024 23:21:11] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:21:19,118 WARNING  Received alert for tenant2
+2024-03-14 23:21:19,118 INFO     127.0.0.1 - - [14/Mar/2024 23:21:19] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:21:21,177 WARNING  Received alert for tenant1
+2024-03-14 23:21:21,178 INFO     127.0.0.1 - - [14/Mar/2024 23:21:21] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:21:29,126 WARNING  Received alert for tenant2
+2024-03-14 23:21:29,127 INFO     127.0.0.1 - - [14/Mar/2024 23:21:29] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:21:31,173 WARNING  Received alert for tenant1
+2024-03-14 23:21:31,174 INFO     127.0.0.1 - - [14/Mar/2024 23:21:31] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:21:39,131 WARNING  Received alert for tenant2
+2024-03-14 23:21:39,131 INFO     127.0.0.1 - - [14/Mar/2024 23:21:39] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:21:41,164 WARNING  Received alert for tenant1
+2024-03-14 23:21:41,165 INFO     127.0.0.1 - - [14/Mar/2024 23:21:41] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:21:49,132 WARNING  Received alert for tenant2
+2024-03-14 23:21:49,132 INFO     127.0.0.1 - - [14/Mar/2024 23:21:49] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:21:51,174 WARNING  Received alert for tenant1
+2024-03-14 23:21:51,174 INFO     127.0.0.1 - - [14/Mar/2024 23:21:51] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:21:59,154 WARNING  Received alert for tenant2
+2024-03-14 23:21:59,155 INFO     127.0.0.1 - - [14/Mar/2024 23:21:59] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:22:01,191 WARNING  Received alert for tenant1
+2024-03-14 23:22:01,192 INFO     127.0.0.1 - - [14/Mar/2024 23:22:01] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:22:09,156 WARNING  Received alert for tenant2
+2024-03-14 23:22:09,156 INFO     127.0.0.1 - - [14/Mar/2024 23:22:09] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:22:11,200 WARNING  Received alert for tenant1
+2024-03-14 23:22:11,201 INFO     127.0.0.1 - - [14/Mar/2024 23:22:11] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:22:19,165 WARNING  Received alert for tenant2
+2024-03-14 23:22:19,166 INFO     127.0.0.1 - - [14/Mar/2024 23:22:19] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:22:21,200 WARNING  Received alert for tenant1
+2024-03-14 23:22:21,201 INFO     127.0.0.1 - - [14/Mar/2024 23:22:21] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:22:29,201 WARNING  Received alert for tenant2
+2024-03-14 23:22:29,202 INFO     127.0.0.1 - - [14/Mar/2024 23:22:29] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:22:31,251 WARNING  Received alert for tenant1
+2024-03-14 23:22:31,252 INFO     127.0.0.1 - - [14/Mar/2024 23:22:31] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:22:39,191 WARNING  Received alert for tenant2
+2024-03-14 23:22:39,200 INFO     127.0.0.1 - - [14/Mar/2024 23:22:39] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:22:41,240 WARNING  Received alert for tenant1
+2024-03-14 23:22:41,242 INFO     127.0.0.1 - - [14/Mar/2024 23:22:41] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:22:49,183 WARNING  Received alert for tenant2
+2024-03-14 23:22:49,184 INFO     127.0.0.1 - - [14/Mar/2024 23:22:49] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:22:51,241 WARNING  Received alert for tenant1
+2024-03-14 23:22:51,243 INFO     127.0.0.1 - - [14/Mar/2024 23:22:51] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:22:59,187 WARNING  Received alert for tenant2
+2024-03-14 23:22:59,187 INFO     127.0.0.1 - - [14/Mar/2024 23:22:59] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:23:01,217 WARNING  Received alert for tenant1
+2024-03-14 23:23:01,218 INFO     127.0.0.1 - - [14/Mar/2024 23:23:01] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:23:09,219 WARNING  Received alert for tenant2
+2024-03-14 23:23:09,220 INFO     127.0.0.1 - - [14/Mar/2024 23:23:09] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:23:11,267 WARNING  Received alert for tenant1
+2024-03-14 23:23:11,268 INFO     127.0.0.1 - - [14/Mar/2024 23:23:11] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:23:19,247 WARNING  Received alert for tenant2
+2024-03-14 23:23:19,249 INFO     127.0.0.1 - - [14/Mar/2024 23:23:19] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:23:21,317 WARNING  Received alert for tenant1
+2024-03-14 23:23:21,318 INFO     127.0.0.1 - - [14/Mar/2024 23:23:21] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:23:29,219 WARNING  Received alert for tenant2
+2024-03-14 23:23:29,220 INFO     127.0.0.1 - - [14/Mar/2024 23:23:29] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:23:31,254 WARNING  Received alert for tenant1
+2024-03-14 23:23:31,256 INFO     127.0.0.1 - - [14/Mar/2024 23:23:31] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:23:39,240 WARNING  Received alert for tenant2
+2024-03-14 23:23:39,240 INFO     127.0.0.1 - - [14/Mar/2024 23:23:39] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:23:41,271 WARNING  Received alert for tenant1
+2024-03-14 23:23:41,272 INFO     127.0.0.1 - - [14/Mar/2024 23:23:41] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:23:49,270 WARNING  Received alert for tenant2
+2024-03-14 23:23:49,270 INFO     127.0.0.1 - - [14/Mar/2024 23:23:49] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:23:51,299 WARNING  Received alert for tenant1
+2024-03-14 23:23:51,300 INFO     127.0.0.1 - - [14/Mar/2024 23:23:51] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:23:59,283 WARNING  Received alert for tenant2
+2024-03-14 23:23:59,284 INFO     127.0.0.1 - - [14/Mar/2024 23:23:59] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:24:01,337 WARNING  Received alert for tenant1
+2024-03-14 23:24:01,337 INFO     127.0.0.1 - - [14/Mar/2024 23:24:01] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:25:00,388 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2024-03-14 23:25:00,389 INFO     [33mPress CTRL+C to quit[0m
+2024-03-14 23:25:03,103 WARNING  Received alert for tenant2
+2024-03-14 23:25:03,104 INFO     127.0.0.1 - - [14/Mar/2024 23:25:03] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:25:05,136 WARNING  Received alert for tenant1
+2024-03-14 23:25:05,137 INFO     127.0.0.1 - - [14/Mar/2024 23:25:05] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:25:07,169 WARNING  Received alert for tenant2
+2024-03-14 23:25:07,169 INFO     127.0.0.1 - - [14/Mar/2024 23:25:07] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:25:09,210 WARNING  Received alert for tenant1
+2024-03-14 23:25:09,211 INFO     127.0.0.1 - - [14/Mar/2024 23:25:09] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:25:11,255 WARNING  Received alert for tenant2
+2024-03-14 23:25:11,255 INFO     127.0.0.1 - - [14/Mar/2024 23:25:11] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:25:13,286 WARNING  Received alert for tenant1
+2024-03-14 23:25:13,286 INFO     127.0.0.1 - - [14/Mar/2024 23:25:13] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:25:14,790 INFO     Stopping process 11964
+2024-03-14 23:25:14,792 INFO     127.0.0.1 - - [14/Mar/2024 23:25:14] "POST /stop HTTP/1.1" 200 -
+2024-03-14 23:25:15,325 WARNING  Received alert for tenant2
+2024-03-14 23:25:15,326 INFO     127.0.0.1 - - [14/Mar/2024 23:25:15] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:25:17,355 WARNING  Received alert for tenant1
+2024-03-14 23:25:17,355 INFO     127.0.0.1 - - [14/Mar/2024 23:25:17] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:25:19,391 WARNING  Received alert for tenant2
+2024-03-14 23:25:19,392 INFO     127.0.0.1 - - [14/Mar/2024 23:25:19] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:25:21,457 WARNING  Received alert for tenant1
+2024-03-14 23:25:21,458 INFO     127.0.0.1 - - [14/Mar/2024 23:25:21] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:25:23,503 WARNING  Received alert for tenant2
+2024-03-14 23:25:23,504 INFO     127.0.0.1 - - [14/Mar/2024 23:25:23] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:25:25,547 WARNING  Received alert for tenant1
+2024-03-14 23:25:25,549 INFO     127.0.0.1 - - [14/Mar/2024 23:25:25] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:25:27,592 WARNING  Received alert for tenant2
+2024-03-14 23:25:27,593 INFO     127.0.0.1 - - [14/Mar/2024 23:25:27] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:25:29,651 WARNING  Received alert for tenant1
+2024-03-14 23:25:29,652 INFO     127.0.0.1 - - [14/Mar/2024 23:25:29] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:25:31,697 WARNING  Received alert for tenant1
+2024-03-14 23:25:31,706 INFO     127.0.0.1 - - [14/Mar/2024 23:25:31] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:25:33,759 WARNING  Received alert for tenant1
+2024-03-14 23:25:33,760 INFO     127.0.0.1 - - [14/Mar/2024 23:25:33] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:25:39,490 WARNING  Received alert for tenant1
+2024-03-14 23:25:39,490 INFO     127.0.0.1 - - [14/Mar/2024 23:25:39] "POST /alerts HTTP/1.1" 200 -
+2024-03-14 23:27:34,391 INFO     [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5000
+2024-03-14 23:27:34,392 INFO     [33mPress CTRL+C to quit[0m
+2024-03-14 23:27:39,680 INFO     Stopping process 11964
+2024-03-14 23:27:39,681 INFO     127.0.0.1 - - [14/Mar/2024 23:27:39] "POST /stop HTTP/1.1" 200 -
+2024-03-14 23:27:50,442 INFO     Stopping process 7500
+2024-03-14 23:27:50,443 INFO     127.0.0.1 - - [14/Mar/2024 23:27:50] "POST /stop HTTP/1.1" 200 -

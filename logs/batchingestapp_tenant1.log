@@ -1,0 +1,1456 @@
+2024-03-14 23:34:12,103 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:34:13,693 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:34:14,951 INFO     Dropped 8 empty columns
+2024-03-14 23:34:14,951 INFO     Dropped columns: {'Trip Start Timestamp', 'Extras', 'Tips', 'Trip ID', 'Fare', 'Payment Type', 'Trip Miles', 'Trip Total'}
+2024-03-14 23:34:14,952 INFO     15 columns remaining
+2024-03-14 23:34:14,952 INFO     Converting to json
+2024-03-14 23:34:14,969 INFO     Writing to coredms
+2024-03-14 23:34:31,784 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:34:33,156 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:34:34,269 INFO     Dropped 8 empty columns
+2024-03-14 23:34:34,269 INFO     Dropped columns: {'Trip ID', 'Trip Start Timestamp', 'Trip Total', 'Extras', 'Tips', 'Payment Type', 'Fare', 'Trip Miles'}
+2024-03-14 23:34:34,270 INFO     15 columns remaining
+2024-03-14 23:34:34,271 INFO     Converting to json
+2024-03-14 23:34:34,286 INFO     Writing to coredms
+2024-03-14 23:34:46,920 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:34:48,216 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:34:49,305 INFO     Dropped 8 empty columns
+2024-03-14 23:34:49,305 INFO     Dropped columns: {'Payment Type', 'Fare', 'Trip Total', 'Trip Start Timestamp', 'Extras', 'Tips', 'Trip Miles', 'Trip ID'}
+2024-03-14 23:34:49,306 INFO     15 columns remaining
+2024-03-14 23:34:49,306 INFO     Converting to json
+2024-03-14 23:34:49,322 INFO     Writing to coredms
+2024-03-14 23:35:02,036 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:35:03,364 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:35:04,725 INFO     Dropped 8 empty columns
+2024-03-14 23:35:04,725 INFO     Dropped columns: {'Trip Miles', 'Fare', 'Trip Total', 'Trip Start Timestamp', 'Payment Type', 'Extras', 'Tips', 'Trip ID'}
+2024-03-14 23:35:04,726 INFO     15 columns remaining
+2024-03-14 23:35:04,726 INFO     Converting to json
+2024-03-14 23:35:04,742 INFO     Writing to coredms
+2024-03-14 23:35:17,221 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:35:18,532 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:35:19,751 INFO     Dropped 8 empty columns
+2024-03-14 23:35:19,752 INFO     Dropped columns: {'Trip Miles', 'Extras', 'Payment Type', 'Trip ID', 'Trip Total', 'Fare', 'Trip Start Timestamp', 'Tips'}
+2024-03-14 23:35:19,752 INFO     15 columns remaining
+2024-03-14 23:35:19,753 INFO     Converting to json
+2024-03-14 23:35:19,768 INFO     Writing to coredms
+2024-03-14 23:35:32,395 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:35:33,798 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:35:35,009 INFO     Dropped 8 empty columns
+2024-03-14 23:35:35,009 INFO     Dropped columns: {'Trip Total', 'Trip Start Timestamp', 'Trip Miles', 'Extras', 'Tips', 'Fare', 'Trip ID', 'Payment Type'}
+2024-03-14 23:35:35,010 INFO     15 columns remaining
+2024-03-14 23:35:35,010 INFO     Converting to json
+2024-03-14 23:35:35,025 INFO     Writing to coredms
+2024-03-14 23:35:52,799 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:35:54,203 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:35:55,376 INFO     Dropped 8 empty columns
+2024-03-14 23:35:55,376 INFO     Dropped columns: {'Payment Type', 'Extras', 'Trip Total', 'Trip Start Timestamp', 'Trip ID', 'Trip Miles', 'Tips', 'Fare'}
+2024-03-14 23:35:55,376 INFO     15 columns remaining
+2024-03-14 23:35:55,377 INFO     Converting to json
+2024-03-14 23:35:55,393 INFO     Writing to coredms
+2024-03-14 23:36:08,040 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:36:09,517 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:36:10,670 INFO     Dropped 8 empty columns
+2024-03-14 23:36:10,671 INFO     Dropped columns: {'Payment Type', 'Fare', 'Trip ID', 'Trip Start Timestamp', 'Trip Total', 'Trip Miles', 'Tips', 'Extras'}
+2024-03-14 23:36:10,671 INFO     15 columns remaining
+2024-03-14 23:36:10,671 INFO     Converting to json
+2024-03-14 23:36:10,686 INFO     Writing to coredms
+2024-03-14 23:36:22,987 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:36:24,063 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:36:24,393 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:36:25,808 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:36:26,083 INFO     Dropped 8 empty columns
+2024-03-14 23:36:26,083 INFO     Dropped columns: {'Payment Type', 'Trip Start Timestamp', 'Trip Miles', 'Fare', 'Tips', 'Trip Total', 'Extras', 'Trip ID'}
+2024-03-14 23:36:26,084 INFO     15 columns remaining
+2024-03-14 23:36:26,084 INFO     Converting to json
+2024-03-14 23:36:26,118 INFO     Writing to coredms
+2024-03-14 23:36:27,575 INFO     Dropped 8 empty columns
+2024-03-14 23:36:27,575 INFO     Dropped columns: {'Trip Miles', 'Fare', 'Extras', 'Trip Start Timestamp', 'Trip ID', 'Tips', 'Trip Total', 'Payment Type'}
+2024-03-14 23:36:27,576 INFO     15 columns remaining
+2024-03-14 23:36:27,576 INFO     Converting to json
+2024-03-14 23:36:27,602 INFO     Writing to coredms
+2024-03-14 23:36:48,630 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:36:49,418 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:36:50,145 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:36:51,293 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:36:51,833 INFO     Dropped 8 empty columns
+2024-03-14 23:36:51,834 INFO     Dropped columns: {'Fare', 'Tips', 'Payment Type', 'Trip Total', 'Extras', 'Trip Miles', 'Trip ID', 'Trip Start Timestamp'}
+2024-03-14 23:36:51,834 INFO     15 columns remaining
+2024-03-14 23:36:51,835 INFO     Converting to json
+2024-03-14 23:36:51,860 INFO     Writing to coredms
+2024-03-14 23:36:53,249 INFO     Dropped 8 empty columns
+2024-03-14 23:36:53,250 INFO     Dropped columns: {'Payment Type', 'Trip ID', 'Trip Start Timestamp', 'Trip Total', 'Trip Miles', 'Extras', 'Fare', 'Tips'}
+2024-03-14 23:36:53,250 INFO     15 columns remaining
+2024-03-14 23:36:53,251 INFO     Converting to json
+2024-03-14 23:36:53,281 INFO     Writing to coredms
+2024-03-14 23:37:14,929 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:37:15,418 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:37:17,094 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:37:17,597 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:37:19,152 INFO     Dropped 8 empty columns
+2024-03-14 23:37:19,152 INFO     Dropped columns: {'Trip ID', 'Fare', 'Trip Start Timestamp', 'Extras', 'Payment Type', 'Trip Total', 'Tips', 'Trip Miles'}
+2024-03-14 23:37:19,153 INFO     15 columns remaining
+2024-03-14 23:37:19,153 INFO     Converting to json
+2024-03-14 23:37:19,178 INFO     Writing to coredms
+2024-03-14 23:37:19,631 INFO     Dropped 8 empty columns
+2024-03-14 23:37:19,632 INFO     Dropped columns: {'Tips', 'Trip Start Timestamp', 'Payment Type', 'Fare', 'Trip ID', 'Trip Total', 'Extras', 'Trip Miles'}
+2024-03-14 23:37:19,632 INFO     15 columns remaining
+2024-03-14 23:37:19,632 INFO     Converting to json
+2024-03-14 23:37:19,660 INFO     Writing to coredms
+2024-03-14 23:37:33,898 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:37:34,718 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:37:34,973 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:37:35,914 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:37:36,037 INFO     Dropped 8 empty columns
+2024-03-14 23:37:36,037 INFO     Dropped columns: {'Trip Total', 'Trip Miles', 'Payment Type', 'Extras', 'Tips', 'Fare', 'Trip ID', 'Trip Start Timestamp'}
+2024-03-14 23:37:36,038 INFO     15 columns remaining
+2024-03-14 23:37:36,038 INFO     Converting to json
+2024-03-14 23:37:36,052 INFO     Writing to coredms
+2024-03-14 23:37:37,145 INFO     Dropped 8 empty columns
+2024-03-14 23:37:37,145 INFO     Dropped columns: {'Payment Type', 'Trip Miles', 'Extras', 'Trip Start Timestamp', 'Trip ID', 'Trip Total', 'Fare', 'Tips'}
+2024-03-14 23:37:37,146 INFO     15 columns remaining
+2024-03-14 23:37:37,146 INFO     Converting to json
+2024-03-14 23:37:37,162 INFO     Writing to coredms
+2024-03-14 23:37:54,061 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:37:54,977 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:37:55,072 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:37:56,133 INFO     Dropped 8 empty columns
+2024-03-14 23:37:56,134 INFO     Dropped columns: {'Tips', 'Payment Type', 'Trip ID', 'Fare', 'Trip Miles', 'Trip Total', 'Trip Start Timestamp', 'Extras'}
+2024-03-14 23:37:56,134 INFO     15 columns remaining
+2024-03-14 23:37:56,134 INFO     Converting to json
+2024-03-14 23:37:56,155 INFO     Writing to coredms
+2024-03-14 23:37:56,214 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:37:56,279 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv for tenant1
+2024-03-14 23:37:57,470 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv for tenant1
+2024-03-14 23:37:57,549 INFO     Dropped 8 empty columns
+2024-03-14 23:37:57,550 INFO     Dropped columns: {'Extras', 'Trip Miles', 'Trip Total', 'Fare', 'Tips', 'Trip ID', 'Trip Start Timestamp', 'Payment Type'}
+2024-03-14 23:37:57,550 INFO     15 columns remaining
+2024-03-14 23:37:57,550 INFO     Converting to json
+2024-03-14 23:37:57,572 INFO     Writing to coredms
+2024-03-14 23:37:57,889 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv
+2024-03-14 23:37:59,143 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv
+2024-03-14 23:37:59,425 INFO     Dropped 8 empty columns
+2024-03-14 23:37:59,425 INFO     Dropped columns: {'Fare', 'Tips', 'Trip ID', 'Trip Miles', 'Trip Start Timestamp', 'Extras', 'Payment Type', 'Trip Total'}
+2024-03-14 23:37:59,426 INFO     15 columns remaining
+2024-03-14 23:37:59,426 INFO     Converting to json
+2024-03-14 23:37:59,459 INFO     Writing to coredms
+2024-03-14 23:38:00,944 INFO     Dropped 8 empty columns
+2024-03-14 23:38:00,944 INFO     Dropped columns: {'Trip Total', 'Extras', 'Payment Type', 'Trip Miles', 'Trip Start Timestamp', 'Trip ID', 'Tips', 'Fare'}
+2024-03-14 23:38:00,945 INFO     15 columns remaining
+2024-03-14 23:38:00,945 INFO     Converting to json
+2024-03-14 23:38:00,963 INFO     Writing to coredms
+2024-03-14 23:38:19,725 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:38:20,460 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:38:20,738 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:38:21,631 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:38:21,730 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv for tenant1
+2024-03-14 23:38:21,841 INFO     Dropped 8 empty columns
+2024-03-14 23:38:21,842 INFO     Dropped columns: {'Fare', 'Trip Start Timestamp', 'Trip Total', 'Extras', 'Trip Miles', 'Tips', 'Trip ID', 'Payment Type'}
+2024-03-14 23:38:21,842 INFO     15 columns remaining
+2024-03-14 23:38:21,842 INFO     Converting to json
+2024-03-14 23:38:21,859 INFO     Writing to coredms
+2024-03-14 23:38:22,883 INFO     Dropped 8 empty columns
+2024-03-14 23:38:22,884 INFO     Dropped columns: {'Trip Start Timestamp', 'Trip Total', 'Payment Type', 'Trip Miles', 'Fare', 'Tips', 'Trip ID', 'Extras'}
+2024-03-14 23:38:22,884 INFO     15 columns remaining
+2024-03-14 23:38:22,884 INFO     Converting to json
+2024-03-14 23:38:22,910 INFO     Writing to coredms
+2024-03-14 23:38:22,913 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv for tenant1
+2024-03-14 23:38:23,198 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv
+2024-03-14 23:38:24,665 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv
+2024-03-14 23:38:24,729 INFO     Dropped 8 empty columns
+2024-03-14 23:38:24,729 INFO     Dropped columns: {'Trip Miles', 'Tips', 'Trip ID', 'Extras', 'Payment Type', 'Fare', 'Trip Start Timestamp', 'Trip Total'}
+2024-03-14 23:38:24,730 INFO     15 columns remaining
+2024-03-14 23:38:24,730 INFO     Converting to json
+2024-03-14 23:38:24,751 INFO     Writing to coredms
+2024-03-14 23:38:26,268 INFO     Dropped 8 empty columns
+2024-03-14 23:38:26,269 INFO     Dropped columns: {'Trip Miles', 'Fare', 'Payment Type', 'Tips', 'Trip Start Timestamp', 'Trip ID', 'Trip Total', 'Extras'}
+2024-03-14 23:38:26,269 INFO     15 columns remaining
+2024-03-14 23:38:26,269 INFO     Converting to json
+2024-03-14 23:38:26,291 INFO     Writing to coredms
+2024-03-14 23:38:45,596 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:38:46,375 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:38:46,644 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:38:47,553 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:38:47,714 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv for tenant1
+2024-03-14 23:38:47,754 INFO     Dropped 8 empty columns
+2024-03-14 23:38:47,754 INFO     Dropped columns: {'Trip ID', 'Trip Total', 'Tips', 'Trip Start Timestamp', 'Payment Type', 'Trip Miles', 'Extras', 'Fare'}
+2024-03-14 23:38:47,755 INFO     15 columns remaining
+2024-03-14 23:38:47,755 INFO     Converting to json
+2024-03-14 23:38:47,773 INFO     Writing to coredms
+2024-03-14 23:38:48,846 INFO     Dropped 8 empty columns
+2024-03-14 23:38:48,847 INFO     Dropped columns: {'Fare', 'Trip ID', 'Payment Type', 'Trip Total', 'Trip Start Timestamp', 'Tips', 'Extras', 'Trip Miles'}
+2024-03-14 23:38:48,847 INFO     15 columns remaining
+2024-03-14 23:38:48,847 INFO     Converting to json
+2024-03-14 23:38:48,868 INFO     Writing to coredms
+2024-03-14 23:38:48,886 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv for tenant1
+2024-03-14 23:38:49,171 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv
+2024-03-14 23:38:49,990 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv for tenant1
+2024-03-14 23:38:50,635 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv
+2024-03-14 23:38:50,642 INFO     Dropped 8 empty columns
+2024-03-14 23:38:50,643 INFO     Dropped columns: {'Extras', 'Trip ID', 'Trip Start Timestamp', 'Payment Type', 'Tips', 'Fare', 'Trip Total', 'Trip Miles'}
+2024-03-14 23:38:50,643 INFO     15 columns remaining
+2024-03-14 23:38:50,644 INFO     Converting to json
+2024-03-14 23:38:50,668 INFO     Writing to coredms
+2024-03-14 23:38:51,206 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv for tenant1
+2024-03-14 23:38:52,003 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv
+2024-03-14 23:38:52,424 INFO     Dropped 8 empty columns
+2024-03-14 23:38:52,424 INFO     Dropped columns: {'Trip Total', 'Extras', 'Trip Start Timestamp', 'Fare', 'Tips', 'Trip ID', 'Payment Type', 'Trip Miles'}
+2024-03-14 23:38:52,425 INFO     15 columns remaining
+2024-03-14 23:38:52,425 INFO     Converting to json
+2024-03-14 23:38:52,454 INFO     Writing to coredms
+2024-03-14 23:38:52,598 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv for tenant1
+2024-03-14 23:38:53,441 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv
+2024-03-14 23:38:53,733 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv for tenant1
+2024-03-14 23:38:53,828 INFO     Dropped 8 empty columns
+2024-03-14 23:38:53,833 INFO     Dropped columns: {'Tips', 'Extras', 'Trip ID', 'Trip Miles', 'Fare', 'Payment Type', 'Trip Total', 'Trip Start Timestamp'}
+2024-03-14 23:38:53,834 INFO     15 columns remaining
+2024-03-14 23:38:53,834 INFO     Converting to json
+2024-03-14 23:38:53,861 INFO     Writing to coredms
+2024-03-14 23:38:54,819 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv
+2024-03-14 23:38:55,303 INFO     Dropped 8 empty columns
+2024-03-14 23:38:55,304 INFO     Dropped columns: {'Tips', 'Trip Start Timestamp', 'Trip ID', 'Trip Miles', 'Fare', 'Trip Total', 'Extras', 'Payment Type'}
+2024-03-14 23:38:55,304 INFO     15 columns remaining
+2024-03-14 23:38:55,304 INFO     Converting to json
+2024-03-14 23:38:55,334 INFO     Writing to coredms
+2024-03-14 23:38:55,983 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv
+2024-03-14 23:38:56,669 INFO     Dropped 8 empty columns
+2024-03-14 23:38:56,669 INFO     Dropped columns: {'Trip Miles', 'Trip ID', 'Trip Total', 'Fare', 'Payment Type', 'Trip Start Timestamp', 'Extras', 'Tips'}
+2024-03-14 23:38:56,670 INFO     15 columns remaining
+2024-03-14 23:38:56,670 INFO     Converting to json
+2024-03-14 23:38:56,699 INFO     Writing to coredms
+2024-03-14 23:38:58,071 INFO     Dropped 8 empty columns
+2024-03-14 23:38:58,071 INFO     Dropped columns: {'Trip ID', 'Trip Start Timestamp', 'Tips', 'Trip Total', 'Extras', 'Fare', 'Trip Miles', 'Payment Type'}
+2024-03-14 23:38:58,071 INFO     15 columns remaining
+2024-03-14 23:38:58,072 INFO     Converting to json
+2024-03-14 23:38:58,099 INFO     Writing to coredms
+2024-03-14 23:39:18,679 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:39:18,679 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:39:18,816 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv for tenant1
+2024-03-14 23:39:20,117 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:39:20,154 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:39:20,165 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv for tenant1
+2024-03-14 23:39:20,330 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv
+2024-03-14 23:39:21,340 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv for tenant1
+2024-03-14 23:39:21,635 INFO     Dropped 8 empty columns
+2024-03-14 23:39:21,635 INFO     Dropped columns: {'Trip Miles', 'Tips', 'Extras', 'Trip Total', 'Fare', 'Trip Start Timestamp', 'Payment Type', 'Trip ID'}
+2024-03-14 23:39:21,636 INFO     15 columns remaining
+2024-03-14 23:39:21,636 INFO     Converting to json
+2024-03-14 23:39:21,661 INFO     Writing to coredms
+2024-03-14 23:39:21,675 INFO     Dropped 8 empty columns
+2024-03-14 23:39:21,675 INFO     Dropped columns: {'Extras', 'Tips', 'Payment Type', 'Trip Start Timestamp', 'Trip Total', 'Trip Miles', 'Fare', 'Trip ID'}
+2024-03-14 23:39:21,675 INFO     15 columns remaining
+2024-03-14 23:39:21,676 INFO     Converting to json
+2024-03-14 23:39:21,699 INFO     Writing to coredms
+2024-03-14 23:39:21,854 INFO     Dropped 8 empty columns
+2024-03-14 23:39:21,855 INFO     Dropped columns: {'Trip Start Timestamp', 'Extras', 'Tips', 'Fare', 'Trip ID', 'Trip Total', 'Trip Miles', 'Payment Type'}
+2024-03-14 23:39:21,855 INFO     15 columns remaining
+2024-03-14 23:39:21,855 INFO     Converting to json
+2024-03-14 23:39:21,886 INFO     Writing to coredms
+2024-03-14 23:39:21,917 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv
+2024-03-14 23:39:22,504 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv for tenant1
+2024-03-14 23:39:23,419 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv
+2024-03-14 23:39:23,607 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv for tenant1
+2024-03-14 23:39:23,701 INFO     Dropped 8 empty columns
+2024-03-14 23:39:23,701 INFO     Dropped columns: {'Trip Total', 'Trip Start Timestamp', 'Extras', 'Tips', 'Trip Miles', 'Fare', 'Payment Type', 'Trip ID'}
+2024-03-14 23:39:23,701 INFO     15 columns remaining
+2024-03-14 23:39:23,702 INFO     Converting to json
+2024-03-14 23:39:23,725 INFO     Writing to coredms
+2024-03-14 23:39:24,602 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv
+2024-03-14 23:39:24,877 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv for tenant1
+2024-03-14 23:39:25,324 INFO     Dropped 8 empty columns
+2024-03-14 23:39:25,324 INFO     Dropped columns: {'Trip ID', 'Trip Start Timestamp', 'Trip Miles', 'Tips', 'Payment Type', 'Extras', 'Trip Total', 'Fare'}
+2024-03-14 23:39:25,324 INFO     15 columns remaining
+2024-03-14 23:39:25,325 INFO     Converting to json
+2024-03-14 23:39:25,350 INFO     Writing to coredms
+2024-03-14 23:39:25,950 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv for tenant1
+2024-03-14 23:39:25,957 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv
+2024-03-14 23:39:26,684 INFO     Dropped 8 empty columns
+2024-03-14 23:39:26,684 INFO     Dropped columns: {'Payment Type', 'Trip Miles', 'Tips', 'Trip Start Timestamp', 'Fare', 'Extras', 'Trip Total', 'Trip ID'}
+2024-03-14 23:39:26,685 INFO     15 columns remaining
+2024-03-14 23:39:26,685 INFO     Converting to json
+2024-03-14 23:39:26,718 INFO     Writing to coredms
+2024-03-14 23:39:27,181 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv for tenant1
+2024-03-14 23:39:27,432 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv
+2024-03-14 23:39:28,178 INFO     Dropped 8 empty columns
+2024-03-14 23:39:28,179 INFO     Dropped columns: {'Trip ID', 'Tips', 'Payment Type', 'Fare', 'Trip Total', 'Trip Miles', 'Trip Start Timestamp', 'Extras'}
+2024-03-14 23:39:28,181 INFO     15 columns remaining
+2024-03-14 23:39:28,183 INFO     Converting to json
+2024-03-14 23:39:28,220 INFO     Writing to coredms
+2024-03-14 23:39:28,824 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv
+2024-03-14 23:39:29,188 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv for tenant1
+2024-03-14 23:39:30,258 INFO     Dropped 8 empty columns
+2024-03-14 23:39:30,262 INFO     Dropped columns: {'Fare', 'Extras', 'Payment Type', 'Trip Start Timestamp', 'Trip Miles', 'Trip ID', 'Trip Total', 'Tips'}
+2024-03-14 23:39:30,265 INFO     15 columns remaining
+2024-03-14 23:39:30,266 INFO     Converting to json
+2024-03-14 23:39:30,320 INFO     Writing to coredms
+2024-03-14 23:39:30,808 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv
+2024-03-14 23:39:31,099 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv for tenant1
+2024-03-14 23:39:32,192 INFO     Dropped 8 empty columns
+2024-03-14 23:39:32,195 INFO     Dropped columns: {'Trip ID', 'Tips', 'Trip Miles', 'Payment Type', 'Trip Total', 'Trip Start Timestamp', 'Fare', 'Extras'}
+2024-03-14 23:39:32,198 INFO     15 columns remaining
+2024-03-14 23:39:32,200 INFO     Converting to json
+2024-03-14 23:39:32,245 INFO     Writing to coredms
+2024-03-14 23:39:33,377 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv
+2024-03-14 23:39:34,117 INFO     Dropped 8 empty columns
+2024-03-14 23:39:34,121 INFO     Dropped columns: {'Extras', 'Payment Type', 'Tips', 'Trip Miles', 'Trip Start Timestamp', 'Trip ID', 'Trip Total', 'Fare'}
+2024-03-14 23:39:34,122 INFO     15 columns remaining
+2024-03-14 23:39:34,124 INFO     Converting to json
+2024-03-14 23:39:34,165 INFO     Writing to coredms
+2024-03-14 23:39:35,533 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv
+2024-03-14 23:39:36,781 INFO     Dropped 8 empty columns
+2024-03-14 23:39:36,782 INFO     Dropped columns: {'Trip Start Timestamp', 'Payment Type', 'Tips', 'Trip ID', 'Trip Miles', 'Trip Total', 'Fare', 'Extras'}
+2024-03-14 23:39:36,790 INFO     15 columns remaining
+2024-03-14 23:39:36,792 INFO     Converting to json
+2024-03-14 23:39:36,837 INFO     Writing to coredms
+2024-03-14 23:39:38,561 INFO     Dropped 8 empty columns
+2024-03-14 23:39:38,561 INFO     Dropped columns: {'Payment Type', 'Trip ID', 'Extras', 'Trip Miles', 'Trip Start Timestamp', 'Trip Total', 'Tips', 'Fare'}
+2024-03-14 23:39:38,562 INFO     15 columns remaining
+2024-03-14 23:39:38,562 INFO     Converting to json
+2024-03-14 23:39:38,609 INFO     Writing to coredms
+2024-03-14 23:40:11,216 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:40:12,234 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:40:12,324 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:40:13,352 INFO     Dropped 8 empty columns
+2024-03-14 23:40:13,352 INFO     Dropped columns: {'Trip Start Timestamp', 'Trip ID', 'Trip Miles', 'Extras', 'Payment Type', 'Tips', 'Trip Total', 'Fare'}
+2024-03-14 23:40:13,352 INFO     15 columns remaining
+2024-03-14 23:40:13,353 INFO     Converting to json
+2024-03-14 23:40:13,369 INFO     Writing to coredms
+2024-03-14 23:40:13,528 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:40:13,582 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv for tenant1
+2024-03-14 23:40:15,187 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv for tenant1
+2024-03-14 23:40:15,361 INFO     Dropped 8 empty columns
+2024-03-14 23:40:15,361 INFO     Dropped columns: {'Payment Type', 'Tips', 'Trip Total', 'Trip ID', 'Extras', 'Trip Start Timestamp', 'Fare', 'Trip Miles'}
+2024-03-14 23:40:15,362 INFO     15 columns remaining
+2024-03-14 23:40:15,362 INFO     Converting to json
+2024-03-14 23:40:15,404 INFO     Writing to coredms
+2024-03-14 23:40:16,042 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv
+2024-03-14 23:40:16,608 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv for tenant1
+2024-03-14 23:40:18,045 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv for tenant1
+2024-03-14 23:40:18,277 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv
+2024-03-14 23:40:19,039 INFO     Dropped 8 empty columns
+2024-03-14 23:40:19,040 INFO     Dropped columns: {'Trip Miles', 'Tips', 'Trip Start Timestamp', 'Trip Total', 'Payment Type', 'Trip ID', 'Fare', 'Extras'}
+2024-03-14 23:40:19,040 INFO     15 columns remaining
+2024-03-14 23:40:19,041 INFO     Converting to json
+2024-03-14 23:40:19,097 INFO     Writing to coredms
+2024-03-14 23:40:19,450 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv for tenant1
+2024-03-14 23:40:20,176 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv
+2024-03-14 23:40:20,819 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv for tenant1
+2024-03-14 23:40:21,925 INFO     Dropped 8 empty columns
+2024-03-14 23:40:21,926 INFO     Dropped columns: {'Payment Type', 'Trip ID', 'Trip Total', 'Trip Miles', 'Fare', 'Trip Start Timestamp', 'Extras', 'Tips'}
+2024-03-14 23:40:21,926 INFO     15 columns remaining
+2024-03-14 23:40:21,927 INFO     Converting to json
+2024-03-14 23:40:21,991 INFO     Writing to coredms
+2024-03-14 23:40:22,267 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv
+2024-03-14 23:40:22,308 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv for tenant1
+2024-03-14 23:40:23,494 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv for tenant1
+2024-03-14 23:40:23,786 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv
+2024-03-14 23:40:24,028 INFO     Dropped 8 empty columns
+2024-03-14 23:40:24,029 INFO     Dropped columns: {'Extras', 'Fare', 'Trip Total', 'Tips', 'Trip ID', 'Trip Start Timestamp', 'Payment Type', 'Trip Miles'}
+2024-03-14 23:40:24,031 INFO     15 columns remaining
+2024-03-14 23:40:24,031 INFO     Converting to json
+2024-03-14 23:40:24,100 INFO     Writing to coredms
+2024-03-14 23:40:25,330 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv for tenant1
+2024-03-14 23:40:25,647 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv
+2024-03-14 23:40:26,520 INFO     Dropped 8 empty columns
+2024-03-14 23:40:26,521 INFO     Dropped columns: {'Trip ID', 'Trip Miles', 'Extras', 'Fare', 'Payment Type', 'Trip Start Timestamp', 'Trip Total', 'Tips'}
+2024-03-14 23:40:26,522 INFO     15 columns remaining
+2024-03-14 23:40:26,523 INFO     Converting to json
+2024-03-14 23:40:26,594 INFO     Writing to coredms
+2024-03-14 23:40:26,660 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv for tenant1
+2024-03-14 23:40:27,294 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv
+2024-03-14 23:40:28,108 INFO     Dropped 8 empty columns
+2024-03-14 23:40:28,110 INFO     Dropped columns: {'Fare', 'Trip ID', 'Tips', 'Trip Miles', 'Extras', 'Trip Total', 'Payment Type', 'Trip Start Timestamp'}
+2024-03-14 23:40:28,111 INFO     15 columns remaining
+2024-03-14 23:40:28,111 INFO     Converting to json
+2024-03-14 23:40:28,168 INFO     Writing to coredms
+2024-03-14 23:40:28,738 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv
+2024-03-14 23:40:29,877 INFO     Dropped 8 empty columns
+2024-03-14 23:40:29,878 INFO     Dropped columns: {'Payment Type', 'Extras', 'Trip Miles', 'Trip Total', 'Trip Start Timestamp', 'Fare', 'Trip ID', 'Tips'}
+2024-03-14 23:40:29,907 INFO     15 columns remaining
+2024-03-14 23:40:29,916 INFO     Converting to json
+2024-03-14 23:40:30,040 INFO     Writing to coredms
+2024-03-14 23:40:30,558 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv
+2024-03-14 23:40:31,499 INFO     Dropped 8 empty columns
+2024-03-14 23:40:31,500 INFO     Dropped columns: {'Tips', 'Fare', 'Extras', 'Trip Miles', 'Trip Start Timestamp', 'Trip Total', 'Payment Type', 'Trip ID'}
+2024-03-14 23:40:31,500 INFO     15 columns remaining
+2024-03-14 23:40:31,500 INFO     Converting to json
+2024-03-14 23:40:31,554 INFO     Writing to coredms
+2024-03-14 23:40:32,040 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv
+2024-03-14 23:40:33,053 INFO     Dropped 8 empty columns
+2024-03-14 23:40:33,087 INFO     Dropped columns: {'Extras', 'Trip Total', 'Trip Start Timestamp', 'Payment Type', 'Tips', 'Trip Miles', 'Fare', 'Trip ID'}
+2024-03-14 23:40:33,113 INFO     15 columns remaining
+2024-03-14 23:40:33,130 INFO     Converting to json
+2024-03-14 23:40:33,213 INFO     Writing to coredms
+2024-03-14 23:40:34,751 INFO     Dropped 8 empty columns
+2024-03-14 23:40:34,753 INFO     Dropped columns: {'Payment Type', 'Fare', 'Trip Miles', 'Trip Start Timestamp', 'Trip Total', 'Tips', 'Extras', 'Trip ID'}
+2024-03-14 23:40:34,761 INFO     15 columns remaining
+2024-03-14 23:40:34,765 INFO     Converting to json
+2024-03-14 23:40:34,843 INFO     Writing to coredms
+2024-03-14 23:40:36,425 INFO     Dropped 8 empty columns
+2024-03-14 23:40:36,426 INFO     Dropped columns: {'Tips', 'Payment Type', 'Fare', 'Trip Total', 'Trip Miles', 'Trip Start Timestamp', 'Trip ID', 'Extras'}
+2024-03-14 23:40:36,427 INFO     15 columns remaining
+2024-03-14 23:40:36,428 INFO     Converting to json
+2024-03-14 23:40:36,515 INFO     Writing to coredms
+2024-03-14 23:40:41,484 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-12.csv for tenant1
+2024-03-14 23:40:42,041 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-13.csv for tenant1
+2024-03-14 23:40:46,934 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-12.csv
+2024-03-14 23:40:47,323 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-13.csv
+2024-03-14 23:40:47,494 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-14.csv for tenant1
+2024-03-14 23:40:51,254 INFO     Dropped 8 empty columns
+2024-03-14 23:40:51,255 INFO     Dropped columns: {'Trip Miles', 'Trip ID', 'Tips', 'Trip Total', 'Payment Type', 'Fare', 'Trip Start Timestamp', 'Extras'}
+2024-03-14 23:40:51,256 INFO     15 columns remaining
+2024-03-14 23:40:51,257 INFO     Converting to json
+2024-03-14 23:40:51,330 INFO     Writing to coredms
+2024-03-14 23:40:51,713 INFO     Dropped 8 empty columns
+2024-03-14 23:40:51,714 INFO     Dropped columns: {'Trip Total', 'Trip Miles', 'Trip ID', 'Tips', 'Extras', 'Payment Type', 'Fare', 'Trip Start Timestamp'}
+2024-03-14 23:40:51,715 INFO     15 columns remaining
+2024-03-14 23:40:51,716 INFO     Converting to json
+2024-03-14 23:40:51,776 INFO     Writing to coredms
+2024-03-14 23:40:52,810 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-14.csv
+2024-03-14 23:40:54,762 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-15.csv for tenant1
+2024-03-14 23:40:56,939 INFO     Dropped 8 empty columns
+2024-03-14 23:40:56,943 INFO     Dropped columns: {'Trip Miles', 'Trip Total', 'Trip ID', 'Tips', 'Trip Start Timestamp', 'Fare', 'Extras', 'Payment Type'}
+2024-03-14 23:40:56,943 INFO     15 columns remaining
+2024-03-14 23:40:56,945 INFO     Converting to json
+2024-03-14 23:40:57,015 INFO     Writing to coredms
+2024-03-14 23:41:00,090 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-15.csv
+2024-03-14 23:41:03,550 INFO     Dropped 8 empty columns
+2024-03-14 23:41:03,550 INFO     Dropped columns: {'Trip Miles', 'Trip Total', 'Tips', 'Extras', 'Trip Start Timestamp', 'Fare', 'Payment Type', 'Trip ID'}
+2024-03-14 23:41:03,551 INFO     15 columns remaining
+2024-03-14 23:41:03,551 INFO     Converting to json
+2024-03-14 23:41:03,599 INFO     Writing to coredms
+2024-03-14 23:41:26,091 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:41:27,725 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:41:28,312 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:41:29,070 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv for tenant1
+2024-03-14 23:41:30,072 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv for tenant1
+2024-03-14 23:41:30,362 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:41:30,658 INFO     Dropped 8 empty columns
+2024-03-14 23:41:30,659 INFO     Dropped columns: {'Trip ID', 'Fare', 'Trip Miles', 'Tips', 'Payment Type', 'Extras', 'Trip Total', 'Trip Start Timestamp'}
+2024-03-14 23:41:30,659 INFO     15 columns remaining
+2024-03-14 23:41:30,660 INFO     Converting to json
+2024-03-14 23:41:30,705 INFO     Writing to coredms
+2024-03-14 23:41:31,629 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv for tenant1
+2024-03-14 23:41:32,366 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv
+2024-03-14 23:41:33,223 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv for tenant1
+2024-03-14 23:41:33,654 INFO     Dropped 8 empty columns
+2024-03-14 23:41:33,655 INFO     Dropped columns: {'Trip ID', 'Payment Type', 'Fare', 'Extras', 'Trip Start Timestamp', 'Trip Miles', 'Trip Total', 'Tips'}
+2024-03-14 23:41:33,656 INFO     15 columns remaining
+2024-03-14 23:41:33,656 INFO     Converting to json
+2024-03-14 23:41:33,719 INFO     Writing to coredms
+2024-03-14 23:41:33,796 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv
+2024-03-14 23:41:34,767 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv for tenant1
+2024-03-14 23:41:36,151 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv
+2024-03-14 23:41:36,344 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv for tenant1
+2024-03-14 23:41:36,384 INFO     Dropped 8 empty columns
+2024-03-14 23:41:36,385 INFO     Dropped columns: {'Extras', 'Tips', 'Trip Start Timestamp', 'Trip ID', 'Payment Type', 'Trip Total', 'Fare', 'Trip Miles'}
+2024-03-14 23:41:36,386 INFO     15 columns remaining
+2024-03-14 23:41:36,386 INFO     Converting to json
+2024-03-14 23:41:36,455 INFO     Writing to coredms
+2024-03-14 23:41:37,845 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv for tenant1
+2024-03-14 23:41:38,116 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv
+2024-03-14 23:41:38,188 INFO     Dropped 8 empty columns
+2024-03-14 23:41:38,191 INFO     Dropped columns: {'Fare', 'Trip ID', 'Tips', 'Trip Total', 'Trip Start Timestamp', 'Trip Miles', 'Extras', 'Payment Type'}
+2024-03-14 23:41:38,192 INFO     15 columns remaining
+2024-03-14 23:41:38,197 INFO     Converting to json
+2024-03-14 23:41:38,269 INFO     Writing to coredms
+2024-03-14 23:41:39,545 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv for tenant1
+2024-03-14 23:41:40,173 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv
+2024-03-14 23:41:40,756 INFO     Dropped 8 empty columns
+2024-03-14 23:41:40,758 INFO     Dropped columns: {'Extras', 'Trip Total', 'Trip Miles', 'Payment Type', 'Trip Start Timestamp', 'Fare', 'Trip ID', 'Tips'}
+2024-03-14 23:41:40,774 INFO     15 columns remaining
+2024-03-14 23:41:40,776 INFO     Converting to json
+2024-03-14 23:41:40,816 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv for tenant1
+2024-03-14 23:41:40,857 INFO     Writing to coredms
+2024-03-14 23:41:42,328 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv
+2024-03-14 23:41:42,797 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv for tenant1
+2024-03-14 23:41:42,913 INFO     Dropped 8 empty columns
+2024-03-14 23:41:42,915 INFO     Dropped columns: {'Payment Type', 'Trip Start Timestamp', 'Fare', 'Tips', 'Extras', 'Trip Miles', 'Trip ID', 'Trip Total'}
+2024-03-14 23:41:42,916 INFO     15 columns remaining
+2024-03-14 23:41:42,917 INFO     Converting to json
+2024-03-14 23:41:42,997 INFO     Writing to coredms
+2024-03-14 23:41:44,137 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv
+2024-03-14 23:41:45,309 INFO     Dropped 8 empty columns
+2024-03-14 23:41:45,310 INFO     Dropped columns: {'Fare', 'Trip Start Timestamp', 'Payment Type', 'Tips', 'Trip Total', 'Trip Miles', 'Extras', 'Trip ID'}
+2024-03-14 23:41:45,312 INFO     15 columns remaining
+2024-03-14 23:41:45,313 INFO     Converting to json
+2024-03-14 23:41:45,386 INFO     Writing to coredms
+2024-03-14 23:41:45,750 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv
+2024-03-14 23:41:47,178 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv
+2024-03-14 23:41:47,368 INFO     Dropped 8 empty columns
+2024-03-14 23:41:47,369 INFO     Dropped columns: {'Payment Type', 'Trip Total', 'Trip Miles', 'Tips', 'Trip ID', 'Fare', 'Extras', 'Trip Start Timestamp'}
+2024-03-14 23:41:47,370 INFO     15 columns remaining
+2024-03-14 23:41:47,371 INFO     Converting to json
+2024-03-14 23:41:47,466 INFO     Writing to coredms
+2024-03-14 23:41:49,208 INFO     Dropped 8 empty columns
+2024-03-14 23:41:49,212 INFO     Dropped columns: {'Payment Type', 'Trip ID', 'Trip Miles', 'Fare', 'Trip Start Timestamp', 'Trip Total', 'Tips', 'Extras'}
+2024-03-14 23:41:49,218 INFO     15 columns remaining
+2024-03-14 23:41:49,252 INFO     Converting to json
+2024-03-14 23:41:49,371 INFO     Writing to coredms
+2024-03-14 23:41:49,383 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv
+2024-03-14 23:41:51,061 INFO     Dropped 8 empty columns
+2024-03-14 23:41:51,062 INFO     Dropped columns: {'Trip ID', 'Trip Miles', 'Trip Start Timestamp', 'Tips', 'Trip Total', 'Payment Type', 'Fare', 'Extras'}
+2024-03-14 23:41:51,062 INFO     15 columns remaining
+2024-03-14 23:41:51,063 INFO     Converting to json
+2024-03-14 23:41:51,137 INFO     Writing to coredms
+2024-03-14 23:41:52,087 INFO     Dropped 8 empty columns
+2024-03-14 23:41:52,088 INFO     Dropped columns: {'Trip Total', 'Fare', 'Trip ID', 'Trip Start Timestamp', 'Extras', 'Tips', 'Trip Miles', 'Payment Type'}
+2024-03-14 23:41:52,089 INFO     15 columns remaining
+2024-03-14 23:41:52,089 INFO     Converting to json
+2024-03-14 23:41:52,166 INFO     Writing to coredms
+2024-03-14 23:41:54,011 INFO     Dropped 8 empty columns
+2024-03-14 23:41:54,012 INFO     Dropped columns: {'Trip Miles', 'Tips', 'Trip Total', 'Payment Type', 'Fare', 'Trip ID', 'Extras', 'Trip Start Timestamp'}
+2024-03-14 23:41:54,014 INFO     15 columns remaining
+2024-03-14 23:41:54,015 INFO     Converting to json
+2024-03-14 23:41:54,114 INFO     Writing to coredms
+2024-03-14 23:42:01,661 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-12.csv for tenant1
+2024-03-14 23:42:07,256 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-12.csv
+2024-03-14 23:42:09,097 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-13.csv for tenant1
+2024-03-14 23:42:09,494 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-14.csv for tenant1
+2024-03-14 23:42:10,392 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-15.csv for tenant1
+2024-03-14 23:42:10,924 INFO     Dropped 8 empty columns
+2024-03-14 23:42:10,926 INFO     Dropped columns: {'Trip Total', 'Trip Miles', 'Trip ID', 'Fare', 'Extras', 'Tips', 'Payment Type', 'Trip Start Timestamp'}
+2024-03-14 23:42:10,927 INFO     15 columns remaining
+2024-03-14 23:42:10,927 INFO     Converting to json
+2024-03-14 23:42:10,989 INFO     Writing to coredms
+2024-03-14 23:42:13,583 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-13.csv
+2024-03-14 23:42:14,137 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-14.csv
+2024-03-14 23:42:14,706 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-16.csv for tenant1
+2024-03-14 23:42:15,361 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-15.csv
+2024-03-14 23:42:15,673 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-17.csv for tenant1
+2024-03-14 23:42:17,009 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-18.csv for tenant1
+2024-03-14 23:42:17,039 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-19.csv for tenant1
+2024-03-14 23:42:17,533 INFO     Dropped 8 empty columns
+2024-03-14 23:42:17,534 INFO     Dropped columns: {'Trip Miles', 'Trip Total', 'Trip ID', 'Extras', 'Payment Type', 'Trip Start Timestamp', 'Fare', 'Tips'}
+2024-03-14 23:42:17,536 INFO     15 columns remaining
+2024-03-14 23:42:17,537 INFO     Converting to json
+2024-03-14 23:42:17,617 INFO     Writing to coredms
+2024-03-14 23:42:18,109 INFO     Dropped 8 empty columns
+2024-03-14 23:42:18,111 INFO     Dropped columns: {'Tips', 'Fare', 'Payment Type', 'Trip Total', 'Extras', 'Trip Miles', 'Trip Start Timestamp', 'Trip ID'}
+2024-03-14 23:42:18,111 INFO     15 columns remaining
+2024-03-14 23:42:18,112 INFO     Converting to json
+2024-03-14 23:42:18,189 INFO     Writing to coredms
+2024-03-14 23:42:19,429 INFO     Dropped 8 empty columns
+2024-03-14 23:42:19,429 INFO     Dropped columns: {'Trip Miles', 'Extras', 'Trip ID', 'Payment Type', 'Fare', 'Tips', 'Trip Start Timestamp', 'Trip Total'}
+2024-03-14 23:42:19,430 INFO     15 columns remaining
+2024-03-14 23:42:19,431 INFO     Converting to json
+2024-03-14 23:42:19,497 INFO     Writing to coredms
+2024-03-14 23:42:19,778 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-16.csv
+2024-03-14 23:42:20,557 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-17.csv
+2024-03-14 23:42:21,951 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-19.csv
+2024-03-14 23:42:21,972 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-18.csv
+2024-03-14 23:42:23,718 INFO     Dropped 8 empty columns
+2024-03-14 23:42:23,720 INFO     Dropped columns: {'Extras', 'Trip Miles', 'Trip Start Timestamp', 'Payment Type', 'Trip Total', 'Trip ID', 'Tips', 'Fare'}
+2024-03-14 23:42:23,720 INFO     15 columns remaining
+2024-03-14 23:42:23,721 INFO     Converting to json
+2024-03-14 23:42:23,789 INFO     Writing to coredms
+2024-03-14 23:42:24,370 INFO     Dropped 8 empty columns
+2024-03-14 23:42:24,371 INFO     Dropped columns: {'Extras', 'Payment Type', 'Trip ID', 'Fare', 'Trip Miles', 'Trip Start Timestamp', 'Trip Total', 'Tips'}
+2024-03-14 23:42:24,372 INFO     15 columns remaining
+2024-03-14 23:42:24,373 INFO     Converting to json
+2024-03-14 23:42:24,439 INFO     Writing to coredms
+2024-03-14 23:42:25,666 INFO     Dropped 8 empty columns
+2024-03-14 23:42:25,667 INFO     Dropped columns: {'Extras', 'Payment Type', 'Tips', 'Trip ID', 'Trip Miles', 'Trip Start Timestamp', 'Fare', 'Trip Total'}
+2024-03-14 23:42:25,667 INFO     15 columns remaining
+2024-03-14 23:42:25,667 INFO     Dropped 8 empty columns
+2024-03-14 23:42:25,687 INFO     Dropped columns: {'Trip Total', 'Fare', 'Trip ID', 'Extras', 'Payment Type', 'Trip Miles', 'Trip Start Timestamp', 'Tips'}
+2024-03-14 23:42:25,693 INFO     15 columns remaining
+2024-03-14 23:42:25,695 INFO     Converting to json
+2024-03-14 23:42:25,668 INFO     Converting to json
+2024-03-14 23:42:25,761 INFO     Writing to coredms
+2024-03-14 23:42:25,770 INFO     Writing to coredms
+2024-03-14 23:42:52,095 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:42:53,263 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:42:53,388 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:42:54,967 INFO     Dropped 8 empty columns
+2024-03-14 23:42:54,968 INFO     Dropped columns: {'Trip ID', 'Trip Miles', 'Fare', 'Tips', 'Payment Type', 'Trip Start Timestamp', 'Trip Total', 'Extras'}
+2024-03-14 23:42:54,968 INFO     15 columns remaining
+2024-03-14 23:42:54,969 INFO     Converting to json
+2024-03-14 23:42:54,974 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv for tenant1
+2024-03-14 23:42:54,991 INFO     Writing to coredms
+2024-03-14 23:42:55,390 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:42:56,273 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv for tenant1
+2024-03-14 23:42:57,181 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv
+2024-03-14 23:42:57,188 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv for tenant1
+2024-03-14 23:42:57,471 INFO     Dropped 8 empty columns
+2024-03-14 23:42:57,472 INFO     Dropped columns: {'Trip ID', 'Fare', 'Extras', 'Payment Type', 'Trip Miles', 'Trip Start Timestamp', 'Trip Total', 'Tips'}
+2024-03-14 23:42:57,472 INFO     15 columns remaining
+2024-03-14 23:42:57,473 INFO     Converting to json
+2024-03-14 23:42:57,503 INFO     Writing to coredms
+2024-03-14 23:42:58,392 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv for tenant1
+2024-03-14 23:42:58,769 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv
+2024-03-14 23:42:59,475 INFO     Dropped 8 empty columns
+2024-03-14 23:42:59,476 INFO     Dropped columns: {'Fare', 'Payment Type', 'Trip Miles', 'Trip ID', 'Tips', 'Trip Total', 'Extras', 'Trip Start Timestamp'}
+2024-03-14 23:42:59,476 INFO     15 columns remaining
+2024-03-14 23:42:59,477 INFO     Converting to json
+2024-03-14 23:42:59,505 INFO     Writing to coredms
+2024-03-14 23:42:59,566 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv for tenant1
+2024-03-14 23:43:00,040 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv
+2024-03-14 23:43:00,955 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv for tenant1
+2024-03-14 23:43:01,431 INFO     Dropped 8 empty columns
+2024-03-14 23:43:01,432 INFO     Dropped columns: {'Trip Total', 'Tips', 'Trip Miles', 'Trip Start Timestamp', 'Fare', 'Trip ID', 'Extras', 'Payment Type'}
+2024-03-14 23:43:01,432 INFO     15 columns remaining
+2024-03-14 23:43:01,432 INFO     Converting to json
+2024-03-14 23:43:01,474 INFO     Writing to coredms
+2024-03-14 23:43:01,518 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv
+2024-03-14 23:43:02,177 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv for tenant1
+2024-03-14 23:43:02,930 INFO     Dropped 8 empty columns
+2024-03-14 23:43:02,931 INFO     Dropped columns: {'Trip Total', 'Tips', 'Trip ID', 'Trip Start Timestamp', 'Extras', 'Fare', 'Trip Miles', 'Payment Type'}
+2024-03-14 23:43:02,932 INFO     15 columns remaining
+2024-03-14 23:43:02,933 INFO     Converting to json
+2024-03-14 23:43:02,963 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv
+2024-03-14 23:43:02,981 INFO     Writing to coredms
+2024-03-14 23:43:03,438 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv for tenant1
+2024-03-14 23:43:04,498 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv
+2024-03-14 23:43:04,641 INFO     Dropped 8 empty columns
+2024-03-14 23:43:04,643 INFO     Dropped columns: {'Payment Type', 'Trip ID', 'Fare', 'Extras', 'Trip Start Timestamp', 'Trip Miles', 'Tips', 'Trip Total'}
+2024-03-14 23:43:04,646 INFO     15 columns remaining
+2024-03-14 23:43:04,652 INFO     Converting to json
+2024-03-14 23:43:04,700 INFO     Writing to coredms
+2024-03-14 23:43:04,797 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv for tenant1
+2024-03-14 23:43:06,058 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv
+2024-03-14 23:43:06,102 INFO     Dropped 8 empty columns
+2024-03-14 23:43:06,103 INFO     Dropped columns: {'Tips', 'Payment Type', 'Trip Start Timestamp', 'Trip Total', 'Extras', 'Trip ID', 'Trip Miles', 'Fare'}
+2024-03-14 23:43:06,103 INFO     15 columns remaining
+2024-03-14 23:43:06,103 INFO     Converting to json
+2024-03-14 23:43:06,148 INFO     Writing to coredms
+2024-03-14 23:43:06,181 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv for tenant1
+2024-03-14 23:43:07,064 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv
+2024-03-14 23:43:07,469 INFO     Dropped 8 empty columns
+2024-03-14 23:43:07,470 INFO     Dropped columns: {'Payment Type', 'Trip Start Timestamp', 'Trip ID', 'Trip Total', 'Extras', 'Tips', 'Trip Miles', 'Fare'}
+2024-03-14 23:43:07,472 INFO     15 columns remaining
+2024-03-14 23:43:07,473 INFO     Converting to json
+2024-03-14 23:43:07,512 INFO     Writing to coredms
+2024-03-14 23:43:08,494 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv
+2024-03-14 23:43:09,251 INFO     Dropped 8 empty columns
+2024-03-14 23:43:09,253 INFO     Dropped columns: {'Trip Total', 'Trip Start Timestamp', 'Trip ID', 'Extras', 'Tips', 'Fare', 'Trip Miles', 'Payment Type'}
+2024-03-14 23:43:09,260 INFO     15 columns remaining
+2024-03-14 23:43:09,263 INFO     Converting to json
+2024-03-14 23:43:09,316 INFO     Writing to coredms
+2024-03-14 23:43:10,225 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv
+2024-03-14 23:43:10,290 INFO     Dropped 8 empty columns
+2024-03-14 23:43:10,290 INFO     Dropped columns: {'Trip Start Timestamp', 'Tips', 'Trip Miles', 'Trip Total', 'Extras', 'Fare', 'Payment Type', 'Trip ID'}
+2024-03-14 23:43:10,291 INFO     15 columns remaining
+2024-03-14 23:43:10,291 INFO     Converting to json
+2024-03-14 23:43:10,329 INFO     Writing to coredms
+2024-03-14 23:43:11,488 INFO     Dropped 8 empty columns
+2024-03-14 23:43:11,498 INFO     Dropped columns: {'Trip Miles', 'Trip ID', 'Payment Type', 'Trip Start Timestamp', 'Fare', 'Trip Total', 'Tips', 'Extras'}
+2024-03-14 23:43:11,501 INFO     15 columns remaining
+2024-03-14 23:43:11,502 INFO     Converting to json
+2024-03-14 23:43:11,544 INFO     Writing to coredms
+2024-03-14 23:43:13,121 INFO     Dropped 8 empty columns
+2024-03-14 23:43:13,122 INFO     Dropped columns: {'Trip Start Timestamp', 'Trip Total', 'Trip ID', 'Extras', 'Payment Type', 'Tips', 'Trip Miles', 'Fare'}
+2024-03-14 23:43:13,122 INFO     15 columns remaining
+2024-03-14 23:43:13,123 INFO     Converting to json
+2024-03-14 23:43:13,163 INFO     Writing to coredms
+2024-03-14 23:43:17,221 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-12.csv for tenant1
+2024-03-14 23:43:17,289 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-13.csv for tenant1
+2024-03-14 23:43:19,883 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-14.csv for tenant1
+2024-03-14 23:43:20,476 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-12.csv
+2024-03-14 23:43:20,652 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-13.csv
+2024-03-14 23:43:23,354 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-14.csv
+2024-03-14 23:43:23,442 INFO     Dropped 8 empty columns
+2024-03-14 23:43:23,443 INFO     Dropped columns: {'Tips', 'Trip Total', 'Trip Start Timestamp', 'Payment Type', 'Trip Miles', 'Extras', 'Fare', 'Trip ID'}
+2024-03-14 23:43:23,444 INFO     15 columns remaining
+2024-03-14 23:43:23,445 INFO     Converting to json
+2024-03-14 23:43:23,492 INFO     Writing to coredms
+2024-03-14 23:43:23,555 INFO     Dropped 8 empty columns
+2024-03-14 23:43:23,557 INFO     Dropped columns: {'Tips', 'Trip Miles', 'Trip Total', 'Trip Start Timestamp', 'Payment Type', 'Extras', 'Trip ID', 'Fare'}
+2024-03-14 23:43:23,557 INFO     15 columns remaining
+2024-03-14 23:43:23,558 INFO     Converting to json
+2024-03-14 23:43:23,604 INFO     Writing to coredms
+2024-03-14 23:43:24,800 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-15.csv for tenant1
+2024-03-14 23:43:26,453 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-16.csv for tenant1
+2024-03-14 23:43:26,745 INFO     Dropped 8 empty columns
+2024-03-14 23:43:27,006 INFO     Dropped columns: {'Tips', 'Fare', 'Trip Miles', 'Payment Type', 'Extras', 'Trip Start Timestamp', 'Trip ID', 'Trip Total'}
+2024-03-14 23:43:27,007 INFO     15 columns remaining
+2024-03-14 23:43:27,015 INFO     Converting to json
+2024-03-14 23:43:27,075 INFO     Writing to coredms
+2024-03-14 23:43:28,075 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-18.csv for tenant1
+2024-03-14 23:43:28,174 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-17.csv for tenant1
+2024-03-14 23:43:28,418 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-15.csv
+2024-03-14 23:43:30,133 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-16.csv
+2024-03-14 23:43:31,090 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-19.csv for tenant1
+2024-03-14 23:43:31,406 INFO     Dropped 8 empty columns
+2024-03-14 23:43:31,407 INFO     Dropped columns: {'Extras', 'Payment Type', 'Tips', 'Trip Start Timestamp', 'Trip Miles', 'Trip Total', 'Fare', 'Trip ID'}
+2024-03-14 23:43:31,409 INFO     15 columns remaining
+2024-03-14 23:43:31,410 INFO     Converting to json
+2024-03-14 23:43:31,476 INFO     Writing to coredms
+2024-03-14 23:43:31,622 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-18.csv
+2024-03-14 23:43:31,776 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-17.csv
+2024-03-14 23:43:31,821 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-20.csv for tenant1
+2024-03-14 23:43:33,309 INFO     Dropped 8 empty columns
+2024-03-14 23:43:33,311 INFO     Dropped columns: {'Payment Type', 'Trip Total', 'Trip Start Timestamp', 'Extras', 'Trip ID', 'Trip Miles', 'Tips', 'Fare'}
+2024-03-14 23:43:33,312 INFO     15 columns remaining
+2024-03-14 23:43:33,312 INFO     Converting to json
+2024-03-14 23:43:33,353 INFO     Writing to coredms
+2024-03-14 23:43:33,707 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-21.csv for tenant1
+2024-03-14 23:43:34,876 INFO     Dropped 8 empty columns
+2024-03-14 23:43:34,892 INFO     Dropped columns: {'Extras', 'Payment Type', 'Trip Start Timestamp', 'Trip ID', 'Fare', 'Tips', 'Trip Miles', 'Trip Total'}
+2024-03-14 23:43:34,917 INFO     15 columns remaining
+2024-03-14 23:43:34,947 INFO     Converting to json
+2024-03-14 23:43:35,006 INFO     Writing to coredms
+2024-03-14 23:43:35,024 INFO     Dropped 8 empty columns
+2024-03-14 23:43:35,029 INFO     Dropped columns: {'Trip Miles', 'Tips', 'Extras', 'Fare', 'Payment Type', 'Trip Start Timestamp', 'Trip Total', 'Trip ID'}
+2024-03-14 23:43:35,031 INFO     15 columns remaining
+2024-03-14 23:43:35,031 INFO     Converting to json
+2024-03-14 23:43:35,079 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-19.csv
+2024-03-14 23:43:35,088 INFO     Writing to coredms
+2024-03-14 23:43:35,356 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-22.csv for tenant1
+2024-03-14 23:43:35,952 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-20.csv
+2024-03-14 23:43:37,502 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-21.csv
+2024-03-14 23:43:38,174 INFO     Dropped 8 empty columns
+2024-03-14 23:43:38,175 INFO     Dropped columns: {'Payment Type', 'Fare', 'Tips', 'Extras', 'Trip Miles', 'Trip ID', 'Trip Total', 'Trip Start Timestamp'}
+2024-03-14 23:43:38,175 INFO     15 columns remaining
+2024-03-14 23:43:38,175 INFO     Converting to json
+2024-03-14 23:43:38,222 INFO     Writing to coredms
+2024-03-14 23:43:38,822 INFO     Dropped 8 empty columns
+2024-03-14 23:43:38,824 INFO     Dropped columns: {'Extras', 'Trip ID', 'Fare', 'Trip Miles', 'Trip Start Timestamp', 'Tips', 'Trip Total', 'Payment Type'}
+2024-03-14 23:43:38,826 INFO     15 columns remaining
+2024-03-14 23:43:38,826 INFO     Converting to json
+2024-03-14 23:43:38,865 INFO     Writing to coredms
+2024-03-14 23:43:38,967 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-22.csv
+2024-03-14 23:43:39,072 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-23.csv for tenant1
+2024-03-14 23:43:40,415 INFO     Dropped 8 empty columns
+2024-03-14 23:43:40,416 INFO     Dropped columns: {'Extras', 'Payment Type', 'Trip Miles', 'Trip ID', 'Trip Total', 'Trip Start Timestamp', 'Fare', 'Tips'}
+2024-03-14 23:43:40,416 INFO     15 columns remaining
+2024-03-14 23:43:40,417 INFO     Converting to json
+2024-03-14 23:43:40,466 INFO     Writing to coredms
+2024-03-14 23:43:42,270 INFO     Dropped 8 empty columns
+2024-03-14 23:43:42,275 INFO     Dropped columns: {'Trip Start Timestamp', 'Trip ID', 'Trip Total', 'Trip Miles', 'Fare', 'Tips', 'Extras', 'Payment Type'}
+2024-03-14 23:43:42,276 INFO     15 columns remaining
+2024-03-14 23:43:42,288 INFO     Converting to json
+2024-03-14 23:43:42,337 INFO     Writing to coredms
+2024-03-14 23:43:43,018 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-23.csv
+2024-03-14 23:43:45,847 INFO     Dropped 8 empty columns
+2024-03-14 23:43:45,847 INFO     Dropped columns: {'Trip Start Timestamp', 'Trip Miles', 'Trip ID', 'Fare', 'Tips', 'Trip Total', 'Payment Type', 'Extras'}
+2024-03-14 23:43:45,848 INFO     15 columns remaining
+2024-03-14 23:43:45,848 INFO     Converting to json
+2024-03-14 23:43:45,888 INFO     Writing to coredms
+2024-03-14 23:49:09,618 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:49:10,580 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:49:11,425 INFO     Dropped 8 empty columns
+2024-03-14 23:49:11,425 INFO     Dropped columns: {'Trip Miles', 'Extras', 'Trip Total', 'Trip ID', 'Payment Type', 'Trip Start Timestamp', 'Fare', 'Tips'}
+2024-03-14 23:49:11,425 INFO     15 columns remaining
+2024-03-14 23:49:11,426 INFO     Converting to json
+2024-03-14 23:49:11,441 INFO     Writing to coredms
+2024-03-14 23:49:24,710 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:49:25,662 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:49:26,544 INFO     Dropped 8 empty columns
+2024-03-14 23:49:26,545 INFO     Dropped columns: {'Tips', 'Fare', 'Payment Type', 'Trip Start Timestamp', 'Trip Total', 'Trip Miles', 'Trip ID', 'Extras'}
+2024-03-14 23:49:26,545 INFO     15 columns remaining
+2024-03-14 23:49:26,545 INFO     Converting to json
+2024-03-14 23:49:26,559 INFO     Writing to coredms
+2024-03-14 23:49:39,833 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:49:40,821 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:49:41,650 INFO     Dropped 8 empty columns
+2024-03-14 23:49:41,651 INFO     Dropped columns: {'Payment Type', 'Trip Start Timestamp', 'Fare', 'Trip Miles', 'Trip Total', 'Tips', 'Trip ID', 'Extras'}
+2024-03-14 23:49:41,651 INFO     15 columns remaining
+2024-03-14 23:49:41,651 INFO     Converting to json
+2024-03-14 23:49:41,662 INFO     Writing to coredms
+2024-03-14 23:49:54,943 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:49:55,902 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:49:56,757 INFO     Dropped 8 empty columns
+2024-03-14 23:49:56,758 INFO     Dropped columns: {'Extras', 'Fare', 'Trip ID', 'Trip Start Timestamp', 'Payment Type', 'Tips', 'Trip Miles', 'Trip Total'}
+2024-03-14 23:49:56,758 INFO     15 columns remaining
+2024-03-14 23:49:56,758 INFO     Converting to json
+2024-03-14 23:49:56,770 INFO     Writing to coredms
+2024-03-14 23:50:09,986 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:50:10,919 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:50:11,783 INFO     Dropped 8 empty columns
+2024-03-14 23:50:11,783 INFO     Dropped columns: {'Payment Type', 'Fare', 'Tips', 'Extras', 'Trip Start Timestamp', 'Trip Total', 'Trip ID', 'Trip Miles'}
+2024-03-14 23:50:11,783 INFO     15 columns remaining
+2024-03-14 23:50:11,783 INFO     Converting to json
+2024-03-14 23:50:11,796 INFO     Writing to coredms
+2024-03-14 23:50:25,099 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:50:26,038 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:50:26,881 INFO     Dropped 8 empty columns
+2024-03-14 23:50:26,882 INFO     Dropped columns: {'Trip Miles', 'Trip Total', 'Tips', 'Payment Type', 'Trip ID', 'Trip Start Timestamp', 'Fare', 'Extras'}
+2024-03-14 23:50:26,882 INFO     15 columns remaining
+2024-03-14 23:50:26,882 INFO     Converting to json
+2024-03-14 23:50:26,895 INFO     Writing to coredms
+2024-03-14 23:50:40,206 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:50:41,160 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:50:42,051 INFO     Dropped 8 empty columns
+2024-03-14 23:50:42,051 INFO     Dropped columns: {'Trip ID', 'Payment Type', 'Trip Start Timestamp', 'Trip Miles', 'Tips', 'Trip Total', 'Fare', 'Extras'}
+2024-03-14 23:50:42,052 INFO     15 columns remaining
+2024-03-14 23:50:42,052 INFO     Converting to json
+2024-03-14 23:50:42,066 INFO     Writing to coredms
+2024-03-14 23:50:55,276 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:50:56,213 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:50:57,049 INFO     Dropped 8 empty columns
+2024-03-14 23:50:57,050 INFO     Dropped columns: {'Trip ID', 'Tips', 'Payment Type', 'Trip Miles', 'Trip Start Timestamp', 'Trip Total', 'Extras', 'Fare'}
+2024-03-14 23:50:57,050 INFO     15 columns remaining
+2024-03-14 23:50:57,051 INFO     Converting to json
+2024-03-14 23:50:57,063 INFO     Writing to coredms
+2024-03-14 23:51:10,399 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:51:11,352 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:51:11,431 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:51:12,326 INFO     Dropped 8 empty columns
+2024-03-14 23:51:12,326 INFO     Dropped columns: {'Trip ID', 'Trip Start Timestamp', 'Trip Miles', 'Fare', 'Payment Type', 'Extras', 'Tips', 'Trip Total'}
+2024-03-14 23:51:12,327 INFO     15 columns remaining
+2024-03-14 23:51:12,327 INFO     Converting to json
+2024-03-14 23:51:12,346 INFO     Writing to coredms
+2024-03-14 23:51:12,572 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:51:13,791 INFO     Dropped 8 empty columns
+2024-03-14 23:51:13,792 INFO     Dropped columns: {'Trip ID', 'Extras', 'Payment Type', 'Tips', 'Trip Total', 'Fare', 'Trip Miles', 'Trip Start Timestamp'}
+2024-03-14 23:51:13,792 INFO     15 columns remaining
+2024-03-14 23:51:13,792 INFO     Converting to json
+2024-03-14 23:51:13,808 INFO     Writing to coredms
+2024-03-14 23:51:30,581 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:51:31,535 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:51:31,631 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:51:32,497 INFO     Dropped 8 empty columns
+2024-03-14 23:51:32,498 INFO     Dropped columns: {'Trip Start Timestamp', 'Trip ID', 'Payment Type', 'Extras', 'Trip Miles', 'Trip Total', 'Fare', 'Tips'}
+2024-03-14 23:51:32,498 INFO     15 columns remaining
+2024-03-14 23:51:32,498 INFO     Converting to json
+2024-03-14 23:51:32,514 INFO     Writing to coredms
+2024-03-14 23:51:32,734 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:51:33,918 INFO     Dropped 8 empty columns
+2024-03-14 23:51:33,919 INFO     Dropped columns: {'Trip Total', 'Tips', 'Trip ID', 'Payment Type', 'Extras', 'Trip Miles', 'Trip Start Timestamp', 'Fare'}
+2024-03-14 23:51:33,919 INFO     15 columns remaining
+2024-03-14 23:51:33,919 INFO     Converting to json
+2024-03-14 23:51:33,935 INFO     Writing to coredms
+2024-03-14 23:51:50,776 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:51:51,711 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:51:51,816 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:51:52,643 INFO     Dropped 8 empty columns
+2024-03-14 23:51:52,643 INFO     Dropped columns: {'Trip Miles', 'Extras', 'Trip ID', 'Fare', 'Tips', 'Trip Total', 'Trip Start Timestamp', 'Payment Type'}
+2024-03-14 23:51:52,643 INFO     15 columns remaining
+2024-03-14 23:51:52,644 INFO     Converting to json
+2024-03-14 23:51:52,658 INFO     Writing to coredms
+2024-03-14 23:51:52,905 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:51:54,070 INFO     Dropped 8 empty columns
+2024-03-14 23:51:54,070 INFO     Dropped columns: {'Extras', 'Trip ID', 'Payment Type', 'Trip Start Timestamp', 'Trip Total', 'Trip Miles', 'Fare', 'Tips'}
+2024-03-14 23:51:54,071 INFO     15 columns remaining
+2024-03-14 23:51:54,071 INFO     Converting to json
+2024-03-14 23:51:54,094 INFO     Writing to coredms
+2024-03-14 23:52:10,976 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:52:11,921 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:52:12,012 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:52:12,866 INFO     Dropped 8 empty columns
+2024-03-14 23:52:12,867 INFO     Dropped columns: {'Trip Total', 'Extras', 'Fare', 'Trip Miles', 'Trip ID', 'Trip Start Timestamp', 'Tips', 'Payment Type'}
+2024-03-14 23:52:12,867 INFO     15 columns remaining
+2024-03-14 23:52:12,868 INFO     Converting to json
+2024-03-14 23:52:12,882 INFO     Writing to coredms
+2024-03-14 23:52:13,099 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:52:14,293 INFO     Dropped 8 empty columns
+2024-03-14 23:52:14,293 INFO     Dropped columns: {'Payment Type', 'Fare', 'Trip Miles', 'Tips', 'Extras', 'Trip ID', 'Trip Total', 'Trip Start Timestamp'}
+2024-03-14 23:52:14,294 INFO     15 columns remaining
+2024-03-14 23:52:14,294 INFO     Converting to json
+2024-03-14 23:52:14,308 INFO     Writing to coredms
+2024-03-14 23:52:31,195 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:52:32,173 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:52:32,230 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:52:33,135 INFO     Dropped 8 empty columns
+2024-03-14 23:52:33,135 INFO     Dropped columns: {'Tips', 'Fare', 'Trip Start Timestamp', 'Payment Type', 'Extras', 'Trip Miles', 'Trip ID', 'Trip Total'}
+2024-03-14 23:52:33,135 INFO     15 columns remaining
+2024-03-14 23:52:33,136 INFO     Converting to json
+2024-03-14 23:52:33,148 INFO     Writing to coredms
+2024-03-14 23:52:33,306 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:52:33,516 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv for tenant1
+2024-03-14 23:52:34,443 INFO     Dropped 8 empty columns
+2024-03-14 23:52:34,444 INFO     Dropped columns: {'Trip Total', 'Trip Start Timestamp', 'Payment Type', 'Trip Miles', 'Trip ID', 'Extras', 'Tips', 'Fare'}
+2024-03-14 23:52:34,444 INFO     15 columns remaining
+2024-03-14 23:52:34,444 INFO     Converting to json
+2024-03-14 23:52:34,461 INFO     Writing to coredms
+2024-03-14 23:52:34,654 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv for tenant1
+2024-03-14 23:52:34,935 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv
+2024-03-14 23:52:36,327 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv
+2024-03-14 23:52:36,449 INFO     Dropped 8 empty columns
+2024-03-14 23:52:36,450 INFO     Dropped columns: {'Trip ID', 'Trip Start Timestamp', 'Tips', 'Extras', 'Fare', 'Trip Miles', 'Payment Type', 'Trip Total'}
+2024-03-14 23:52:36,450 INFO     15 columns remaining
+2024-03-14 23:52:36,450 INFO     Converting to json
+2024-03-14 23:52:36,474 INFO     Writing to coredms
+2024-03-14 23:52:37,866 INFO     Dropped 8 empty columns
+2024-03-14 23:52:37,866 INFO     Dropped columns: {'Trip Start Timestamp', 'Extras', 'Fare', 'Trip ID', 'Trip Miles', 'Payment Type', 'Tips', 'Trip Total'}
+2024-03-14 23:52:37,866 INFO     15 columns remaining
+2024-03-14 23:52:37,867 INFO     Converting to json
+2024-03-14 23:52:37,890 INFO     Writing to coredms
+2024-03-14 23:52:56,605 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:52:57,538 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:52:57,644 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:52:58,492 INFO     Dropped 8 empty columns
+2024-03-14 23:52:58,493 INFO     Dropped columns: {'Fare', 'Trip Miles', 'Tips', 'Trip Total', 'Payment Type', 'Extras', 'Trip Start Timestamp', 'Trip ID'}
+2024-03-14 23:52:58,493 INFO     15 columns remaining
+2024-03-14 23:52:58,493 INFO     Converting to json
+2024-03-14 23:52:58,515 INFO     Writing to coredms
+2024-03-14 23:52:58,763 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:52:58,888 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv for tenant1
+2024-03-14 23:52:59,886 INFO     Dropped 8 empty columns
+2024-03-14 23:52:59,887 INFO     Dropped columns: {'Trip Start Timestamp', 'Trip ID', 'Tips', 'Trip Total', 'Fare', 'Trip Miles', 'Payment Type', 'Extras'}
+2024-03-14 23:52:59,887 INFO     15 columns remaining
+2024-03-14 23:52:59,887 INFO     Converting to json
+2024-03-14 23:52:59,903 INFO     Writing to coredms
+2024-03-14 23:53:00,061 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv for tenant1
+2024-03-14 23:53:00,288 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv
+2024-03-14 23:53:01,706 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv
+2024-03-14 23:53:01,738 INFO     Dropped 8 empty columns
+2024-03-14 23:53:01,738 INFO     Dropped columns: {'Trip Miles', 'Payment Type', 'Trip Total', 'Tips', 'Fare', 'Extras', 'Trip ID', 'Trip Start Timestamp'}
+2024-03-14 23:53:01,739 INFO     15 columns remaining
+2024-03-14 23:53:01,739 INFO     Converting to json
+2024-03-14 23:53:01,762 INFO     Writing to coredms
+2024-03-14 23:53:03,270 INFO     Dropped 8 empty columns
+2024-03-14 23:53:03,270 INFO     Dropped columns: {'Tips', 'Payment Type', 'Trip ID', 'Fare', 'Trip Miles', 'Trip Start Timestamp', 'Trip Total', 'Extras'}
+2024-03-14 23:53:03,270 INFO     15 columns remaining
+2024-03-14 23:53:03,271 INFO     Converting to json
+2024-03-14 23:53:03,290 INFO     Writing to coredms
+2024-03-14 23:53:22,173 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:53:23,076 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:53:23,186 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:53:24,267 INFO     Dropped 8 empty columns
+2024-03-14 23:53:24,267 INFO     Dropped columns: {'Extras', 'Fare', 'Trip Miles', 'Payment Type', 'Trip ID', 'Trip Start Timestamp', 'Tips', 'Trip Total'}
+2024-03-14 23:53:24,267 INFO     15 columns remaining
+2024-03-14 23:53:24,267 INFO     Converting to json
+2024-03-14 23:53:24,287 INFO     Writing to coredms
+2024-03-14 23:53:24,304 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:53:24,433 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv for tenant1
+2024-03-14 23:53:25,614 INFO     Dropped 8 empty columns
+2024-03-14 23:53:25,614 INFO     Dropped columns: {'Payment Type', 'Trip Start Timestamp', 'Trip Total', 'Extras', 'Tips', 'Fare', 'Trip Miles', 'Trip ID'}
+2024-03-14 23:53:25,614 INFO     15 columns remaining
+2024-03-14 23:53:25,615 INFO     Converting to json
+2024-03-14 23:53:25,632 INFO     Writing to coredms
+2024-03-14 23:53:25,645 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv for tenant1
+2024-03-14 23:53:26,086 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv
+2024-03-14 23:53:26,784 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv for tenant1
+2024-03-14 23:53:27,551 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv
+2024-03-14 23:53:27,844 INFO     Dropped 8 empty columns
+2024-03-14 23:53:27,845 INFO     Dropped columns: {'Trip ID', 'Trip Start Timestamp', 'Fare', 'Trip Miles', 'Payment Type', 'Extras', 'Tips', 'Trip Total'}
+2024-03-14 23:53:27,845 INFO     15 columns remaining
+2024-03-14 23:53:27,845 INFO     Converting to json
+2024-03-14 23:53:27,875 INFO     Writing to coredms
+2024-03-14 23:53:27,943 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv for tenant1
+2024-03-14 23:53:28,929 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv
+2024-03-14 23:53:29,169 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv for tenant1
+2024-03-14 23:53:29,526 INFO     Dropped 8 empty columns
+2024-03-14 23:53:29,527 INFO     Dropped columns: {'Extras', 'Trip ID', 'Trip Start Timestamp', 'Trip Miles', 'Trip Total', 'Fare', 'Tips', 'Payment Type'}
+2024-03-14 23:53:29,527 INFO     15 columns remaining
+2024-03-14 23:53:29,527 INFO     Converting to json
+2024-03-14 23:53:29,552 INFO     Writing to coredms
+2024-03-14 23:53:30,297 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv for tenant1
+2024-03-14 23:53:30,298 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv
+2024-03-14 23:53:31,250 INFO     Dropped 8 empty columns
+2024-03-14 23:53:31,251 INFO     Dropped columns: {'Tips', 'Extras', 'Trip Miles', 'Trip ID', 'Trip Total', 'Fare', 'Payment Type', 'Trip Start Timestamp'}
+2024-03-14 23:53:31,405 INFO     15 columns remaining
+2024-03-14 23:53:31,406 INFO     Converting to json
+2024-03-14 23:53:31,455 INFO     Writing to coredms
+2024-03-14 23:53:32,035 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv
+2024-03-14 23:53:32,936 INFO     Dropped 8 empty columns
+2024-03-14 23:53:32,937 INFO     Dropped columns: {'Fare', 'Trip Total', 'Extras', 'Trip Miles', 'Tips', 'Trip Start Timestamp', 'Trip ID', 'Payment Type'}
+2024-03-14 23:53:32,937 INFO     15 columns remaining
+2024-03-14 23:53:32,938 INFO     Converting to json
+2024-03-14 23:53:32,976 INFO     Writing to coredms
+2024-03-14 23:53:33,419 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv
+2024-03-14 23:53:34,851 INFO     Dropped 8 empty columns
+2024-03-14 23:53:34,851 INFO     Dropped columns: {'Trip Start Timestamp', 'Payment Type', 'Trip Miles', 'Tips', 'Trip ID', 'Fare', 'Extras', 'Trip Total'}
+2024-03-14 23:53:34,852 INFO     15 columns remaining
+2024-03-14 23:53:34,853 INFO     Converting to json
+2024-03-14 23:53:34,890 INFO     Writing to coredms
+2024-03-14 23:53:36,196 INFO     Dropped 8 empty columns
+2024-03-14 23:53:36,197 INFO     Dropped columns: {'Fare', 'Trip Miles', 'Extras', 'Trip Total', 'Trip Start Timestamp', 'Tips', 'Payment Type', 'Trip ID'}
+2024-03-14 23:53:36,197 INFO     15 columns remaining
+2024-03-14 23:53:36,198 INFO     Converting to json
+2024-03-14 23:53:36,235 INFO     Writing to coredms
+2024-03-14 23:53:58,124 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:53:59,172 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:53:59,352 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:54:00,748 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv for tenant1
+2024-03-14 23:54:00,862 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:54:00,953 INFO     Dropped 8 empty columns
+2024-03-14 23:54:00,953 INFO     Dropped columns: {'Trip Total', 'Trip Start Timestamp', 'Trip ID', 'Fare', 'Trip Miles', 'Extras', 'Tips', 'Payment Type'}
+2024-03-14 23:54:00,954 INFO     15 columns remaining
+2024-03-14 23:54:00,954 INFO     Converting to json
+2024-03-14 23:54:00,978 INFO     Writing to coredms
+2024-03-14 23:54:01,974 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv for tenant1
+2024-03-14 23:54:02,910 INFO     Dropped 8 empty columns
+2024-03-14 23:54:02,911 INFO     Dropped columns: {'Trip ID', 'Payment Type', 'Fare', 'Trip Total', 'Tips', 'Trip Start Timestamp', 'Trip Miles', 'Extras'}
+2024-03-14 23:54:02,912 INFO     15 columns remaining
+2024-03-14 23:54:02,912 INFO     Converting to json
+2024-03-14 23:54:02,955 INFO     Writing to coredms
+2024-03-14 23:54:03,224 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv
+2024-03-14 23:54:03,365 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv for tenant1
+2024-03-14 23:54:04,792 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv for tenant1
+2024-03-14 23:54:04,847 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv
+2024-03-14 23:54:06,222 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv for tenant1
+2024-03-14 23:54:06,248 INFO     Dropped 8 empty columns
+2024-03-14 23:54:06,249 INFO     Dropped columns: {'Trip ID', 'Fare', 'Trip Total', 'Tips', 'Trip Start Timestamp', 'Payment Type', 'Extras', 'Trip Miles'}
+2024-03-14 23:54:06,250 INFO     15 columns remaining
+2024-03-14 23:54:06,251 INFO     Converting to json
+2024-03-14 23:54:06,311 INFO     Writing to coredms
+2024-03-14 23:54:07,171 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv
+2024-03-14 23:54:07,855 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv for tenant1
+2024-03-14 23:54:08,572 INFO     Dropped 8 empty columns
+2024-03-14 23:54:08,574 INFO     Dropped columns: {'Tips', 'Extras', 'Trip ID', 'Trip Start Timestamp', 'Fare', 'Trip Miles', 'Payment Type', 'Trip Total'}
+2024-03-14 23:54:08,576 INFO     15 columns remaining
+2024-03-14 23:54:08,581 INFO     Converting to json
+2024-03-14 23:54:08,653 INFO     Writing to coredms
+2024-03-14 23:54:09,433 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv
+2024-03-14 23:54:10,044 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv for tenant1
+2024-03-14 23:54:11,473 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv
+2024-03-14 23:54:11,799 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv for tenant1
+2024-03-14 23:54:11,805 INFO     Dropped 8 empty columns
+2024-03-14 23:54:11,814 INFO     Dropped columns: {'Extras', 'Trip Miles', 'Trip ID', 'Fare', 'Trip Start Timestamp', 'Tips', 'Trip Total', 'Payment Type'}
+2024-03-14 23:54:11,832 INFO     15 columns remaining
+2024-03-14 23:54:11,842 INFO     Converting to json
+2024-03-14 23:54:11,977 INFO     Writing to coredms
+2024-03-14 23:54:13,512 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv for tenant1
+2024-03-14 23:54:13,925 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv
+2024-03-14 23:54:14,399 INFO     Dropped 8 empty columns
+2024-03-14 23:54:14,409 INFO     Dropped columns: {'Extras', 'Payment Type', 'Fare', 'Trip Miles', 'Trip ID', 'Trip Start Timestamp', 'Trip Total', 'Tips'}
+2024-03-14 23:54:14,410 INFO     15 columns remaining
+2024-03-14 23:54:14,411 INFO     Converting to json
+2024-03-14 23:54:14,557 INFO     Writing to coredms
+2024-03-14 23:54:15,121 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv for tenant1
+2024-03-14 23:54:16,269 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv
+2024-03-14 23:54:16,765 INFO     Dropped 8 empty columns
+2024-03-14 23:54:16,774 INFO     Dropped columns: {'Trip Start Timestamp', 'Extras', 'Fare', 'Tips', 'Payment Type', 'Trip ID', 'Trip Total', 'Trip Miles'}
+2024-03-14 23:54:16,776 INFO     15 columns remaining
+2024-03-14 23:54:16,776 INFO     Converting to json
+2024-03-14 23:54:16,854 INFO     Writing to coredms
+2024-03-14 23:54:19,015 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv
+2024-03-14 23:54:19,403 INFO     Dropped 8 empty columns
+2024-03-14 23:54:19,408 INFO     Dropped columns: {'Extras', 'Payment Type', 'Trip Start Timestamp', 'Trip Miles', 'Trip ID', 'Fare', 'Tips', 'Trip Total'}
+2024-03-14 23:54:19,409 INFO     15 columns remaining
+2024-03-14 23:54:19,410 INFO     Converting to json
+2024-03-14 23:54:19,524 INFO     Writing to coredms
+2024-03-14 23:54:21,206 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv
+2024-03-14 23:54:22,014 INFO     Dropped 8 empty columns
+2024-03-14 23:54:22,021 INFO     Dropped columns: {'Payment Type', 'Extras', 'Trip Start Timestamp', 'Trip ID', 'Tips', 'Fare', 'Trip Total', 'Trip Miles'}
+2024-03-14 23:54:22,023 INFO     15 columns remaining
+2024-03-14 23:54:22,024 INFO     Converting to json
+2024-03-14 23:54:22,164 INFO     Writing to coredms
+2024-03-14 23:54:22,732 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv
+2024-03-14 23:54:25,351 INFO     Dropped 8 empty columns
+2024-03-14 23:54:25,352 INFO     Dropped columns: {'Trip Start Timestamp', 'Fare', 'Trip Miles', 'Extras', 'Payment Type', 'Tips', 'Trip ID', 'Trip Total'}
+2024-03-14 23:54:25,353 INFO     15 columns remaining
+2024-03-14 23:54:25,354 INFO     Converting to json
+2024-03-14 23:54:25,472 INFO     Writing to coredms
+2024-03-14 23:54:27,324 INFO     Dropped 8 empty columns
+2024-03-14 23:54:27,327 INFO     Dropped columns: {'Fare', 'Trip ID', 'Trip Start Timestamp', 'Payment Type', 'Tips', 'Trip Total', 'Extras', 'Trip Miles'}
+2024-03-14 23:54:27,328 INFO     15 columns remaining
+2024-03-14 23:54:27,329 INFO     Converting to json
+2024-03-14 23:54:27,472 INFO     Writing to coredms
+2024-03-14 23:54:29,617 INFO     Dropped 8 empty columns
+2024-03-14 23:54:29,624 INFO     Dropped columns: {'Trip Miles', 'Tips', 'Extras', 'Trip ID', 'Payment Type', 'Trip Total', 'Fare', 'Trip Start Timestamp'}
+2024-03-14 23:54:29,633 INFO     15 columns remaining
+2024-03-14 23:54:29,648 INFO     Converting to json
+2024-03-14 23:54:29,782 INFO     Writing to coredms
+2024-03-14 23:55:17,257 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:55:18,795 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:55:19,961 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv for tenant1
+2024-03-14 23:55:20,899 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:55:21,467 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv for tenant1
+2024-03-14 23:55:23,371 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv for tenant1
+2024-03-14 23:55:23,550 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:55:25,656 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv for tenant1
+2024-03-14 23:55:25,809 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv
+2024-03-14 23:55:26,221 INFO     Dropped 8 empty columns
+2024-03-14 23:55:26,222 INFO     Dropped columns: {'Trip Miles', 'Tips', 'Trip Total', 'Extras', 'Payment Type', 'Fare', 'Trip Start Timestamp', 'Trip ID'}
+2024-03-14 23:55:26,238 INFO     15 columns remaining
+2024-03-14 23:55:26,239 INFO     Converting to json
+2024-03-14 23:55:26,403 INFO     Writing to coredms
+2024-03-14 23:55:27,587 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv
+2024-03-14 23:55:27,776 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv for tenant1
+2024-03-14 23:55:28,979 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv for tenant1
+2024-03-14 23:55:29,232 INFO     Dropped 8 empty columns
+2024-03-14 23:55:29,244 INFO     Dropped columns: {'Payment Type', 'Trip Total', 'Trip Start Timestamp', 'Fare', 'Trip Miles', 'Trip ID', 'Tips', 'Extras'}
+2024-03-14 23:55:29,254 INFO     15 columns remaining
+2024-03-14 23:55:29,259 INFO     Converting to json
+2024-03-14 23:55:29,347 INFO     Writing to coredms
+2024-03-14 23:55:30,440 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv
+2024-03-14 23:55:31,150 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv for tenant1
+2024-03-14 23:55:31,306 INFO     Dropped 8 empty columns
+2024-03-14 23:55:31,309 INFO     Dropped columns: {'Fare', 'Trip Total', 'Trip ID', 'Extras', 'Trip Miles', 'Payment Type', 'Tips', 'Trip Start Timestamp'}
+2024-03-14 23:55:31,312 INFO     15 columns remaining
+2024-03-14 23:55:31,313 INFO     Converting to json
+2024-03-14 23:55:31,403 INFO     Writing to coredms
+2024-03-14 23:55:32,669 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv for tenant1
+2024-03-14 23:55:33,155 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv for tenant1
+2024-03-14 23:55:33,176 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv
+2024-03-14 23:55:33,953 INFO     Dropped 8 empty columns
+2024-03-14 23:55:33,962 INFO     Dropped columns: {'Trip ID', 'Payment Type', 'Tips', 'Extras', 'Fare', 'Trip Total', 'Trip Start Timestamp', 'Trip Miles'}
+2024-03-14 23:55:33,967 INFO     15 columns remaining
+2024-03-14 23:55:33,970 INFO     Converting to json
+2024-03-14 23:55:34,046 INFO     Writing to coredms
+2024-03-14 23:55:35,260 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv for tenant1
+2024-03-14 23:55:35,920 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv
+2024-03-14 23:55:36,379 INFO     Dropped 8 empty columns
+2024-03-14 23:55:36,394 INFO     Dropped columns: {'Trip Total', 'Trip ID', 'Trip Start Timestamp', 'Extras', 'Payment Type', 'Trip Miles', 'Fare', 'Tips'}
+2024-03-14 23:55:36,401 INFO     15 columns remaining
+2024-03-14 23:55:36,405 INFO     Converting to json
+2024-03-14 23:55:36,549 INFO     Writing to coredms
+2024-03-14 23:55:36,677 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv
+2024-03-14 23:55:38,696 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv
+2024-03-14 23:55:39,299 INFO     Dropped 8 empty columns
+2024-03-14 23:55:39,343 INFO     Dropped columns: {'Payment Type', 'Tips', 'Trip Miles', 'Extras', 'Trip Total', 'Trip Start Timestamp', 'Trip ID', 'Fare'}
+2024-03-14 23:55:39,362 INFO     15 columns remaining
+2024-03-14 23:55:39,381 INFO     Converting to json
+2024-03-14 23:55:39,504 INFO     Writing to coredms
+2024-03-14 23:55:40,467 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv
+2024-03-14 23:55:40,740 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv
+2024-03-14 23:55:41,769 INFO     Dropped 8 empty columns
+2024-03-14 23:55:41,776 INFO     Dropped columns: {'Trip Total', 'Tips', 'Payment Type', 'Trip Start Timestamp', 'Fare', 'Trip Miles', 'Trip ID', 'Extras'}
+2024-03-14 23:55:41,788 INFO     15 columns remaining
+2024-03-14 23:55:41,804 INFO     Converting to json
+2024-03-14 23:55:41,900 INFO     Writing to coredms
+2024-03-14 23:55:42,406 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv
+2024-03-14 23:55:42,434 INFO     Dropped 8 empty columns
+2024-03-14 23:55:42,438 INFO     Dropped columns: {'Trip Start Timestamp', 'Tips', 'Trip ID', 'Trip Miles', 'Fare', 'Trip Total', 'Payment Type', 'Extras'}
+2024-03-14 23:55:42,439 INFO     15 columns remaining
+2024-03-14 23:55:42,441 INFO     Converting to json
+2024-03-14 23:55:42,526 INFO     Writing to coredms
+2024-03-14 23:55:44,066 INFO     Dropped 8 empty columns
+2024-03-14 23:55:44,076 INFO     Dropped columns: {'Payment Type', 'Extras', 'Trip Miles', 'Trip Start Timestamp', 'Tips', 'Trip ID', 'Trip Total', 'Fare'}
+2024-03-14 23:55:44,081 INFO     15 columns remaining
+2024-03-14 23:55:44,097 INFO     Converting to json
+2024-03-14 23:55:44,178 INFO     Writing to coredms
+2024-03-14 23:55:45,985 INFO     Dropped 8 empty columns
+2024-03-14 23:55:45,998 INFO     Dropped columns: {'Trip Total', 'Trip ID', 'Payment Type', 'Trip Miles', 'Trip Start Timestamp', 'Fare', 'Tips', 'Extras'}
+2024-03-14 23:55:46,018 INFO     15 columns remaining
+2024-03-14 23:55:46,029 INFO     Converting to json
+2024-03-14 23:55:46,108 INFO     Writing to coredms
+2024-03-14 23:55:46,108 INFO     Dropped 8 empty columns
+2024-03-14 23:55:46,114 INFO     Dropped columns: {'Fare', 'Trip Start Timestamp', 'Trip Total', 'Tips', 'Payment Type', 'Trip ID', 'Extras', 'Trip Miles'}
+2024-03-14 23:55:46,115 INFO     15 columns remaining
+2024-03-14 23:55:46,116 INFO     Converting to json
+2024-03-14 23:55:46,187 INFO     Writing to coredms
+2024-03-14 23:55:47,499 INFO     Dropped 8 empty columns
+2024-03-14 23:55:47,503 INFO     Dropped columns: {'Trip Miles', 'Trip Total', 'Payment Type', 'Trip ID', 'Extras', 'Tips', 'Trip Start Timestamp', 'Fare'}
+2024-03-14 23:55:47,507 INFO     15 columns remaining
+2024-03-14 23:55:47,510 INFO     Converting to json
+2024-03-14 23:55:47,584 INFO     Writing to coredms
+2024-03-14 23:56:02,291 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-12.csv for tenant1
+2024-03-14 23:56:05,308 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-12.csv
+2024-03-14 23:56:07,505 INFO     Dropped 8 empty columns
+2024-03-14 23:56:07,505 INFO     Dropped columns: {'Payment Type', 'Trip Total', 'Fare', 'Trip ID', 'Tips', 'Trip Miles', 'Extras', 'Trip Start Timestamp'}
+2024-03-14 23:56:07,506 INFO     15 columns remaining
+2024-03-14 23:56:07,506 INFO     Converting to json
+2024-03-14 23:56:07,567 INFO     Writing to coredms
+2024-03-14 23:56:11,347 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-13.csv for tenant1
+2024-03-14 23:56:14,833 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-13.csv
+2024-03-14 23:56:15,634 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-15.csv for tenant1
+2024-03-14 23:56:15,646 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-14.csv for tenant1
+2024-03-14 23:56:17,696 INFO     Dropped 8 empty columns
+2024-03-14 23:56:17,696 INFO     Dropped columns: {'Trip Total', 'Trip Miles', 'Trip ID', 'Payment Type', 'Trip Start Timestamp', 'Tips', 'Fare', 'Extras'}
+2024-03-14 23:56:17,697 INFO     15 columns remaining
+2024-03-14 23:56:17,697 INFO     Converting to json
+2024-03-14 23:56:17,746 INFO     Writing to coredms
+2024-03-14 23:56:18,948 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-14.csv
+2024-03-14 23:56:19,020 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-15.csv
+2024-03-14 23:56:21,387 INFO     Dropped 8 empty columns
+2024-03-14 23:56:21,388 INFO     Dropped columns: {'Tips', 'Payment Type', 'Trip Miles', 'Trip Total', 'Trip ID', 'Extras', 'Fare', 'Trip Start Timestamp'}
+2024-03-14 23:56:21,388 INFO     15 columns remaining
+2024-03-14 23:56:21,388 INFO     Converting to json
+2024-03-14 23:56:21,417 INFO     Writing to coredms
+2024-03-14 23:56:21,522 INFO     Dropped 8 empty columns
+2024-03-14 23:56:21,522 INFO     Dropped columns: {'Fare', 'Trip Start Timestamp', 'Trip Miles', 'Tips', 'Trip Total', 'Trip ID', 'Extras', 'Payment Type'}
+2024-03-14 23:56:21,523 INFO     15 columns remaining
+2024-03-14 23:56:21,523 INFO     Converting to json
+2024-03-14 23:56:21,557 INFO     Writing to coredms
+2024-03-14 23:56:40,199 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:56:41,269 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:56:41,789 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:56:42,320 INFO     Dropped 8 empty columns
+2024-03-14 23:56:42,320 INFO     Dropped columns: {'Tips', 'Trip Start Timestamp', 'Trip ID', 'Fare', 'Payment Type', 'Trip Total', 'Extras', 'Trip Miles'}
+2024-03-14 23:56:42,321 INFO     15 columns remaining
+2024-03-14 23:56:42,321 INFO     Converting to json
+2024-03-14 23:56:42,336 INFO     Writing to coredms
+2024-03-14 23:56:43,061 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv for tenant1
+2024-03-14 23:56:43,201 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:56:44,277 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv for tenant1
+2024-03-14 23:56:44,628 INFO     Dropped 8 empty columns
+2024-03-14 23:56:44,628 INFO     Dropped columns: {'Extras', 'Tips', 'Payment Type', 'Trip Total', 'Fare', 'Trip Start Timestamp', 'Trip Miles', 'Trip ID'}
+2024-03-14 23:56:44,629 INFO     15 columns remaining
+2024-03-14 23:56:44,629 INFO     Converting to json
+2024-03-14 23:56:44,648 INFO     Writing to coredms
+2024-03-14 23:56:44,662 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv
+2024-03-14 23:56:45,351 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv for tenant1
+2024-03-14 23:56:46,249 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv
+2024-03-14 23:56:46,498 INFO     Dropped 8 empty columns
+2024-03-14 23:56:46,499 INFO     Dropped columns: {'Tips', 'Trip Start Timestamp', 'Fare', 'Payment Type', 'Trip Total', 'Trip ID', 'Extras', 'Trip Miles'}
+2024-03-14 23:56:46,499 INFO     15 columns remaining
+2024-03-14 23:56:46,500 INFO     Converting to json
+2024-03-14 23:56:46,525 INFO     Writing to coredms
+2024-03-14 23:56:46,738 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv for tenant1
+2024-03-14 23:56:47,745 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv
+2024-03-14 23:56:48,158 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv for tenant1
+2024-03-14 23:56:48,531 INFO     Dropped 8 empty columns
+2024-03-14 23:56:48,531 INFO     Dropped columns: {'Fare', 'Tips', 'Trip Miles', 'Trip ID', 'Payment Type', 'Trip Start Timestamp', 'Extras', 'Trip Total'}
+2024-03-14 23:56:48,532 INFO     15 columns remaining
+2024-03-14 23:56:48,532 INFO     Converting to json
+2024-03-14 23:56:48,568 INFO     Writing to coredms
+2024-03-14 23:56:49,324 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv for tenant1
+2024-03-14 23:56:49,458 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv
+2024-03-14 23:56:50,342 INFO     Dropped 8 empty columns
+2024-03-14 23:56:50,343 INFO     Dropped columns: {'Extras', 'Trip Miles', 'Trip ID', 'Payment Type', 'Trip Total', 'Tips', 'Fare', 'Trip Start Timestamp'}
+2024-03-14 23:56:50,343 INFO     15 columns remaining
+2024-03-14 23:56:50,343 INFO     Converting to json
+2024-03-14 23:56:50,386 INFO     Writing to coredms
+2024-03-14 23:56:50,522 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv for tenant1
+2024-03-14 23:56:51,231 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv
+2024-03-14 23:56:51,994 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv for tenant1
+2024-03-14 23:56:52,330 INFO     Dropped 8 empty columns
+2024-03-14 23:56:52,332 INFO     Dropped columns: {'Extras', 'Fare', 'Trip Total', 'Trip Start Timestamp', 'Trip ID', 'Trip Miles', 'Payment Type', 'Tips'}
+2024-03-14 23:56:52,333 INFO     15 columns remaining
+2024-03-14 23:56:52,333 INFO     Converting to json
+2024-03-14 23:56:52,386 INFO     Writing to coredms
+2024-03-14 23:56:52,724 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv
+2024-03-14 23:56:53,307 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv for tenant1
+2024-03-14 23:56:54,061 INFO     Dropped 8 empty columns
+2024-03-14 23:56:54,064 INFO     Dropped columns: {'Extras', 'Payment Type', 'Trip ID', 'Trip Start Timestamp', 'Fare', 'Trip Total', 'Tips', 'Trip Miles'}
+2024-03-14 23:56:54,065 INFO     15 columns remaining
+2024-03-14 23:56:54,067 INFO     Converting to json
+2024-03-14 23:56:54,101 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv
+2024-03-14 23:56:54,112 INFO     Writing to coredms
+2024-03-14 23:56:54,212 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv for tenant1
+2024-03-14 23:56:55,449 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv
+2024-03-14 23:56:55,564 INFO     Dropped 8 empty columns
+2024-03-14 23:56:55,565 INFO     Dropped columns: {'Trip Miles', 'Trip Total', 'Trip Start Timestamp', 'Fare', 'Trip ID', 'Tips', 'Extras', 'Payment Type'}
+2024-03-14 23:56:55,566 INFO     15 columns remaining
+2024-03-14 23:56:55,567 INFO     Converting to json
+2024-03-14 23:56:55,614 INFO     Writing to coredms
+2024-03-14 23:56:56,794 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv
+2024-03-14 23:56:56,907 INFO     Dropped 8 empty columns
+2024-03-14 23:56:56,908 INFO     Dropped columns: {'Tips', 'Trip Miles', 'Trip ID', 'Fare', 'Trip Total', 'Payment Type', 'Extras', 'Trip Start Timestamp'}
+2024-03-14 23:56:56,915 INFO     15 columns remaining
+2024-03-14 23:56:56,915 INFO     Converting to json
+2024-03-14 23:56:56,950 INFO     Writing to coredms
+2024-03-14 23:56:57,459 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-12.csv for tenant1
+2024-03-14 23:56:57,636 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv
+2024-03-14 23:56:58,299 INFO     Dropped 8 empty columns
+2024-03-14 23:56:58,300 INFO     Dropped columns: {'Tips', 'Fare', 'Trip Total', 'Trip ID', 'Extras', 'Trip Start Timestamp', 'Payment Type', 'Trip Miles'}
+2024-03-14 23:56:58,300 INFO     15 columns remaining
+2024-03-14 23:56:58,301 INFO     Converting to json
+2024-03-14 23:56:58,337 INFO     Writing to coredms
+2024-03-14 23:56:59,582 INFO     Dropped 8 empty columns
+2024-03-14 23:56:59,583 INFO     Dropped columns: {'Trip Total', 'Tips', 'Payment Type', 'Fare', 'Trip Start Timestamp', 'Trip Miles', 'Extras', 'Trip ID'}
+2024-03-14 23:56:59,583 INFO     15 columns remaining
+2024-03-14 23:56:59,584 INFO     Converting to json
+2024-03-14 23:56:59,643 INFO     Writing to coredms
+2024-03-14 23:57:00,561 INFO     Dropped 8 empty columns
+2024-03-14 23:57:00,562 INFO     Dropped columns: {'Trip Miles', 'Trip ID', 'Tips', 'Fare', 'Trip Total', 'Trip Start Timestamp', 'Extras', 'Payment Type'}
+2024-03-14 23:57:00,562 INFO     15 columns remaining
+2024-03-14 23:57:00,562 INFO     Converting to json
+2024-03-14 23:57:00,608 INFO     Writing to coredms
+2024-03-14 23:57:00,859 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-12.csv
+2024-03-14 23:57:03,439 INFO     Dropped 8 empty columns
+2024-03-14 23:57:03,440 INFO     Dropped columns: {'Trip ID', 'Fare', 'Payment Type', 'Trip Miles', 'Trip Total', 'Trip Start Timestamp', 'Tips', 'Extras'}
+2024-03-14 23:57:03,440 INFO     15 columns remaining
+2024-03-14 23:57:03,440 INFO     Converting to json
+2024-03-14 23:57:03,476 INFO     Writing to coredms
+2024-03-14 23:57:04,528 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-13.csv for tenant1
+2024-03-14 23:57:05,931 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-14.csv for tenant1
+2024-03-14 23:57:07,639 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-13.csv
+2024-03-14 23:57:08,305 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-15.csv for tenant1
+2024-03-14 23:57:09,032 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-14.csv
+2024-03-14 23:57:10,183 INFO     Dropped 8 empty columns
+2024-03-14 23:57:10,184 INFO     Dropped columns: {'Trip ID', 'Trip Total', 'Trip Miles', 'Trip Start Timestamp', 'Fare', 'Payment Type', 'Extras', 'Tips'}
+2024-03-14 23:57:10,184 INFO     15 columns remaining
+2024-03-14 23:57:10,184 INFO     Converting to json
+2024-03-14 23:57:10,222 INFO     Writing to coredms
+2024-03-14 23:57:11,397 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-15.csv
+2024-03-14 23:57:11,600 INFO     Dropped 8 empty columns
+2024-03-14 23:57:11,601 INFO     Dropped columns: {'Payment Type', 'Tips', 'Trip Total', 'Extras', 'Trip ID', 'Trip Start Timestamp', 'Trip Miles', 'Fare'}
+2024-03-14 23:57:11,602 INFO     15 columns remaining
+2024-03-14 23:57:11,605 INFO     Converting to json
+2024-03-14 23:57:11,644 INFO     Writing to coredms
+2024-03-14 23:57:12,534 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-16.csv for tenant1
+2024-03-14 23:57:13,700 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-17.csv for tenant1
+2024-03-14 23:57:14,035 INFO     Dropped 8 empty columns
+2024-03-14 23:57:14,035 INFO     Dropped columns: {'Trip Start Timestamp', 'Fare', 'Extras', 'Tips', 'Trip Miles', 'Payment Type', 'Trip ID', 'Trip Total'}
+2024-03-14 23:57:14,036 INFO     15 columns remaining
+2024-03-14 23:57:14,036 INFO     Converting to json
+2024-03-14 23:57:14,068 INFO     Writing to coredms
+2024-03-14 23:57:14,471 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-18.csv for tenant1
+2024-03-14 23:57:15,666 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-16.csv
+2024-03-14 23:57:16,886 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-17.csv
+2024-03-14 23:57:17,771 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-19.csv for tenant1
+2024-03-14 23:57:17,851 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-18.csv
+2024-03-14 23:57:18,443 INFO     Dropped 8 empty columns
+2024-03-14 23:57:18,443 INFO     Dropped columns: {'Tips', 'Trip Miles', 'Trip ID', 'Trip Total', 'Trip Start Timestamp', 'Extras', 'Payment Type', 'Fare'}
+2024-03-14 23:57:18,444 INFO     15 columns remaining
+2024-03-14 23:57:18,444 INFO     Converting to json
+2024-03-14 23:57:18,479 INFO     Writing to coredms
+2024-03-14 23:57:19,552 INFO     Dropped 8 empty columns
+2024-03-14 23:57:19,553 INFO     Dropped columns: {'Trip Total', 'Tips', 'Trip Start Timestamp', 'Fare', 'Trip Miles', 'Payment Type', 'Extras', 'Trip ID'}
+2024-03-14 23:57:19,553 INFO     15 columns remaining
+2024-03-14 23:57:19,553 INFO     Converting to json
+2024-03-14 23:57:19,587 INFO     Writing to coredms
+2024-03-14 23:57:20,458 INFO     Dropped 8 empty columns
+2024-03-14 23:57:20,458 INFO     Dropped columns: {'Fare', 'Trip Start Timestamp', 'Extras', 'Trip Miles', 'Trip ID', 'Payment Type', 'Trip Total', 'Tips'}
+2024-03-14 23:57:20,458 INFO     15 columns remaining
+2024-03-14 23:57:20,459 INFO     Converting to json
+2024-03-14 23:57:20,496 INFO     Writing to coredms
+2024-03-14 23:57:20,849 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-19.csv
+2024-03-14 23:57:23,154 INFO     Dropped 8 empty columns
+2024-03-14 23:57:23,155 INFO     Dropped columns: {'Fare', 'Trip Start Timestamp', 'Trip Miles', 'Tips', 'Trip Total', 'Payment Type', 'Extras', 'Trip ID'}
+2024-03-14 23:57:23,155 INFO     15 columns remaining
+2024-03-14 23:57:23,156 INFO     Converting to json
+2024-03-14 23:57:23,190 INFO     Writing to coredms
+2024-03-14 23:57:42,133 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv for tenant1
+2024-03-14 23:57:43,197 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv
+2024-03-14 23:57:43,570 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv for tenant1
+2024-03-14 23:57:44,329 INFO     Dropped 8 empty columns
+2024-03-14 23:57:44,330 INFO     Dropped columns: {'Trip Miles', 'Trip Start Timestamp', 'Trip ID', 'Fare', 'Tips', 'Trip Total', 'Extras', 'Payment Type'}
+2024-03-14 23:57:44,330 INFO     15 columns remaining
+2024-03-14 23:57:44,331 INFO     Converting to json
+2024-03-14 23:57:44,348 INFO     Writing to coredms
+2024-03-14 23:57:45,197 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv for tenant1
+2024-03-14 23:57:45,235 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv
+2024-03-14 23:57:46,538 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv for tenant1
+2024-03-14 23:57:47,210 INFO     Dropped 8 empty columns
+2024-03-14 23:57:47,211 INFO     Dropped columns: {'Trip Miles', 'Trip Start Timestamp', 'Payment Type', 'Tips', 'Trip ID', 'Extras', 'Fare', 'Trip Total'}
+2024-03-14 23:57:47,211 INFO     15 columns remaining
+2024-03-14 23:57:47,211 INFO     Converting to json
+2024-03-14 23:57:47,237 INFO     Writing to coredms
+2024-03-14 23:57:47,460 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv
+2024-03-14 23:57:47,694 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv for tenant1
+2024-03-14 23:57:49,009 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv for tenant1
+2024-03-14 23:57:49,092 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv
+2024-03-14 23:57:50,004 INFO     Dropped 8 empty columns
+2024-03-14 23:57:50,005 INFO     Dropped columns: {'Tips', 'Fare', 'Trip Start Timestamp', 'Trip ID', 'Trip Miles', 'Trip Total', 'Extras', 'Payment Type'}
+2024-03-14 23:57:50,005 INFO     15 columns remaining
+2024-03-14 23:57:50,005 INFO     Converting to json
+2024-03-14 23:57:50,050 INFO     Writing to coredms
+2024-03-14 23:57:50,341 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv for tenant1
+2024-03-14 23:57:50,834 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv
+2024-03-14 23:57:51,566 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv for tenant1
+2024-03-14 23:57:51,856 INFO     Dropped 8 empty columns
+2024-03-14 23:57:51,858 INFO     Dropped columns: {'Extras', 'Payment Type', 'Tips', 'Trip Miles', 'Trip Start Timestamp', 'Trip ID', 'Trip Total', 'Fare'}
+2024-03-14 23:57:51,859 INFO     15 columns remaining
+2024-03-14 23:57:51,860 INFO     Converting to json
+2024-03-14 23:57:51,904 INFO     Writing to coredms
+2024-03-14 23:57:52,299 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv
+2024-03-14 23:57:52,749 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv for tenant1
+2024-03-14 23:57:53,949 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv
+2024-03-14 23:57:54,018 INFO     Dropped 8 empty columns
+2024-03-14 23:57:54,019 INFO     Dropped columns: {'Trip ID', 'Tips', 'Trip Start Timestamp', 'Extras', 'Fare', 'Payment Type', 'Trip Total', 'Trip Miles'}
+2024-03-14 23:57:54,021 INFO     15 columns remaining
+2024-03-14 23:57:54,023 INFO     Converting to json
+2024-03-14 23:57:54,074 INFO     Writing to coredms
+2024-03-14 23:57:54,253 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv for tenant1
+2024-03-14 23:57:55,398 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv
+2024-03-14 23:57:55,533 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv for tenant1
+2024-03-14 23:57:55,652 INFO     Dropped 8 empty columns
+2024-03-14 23:57:55,653 INFO     Dropped columns: {'Fare', 'Trip Total', 'Trip Start Timestamp', 'Trip Miles', 'Tips', 'Trip ID', 'Payment Type', 'Extras'}
+2024-03-14 23:57:55,654 INFO     15 columns remaining
+2024-03-14 23:57:55,654 INFO     Converting to json
+2024-03-14 23:57:55,700 INFO     Writing to coredms
+2024-03-14 23:57:56,746 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv
+2024-03-14 23:57:56,855 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv for tenant1
+2024-03-14 23:57:57,393 INFO     Dropped 8 empty columns
+2024-03-14 23:57:57,393 INFO     Dropped columns: {'Extras', 'Fare', 'Trip Total', 'Trip ID', 'Trip Miles', 'Payment Type', 'Trip Start Timestamp', 'Tips'}
+2024-03-14 23:57:57,394 INFO     15 columns remaining
+2024-03-14 23:57:57,395 INFO     Converting to json
+2024-03-14 23:57:57,442 INFO     Writing to coredms
+2024-03-14 23:57:58,481 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv
+2024-03-14 23:57:58,902 INFO     Dropped 8 empty columns
+2024-03-14 23:57:58,910 INFO     Dropped columns: {'Fare', 'Extras', 'Payment Type', 'Trip ID', 'Trip Miles', 'Tips', 'Trip Total', 'Trip Start Timestamp'}
+2024-03-14 23:57:58,917 INFO     15 columns remaining
+2024-03-14 23:57:58,919 INFO     Converting to json
+2024-03-14 23:57:58,978 INFO     Writing to coredms
+2024-03-14 23:57:59,992 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv
+2024-03-14 23:58:00,327 INFO     Dropped 8 empty columns
+2024-03-14 23:58:00,328 INFO     Dropped columns: {'Payment Type', 'Trip Start Timestamp', 'Tips', 'Fare', 'Trip Miles', 'Trip ID', 'Extras', 'Trip Total'}
+2024-03-14 23:58:00,336 INFO     15 columns remaining
+2024-03-14 23:58:00,338 INFO     Converting to json
+2024-03-14 23:58:00,403 INFO     Writing to coredms
+2024-03-14 23:58:01,646 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv
+2024-03-14 23:58:02,059 INFO     Dropped 8 empty columns
+2024-03-14 23:58:02,061 INFO     Dropped columns: {'Trip ID', 'Payment Type', 'Trip Total', 'Tips', 'Trip Start Timestamp', 'Trip Miles', 'Fare', 'Extras'}
+2024-03-14 23:58:02,061 INFO     15 columns remaining
+2024-03-14 23:58:02,062 INFO     Converting to json
+2024-03-14 23:58:02,112 INFO     Writing to coredms
+2024-03-14 23:58:03,530 INFO     Dropped 8 empty columns
+2024-03-14 23:58:03,531 INFO     Dropped columns: {'Fare', 'Tips', 'Trip Miles', 'Trip ID', 'Trip Start Timestamp', 'Trip Total', 'Extras', 'Payment Type'}
+2024-03-14 23:58:03,532 INFO     15 columns remaining
+2024-03-14 23:58:03,532 INFO     Converting to json
+2024-03-14 23:58:03,534 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-12.csv for tenant1
+2024-03-14 23:58:03,585 INFO     Writing to coredms
+2024-03-14 23:58:05,191 INFO     Dropped 8 empty columns
+2024-03-14 23:58:05,193 INFO     Dropped columns: {'Trip Miles', 'Extras', 'Trip Total', 'Tips', 'Fare', 'Trip ID', 'Payment Type', 'Trip Start Timestamp'}
+2024-03-14 23:58:05,193 INFO     15 columns remaining
+2024-03-14 23:58:05,194 INFO     Converting to json
+2024-03-14 23:58:05,242 INFO     Writing to coredms
+2024-03-14 23:58:08,315 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-12.csv
+2024-03-14 23:58:10,717 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-13.csv for tenant1
+2024-03-14 23:58:12,216 INFO     Dropped 8 empty columns
+2024-03-14 23:58:12,217 INFO     Dropped columns: {'Trip ID', 'Payment Type', 'Tips', 'Extras', 'Trip Total', 'Trip Start Timestamp', 'Fare', 'Trip Miles'}
+2024-03-14 23:58:12,218 INFO     15 columns remaining
+2024-03-14 23:58:12,219 INFO     Converting to json
+2024-03-14 23:58:12,284 INFO     Writing to coredms
+2024-03-14 23:58:15,634 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-13.csv
+2024-03-14 23:58:17,704 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-14.csv for tenant1
+2024-03-14 23:58:19,634 INFO     Dropped 8 empty columns
+2024-03-14 23:58:19,635 INFO     Dropped columns: {'Extras', 'Trip Start Timestamp', 'Payment Type', 'Trip Miles', 'Trip ID', 'Fare', 'Tips', 'Trip Total'}
+2024-03-14 23:58:19,635 INFO     15 columns remaining
+2024-03-14 23:58:19,636 INFO     Converting to json
+2024-03-14 23:58:19,694 INFO     Writing to coredms
+2024-03-14 23:58:20,548 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-15.csv for tenant1
+2024-03-14 23:58:21,468 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-16.csv for tenant1
+2024-03-14 23:58:23,098 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-14.csv
+2024-03-14 23:58:26,749 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-15.csv
+2024-03-14 23:58:28,143 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-16.csv
+2024-03-14 23:58:28,322 INFO     Dropped 8 empty columns
+2024-03-14 23:58:28,333 INFO     Dropped columns: {'Fare', 'Tips', 'Extras', 'Trip Total', 'Trip ID', 'Payment Type', 'Trip Miles', 'Trip Start Timestamp'}
+2024-03-14 23:58:28,335 INFO     15 columns remaining
+2024-03-14 23:58:28,335 INFO     Converting to json
+2024-03-14 23:58:28,442 INFO     Writing to coredms
+2024-03-14 23:58:28,892 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-17.csv for tenant1
+2024-03-14 23:58:29,878 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-18.csv for tenant1
+2024-03-14 23:58:30,626 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-19.csv for tenant1
+2024-03-14 23:58:32,011 INFO     Dropped 8 empty columns
+2024-03-14 23:58:32,017 INFO     Dropped columns: {'Trip Start Timestamp', 'Tips', 'Fare', 'Payment Type', 'Trip Miles', 'Trip Total', 'Trip ID', 'Extras'}
+2024-03-14 23:58:32,020 INFO     15 columns remaining
+2024-03-14 23:58:32,025 INFO     Converting to json
+2024-03-14 23:58:32,032 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-20.csv for tenant1
+2024-03-14 23:58:32,137 INFO     Writing to coredms
+2024-03-14 23:58:33,630 INFO     Dropped 8 empty columns
+2024-03-14 23:58:33,640 INFO     Dropped columns: {'Extras', 'Trip Total', 'Trip ID', 'Trip Miles', 'Payment Type', 'Trip Start Timestamp', 'Tips', 'Fare'}
+2024-03-14 23:58:33,651 INFO     15 columns remaining
+2024-03-14 23:58:33,661 INFO     Converting to json
+2024-03-14 23:58:33,767 INFO     Writing to coredms
+2024-03-14 23:58:36,464 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-17.csv
+2024-03-14 23:58:36,854 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-21.csv for tenant1
+2024-03-14 23:58:37,642 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-18.csv
+2024-03-14 23:58:37,818 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-19.csv
+2024-03-14 23:58:40,087 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-20.csv
+2024-03-14 23:58:40,451 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-22.csv for tenant1
+2024-03-14 23:58:42,214 INFO     Starting ingestion of data\client-staging-input-directories\tenant1\taxi_data\taxi-data-23.csv for tenant1
+2024-03-14 23:58:42,978 INFO     Dropped 8 empty columns
+2024-03-14 23:58:42,980 INFO     Dropped columns: {'Trip Total', 'Extras', 'Trip Miles', 'Trip ID', 'Fare', 'Payment Type', 'Trip Start Timestamp', 'Tips'}
+2024-03-14 23:58:42,984 INFO     15 columns remaining
+2024-03-14 23:58:42,994 INFO     Converting to json
+2024-03-14 23:58:43,196 INFO     Writing to coredms
+2024-03-14 23:58:43,815 INFO     Dropped 8 empty columns
+2024-03-14 23:58:43,819 INFO     Dropped columns: {'Trip ID', 'Trip Total', 'Extras', 'Tips', 'Fare', 'Trip Start Timestamp', 'Trip Miles', 'Payment Type'}
+2024-03-14 23:58:43,821 INFO     15 columns remaining
+2024-03-14 23:58:43,822 INFO     Converting to json
+2024-03-14 23:58:43,948 INFO     Writing to coredms
+2024-03-14 23:58:44,230 INFO     Dropped 8 empty columns
+2024-03-14 23:58:44,234 INFO     Dropped columns: {'Payment Type', 'Trip Start Timestamp', 'Trip ID', 'Fare', 'Trip Miles', 'Trip Total', 'Tips', 'Extras'}
+2024-03-14 23:58:44,236 INFO     15 columns remaining
+2024-03-14 23:58:44,238 INFO     Converting to json
+2024-03-14 23:58:44,436 INFO     Writing to coredms
+2024-03-14 23:58:44,864 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-21.csv
+2024-03-14 23:58:46,968 INFO     Dropped 8 empty columns
+2024-03-14 23:58:46,972 INFO     Dropped columns: {'Trip Total', 'Payment Type', 'Trip ID', 'Trip Start Timestamp', 'Trip Miles', 'Extras', 'Fare', 'Tips'}
+2024-03-14 23:58:46,978 INFO     15 columns remaining
+2024-03-14 23:58:46,990 INFO     Converting to json
+2024-03-14 23:58:47,171 INFO     Writing to coredms
+2024-03-14 23:58:50,477 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-22.csv
+2024-03-14 23:58:52,424 INFO     Read 247188 rows from data\client-staging-input-directories\tenant1\taxi_data\taxi-data-23.csv
+2024-03-14 23:58:53,299 INFO     Dropped 8 empty columns
+2024-03-14 23:58:53,309 INFO     Dropped columns: {'Trip Miles', 'Extras', 'Trip Start Timestamp', 'Trip Total', 'Fare', 'Tips', 'Trip ID', 'Payment Type'}
+2024-03-14 23:58:53,315 INFO     15 columns remaining
+2024-03-14 23:58:53,327 INFO     Converting to json
+2024-03-14 23:58:53,542 INFO     Writing to coredms
+2024-03-14 23:58:58,018 INFO     Dropped 8 empty columns
+2024-03-14 23:58:58,027 INFO     Dropped columns: {'Fare', 'Trip ID', 'Trip Start Timestamp', 'Tips', 'Trip Total', 'Trip Miles', 'Extras', 'Payment Type'}
+2024-03-14 23:58:58,030 INFO     15 columns remaining
+2024-03-14 23:58:58,031 INFO     Converting to json
+2024-03-14 23:58:58,237 INFO     Writing to coredms
+2024-03-14 23:59:00,418 INFO     Dropped 8 empty columns
+2024-03-14 23:59:00,422 INFO     Dropped columns: {'Tips', 'Trip Total', 'Trip Start Timestamp', 'Payment Type', 'Fare', 'Trip Miles', 'Extras', 'Trip ID'}
+2024-03-14 23:59:00,431 INFO     15 columns remaining
+2024-03-14 23:59:00,448 INFO     Converting to json
+2024-03-14 23:59:00,626 INFO     Writing to coredms

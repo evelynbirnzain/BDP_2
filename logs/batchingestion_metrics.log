@@ -1,0 +1,431 @@
+tenant,file,file_size,ingestion_start_time,ingestion_end_time,ingestion_time,success,concurrent_ingestions
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:34:10.477648,2024-03-14 23:34:23.298788,0:00:12.821140,True,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:34:11.508527,2024-03-14 23:34:24.065431,0:00:12.556904,True,1.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:34:30.614733,2024-03-14 23:34:41.895370,0:00:11.280637,True,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:34:31.625432,2024-03-14 23:34:42.885344,0:00:11.259912,True,1.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:34:45.761150,2024-03-14 23:34:57.233406,0:00:11.472256,True,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:34:46.778178,2024-03-14 23:34:58.262516,0:00:11.484338,True,1.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:35:00.912616,2024-03-14 23:35:12.703888,0:00:11.791272,True,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:35:01.919559,2024-03-14 23:35:13.440762,0:00:11.521203,True,1.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:35:16.090011,2024-03-14 23:35:27.844681,0:00:11.754670,True,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:35:17.096921,2024-03-14 23:35:28.781274,0:00:11.684353,True,1.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:35:31.251043,2024-03-14 23:35:43.740778,0:00:12.489735,True,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:35:32.259337,2024-03-14 23:35:44.894694,0:00:12.635357,True,1.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:35:51.472454,2024-03-14 23:36:03.557329,0:00:12.084875,True,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:35:52.480550,2024-03-14 23:36:04.583916,0:00:12.103366,True,1.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:36:06.672946,2024-03-14 23:36:18.714796,0:00:12.041850,True,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:36:07.689700,2024-03-14 23:36:19.789837,0:00:12.100137,True,1.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:36:21.832003,2024-03-14 23:36:38.939173,0:00:17.107170,True,2.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:36:22.840243,2024-03-14 23:36:40.756338,0:00:17.916095,True,2.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:36:23.870190,2024-03-14 23:36:42.136035,0:00:18.265845,True,2.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:36:24.895116,2024-03-14 23:36:43.186697,0:00:18.291581,True,2.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:36:47.164662,2024-03-14 23:37:03.461772,0:00:16.297110,True,2.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:36:48.172049,2024-03-14 23:37:05.316558,0:00:17.144509,True,2.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:36:49.234129,2024-03-14 23:37:06.837315,0:00:17.603186,True,2.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:36:50.253158,2024-03-14 23:37:07.440242,0:00:17.187084,True,2.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:37:12.506628,2024-03-14 23:37:28.894796,0:00:16.388168,True,2.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:37:13.511358,2024-03-14 23:37:29.466915,0:00:15.955557,True,2.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:37:14.517419,2024-03-14 23:37:29.923187,0:00:15.405768,True,2.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:37:15.526433,2024-03-14 23:37:30.174820,0:00:14.648387,True,2.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:37:32.855854,2024-03-14 23:37:44.063719,0:00:11.207865,True,2.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:37:33.860635,2024-03-14 23:37:45.580405,0:00:11.719770,True,2.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:37:34.864143,2024-03-14 23:37:47.052578,0:00:12.188435,True,2.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:37:35.868314,2024-03-14 23:37:47.760658,0:00:11.892344,True,2.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,4.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-3.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,4.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:37:53.094270,2024-03-14 23:38:05.162926,0:00:12.068656,True,4.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:37:54.102010,2024-03-14 23:38:07.232529,0:00:13.130519,True,4.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv,107029978,2024-03-14 23:37:55.113818,2024-03-14 23:38:09.445811,0:00:14.331993,True,4.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv,107029978,2024-03-14 23:37:56.118392,2024-03-14 23:38:10.601356,0:00:14.482964,True,4.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:37:57.124307,2024-03-14 23:38:12.026060,0:00:14.901753,True,4.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:37:58.135896,2024-03-14 23:38:12.235614,0:00:14.099718,True,4.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,4.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-3.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,4.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:38:18.630573,2024-03-14 23:38:30.955259,0:00:12.324686,True,4.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:38:19.635958,2024-03-14 23:38:32.327385,0:00:12.691427,True,4.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv,107029978,2024-03-14 23:38:20.639675,2024-03-14 23:38:34.803276,0:00:14.163601,True,4.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv,107029978,2024-03-14 23:38:21.643916,2024-03-14 23:38:36.325836,0:00:14.681920,True,4.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:38:22.649452,2024-03-14 23:38:37.306579,0:00:14.657127,True,4.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:38:23.655098,2024-03-14 23:38:38.445710,0:00:14.790612,True,4.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 816.5739288330078 MB,8.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 714.5021877288818 MB,8.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 612.4304466247559 MB,8.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:38:44.549478,2024-03-14 23:38:57.240980,0:00:12.691502,True,8.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-5.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,8.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-6.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,8.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:38:45.556879,2024-03-14 23:38:59.073533,0:00:13.516654,True,8.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-7.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,8.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv,107029978,2024-03-14 23:38:46.561008,2024-03-14 23:39:01.238108,0:00:14.677100,True,8.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv,107029978,2024-03-14 23:38:47.567034,2024-03-14 23:39:03.580962,0:00:16.013928,True,8.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv,107029978,2024-03-14 23:38:48.572320,2024-03-14 23:39:05.102728,0:00:16.530408,True,8.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv,107029978,2024-03-14 23:38:49.578284,2024-03-14 23:39:06.351865,0:00:16.773581,True,8.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv,107029978,2024-03-14 23:38:50.584129,2024-03-14 23:39:07.106280,0:00:16.522151,True,8.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv,107029978,2024-03-14 23:38:51.594774,2024-03-14 23:39:08.085217,0:00:16.490443,True,8.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-3.csv,107029978,2024-03-14 23:38:55.632729,2024-03-14 23:39:10.601646,0:00:14.968917,True,8.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-4.csv,107029978,2024-03-14 23:38:56.655978,2024-03-14 23:39:11.005008,0:00:14.349030,True,8.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1224.8608932495117 MB,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1122.7891521453857 MB,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1020.7174110412598 MB,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-3.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 918.6456699371338 MB,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-4.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 816.5739288330078 MB,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-5.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 714.5021877288818 MB,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-6.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 612.4304466247559 MB,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-9.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-10.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-11.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv,107029978,2024-03-14 23:39:18.855173,2024-03-14 23:39:46.949648,0:00:28.094475,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:39:16.845986,2024-03-14 23:39:49.224846,0:00:32.378860,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv,107029978,2024-03-14 23:39:19.859975,2024-03-14 23:39:49.500631,0:00:29.640656,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:39:15.842466,2024-03-14 23:39:49.658709,0:00:33.816243,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv,107029978,2024-03-14 23:39:17.849353,2024-03-14 23:39:49.677721,0:00:31.828368,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv,107029978,2024-03-14 23:39:22.973751,2024-03-14 23:39:52.154853,0:00:29.181102,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv,107029978,2024-03-14 23:39:23.980663,2024-03-14 23:39:53.139979,0:00:29.159316,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv,107029978,2024-03-14 23:39:20.866035,2024-03-14 23:39:53.326110,0:00:32.460075,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv,107029978,2024-03-14 23:39:21.872961,2024-03-14 23:39:53.511223,0:00:31.638262,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv,107029978,2024-03-14 23:39:27.047200,2024-03-14 23:39:54.828611,0:00:27.781411,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv,107029978,2024-03-14 23:39:24.989177,2024-03-14 23:39:54.831608,0:00:29.842431,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv,107029978,2024-03-14 23:39:26.028486,2024-03-14 23:39:55.346707,0:00:29.318221,True,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-7.csv,107029978,2024-03-14 23:39:35.359745,2024-03-14 23:40:02.575767,0:00:27.216022,True,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-8.csv,107029978,2024-03-14 23:39:36.381902,2024-03-14 23:40:03.334857,0:00:26.952955,True,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1633.1478576660156 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1531.0761165618896 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1429.0043754577637 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-3.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1326.9326343536377 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-4.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1224.8608932495117 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-5.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1122.7891521453857 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-6.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1020.7174110412598 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-7.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 918.6456699371338 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-8.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 816.5739288330078 MB,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:40:10.272425,2024-03-14 23:40:35.903383,0:00:25.630958,True,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-9.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 714.5021877288818 MB,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:40:11.277396,2024-03-14 23:40:36.730823,0:00:25.453427,True,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-10.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 612.4304466247559 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-13.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-14.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv,107029978,2024-03-14 23:40:12.281041,2024-03-14 23:40:41.883954,0:00:29.602913,True,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-15.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv,107029978,2024-03-14 23:40:13.286638,2024-03-14 23:40:49.848262,0:00:36.561624,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv,107029978,2024-03-14 23:40:15.302544,2024-03-14 23:40:51.310960,0:00:36.008416,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv,107029978,2024-03-14 23:40:14.293905,2024-03-14 23:40:55.013148,0:00:40.719243,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv,107029978,2024-03-14 23:40:18.331733,2024-03-14 23:40:56.055869,0:00:37.724136,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv,107029978,2024-03-14 23:40:16.310190,2024-03-14 23:40:57.643354,0:00:41.333164,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv,107029978,2024-03-14 23:40:19.346738,2024-03-14 23:40:57.728268,0:00:38.381530,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv,107029978,2024-03-14 23:40:20.361756,2024-03-14 23:40:59.193554,0:00:38.831798,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv,107029978,2024-03-14 23:40:17.320344,2024-03-14 23:40:59.398736,0:00:42.078392,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv,107029978,2024-03-14 23:40:21.375391,2024-03-14 23:41:02.477537,0:00:41.102146,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-12.csv,107029978,2024-03-14 23:40:22.448067,2024-03-14 23:41:11.240508,0:00:48.792441,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-13.csv,107029978,2024-03-14 23:40:23.467188,2024-03-14 23:41:11.307050,0:00:47.839862,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-14.csv,107029978,2024-03-14 23:40:24.581534,2024-03-14 23:41:14.024142,0:00:49.442608,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-15.csv,107029978,2024-03-14 23:40:25.647445,2024-03-14 23:41:17.837767,0:00:52.190322,True,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-11.csv,107029978,2024-03-14 23:40:38.154554,2024-03-14 23:41:18.823304,0:00:40.668750,True,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-12.csv,107029978,2024-03-14 23:40:39.181778,2024-03-14 23:41:20.118476,0:00:40.936698,True,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 2041.4348220825195 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1939.3630809783936 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1837.2913398742676 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-3.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1735.2195987701416 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-4.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1633.1478576660156 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-5.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1531.0761165618896 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-6.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1429.0043754577637 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-7.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1326.9326343536377 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-8.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1224.8608932495117 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-9.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1122.7891521453857 MB,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:41:24.894620,2024-03-14 23:41:55.924804,0:00:31.030184,True,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-10.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1020.7174110412598 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-11.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 918.6456699371338 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-12.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 816.5739288330078 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-13.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 714.5021877288818 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-14.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 612.4304466247559 MB,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:41:25.900012,2024-03-14 23:42:02.852551,0:00:36.952539,True,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-17.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv,107029978,2024-03-14 23:41:27.919320,2024-03-14 23:42:04.521062,0:00:36.601742,True,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-18.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-19.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv,107029978,2024-03-14 23:41:26.908476,2024-03-14 23:42:06.157324,0:00:39.248848,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv,107029978,2024-03-14 23:41:28.930563,2024-03-14 23:42:09.893693,0:00:40.963130,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv,107029978,2024-03-14 23:41:30.952423,2024-03-14 23:42:11.025927,0:00:40.073504,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv,107029978,2024-03-14 23:41:29.941754,2024-03-14 23:42:12.320493,0:00:42.378739,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv,107029978,2024-03-14 23:41:31.966514,2024-03-14 23:42:12.471361,0:00:40.504847,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv,107029978,2024-03-14 23:41:32.982234,2024-03-14 23:42:16.429946,0:00:43.447712,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv,107029978,2024-03-14 23:41:36.128495,2024-03-14 23:42:17.685289,0:00:41.556794,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv,107029978,2024-03-14 23:41:33.997618,2024-03-14 23:42:18.188701,0:00:44.191083,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv,107029978,2024-03-14 23:41:35.018542,2024-03-14 23:42:19.321132,0:00:44.302590,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-12.csv,107029978,2024-03-14 23:41:37.148367,2024-03-14 23:42:31.927359,0:00:54.778992,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-13.csv,107029978,2024-03-14 23:41:38.183626,2024-03-14 23:42:37.476781,0:00:59.293155,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-15.csv,107029978,2024-03-14 23:41:40.279861,2024-03-14 23:42:38.846799,0:00:58.566938,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-14.csv,107029978,2024-03-14 23:41:39.209680,2024-03-14 23:42:38.871321,0:00:59.661641,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-16.csv,107029978,2024-03-14 23:41:41.367823,2024-03-14 23:42:42.193509,0:01:00.825686,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-17.csv,107029978,2024-03-14 23:41:42.552886,2024-03-14 23:42:42.669247,0:01:00.116361,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-19.csv,107029978,2024-03-14 23:41:44.838621,2024-03-14 23:42:43.387752,0:00:58.549131,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-18.csv,107029978,2024-03-14 23:41:43.715323,2024-03-14 23:42:43.420278,0:00:59.704955,True,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-15.csv,107029978,2024-03-14 23:42:01.560601,2024-03-14 23:42:44.806551,0:00:43.245950,True,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-16.csv,107029978,2024-03-14 23:42:02.583130,2024-03-14 23:42:44.860601,0:00:42.277471,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:42:50.955046,2024-03-14 23:43:13.876691,0:00:22.921645,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:42:52.230115,2024-03-14 23:43:14.269142,0:00:22.039027,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 2449.7217864990234 MB,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv,107029978,2024-03-14 23:42:53.237440,2024-03-14 23:43:16.952204,0:00:23.714764,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 2347.6500453948975 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 2245.5783042907715 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-3.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 2143.5065631866455 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-4.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 2041.4348220825195 MB,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv,107029978,2024-03-14 23:42:55.254540,2024-03-14 23:43:20.892189,0:00:25.637649,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-5.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1939.3630809783936 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-6.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1837.2913398742676 MB,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv,107029978,2024-03-14 23:42:56.263757,2024-03-14 23:43:22.289128,0:00:26.025371,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-7.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1735.2195987701416 MB,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv,107029978,2024-03-14 23:42:54.245587,2024-03-14 23:43:24.110515,0:00:29.864928,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-8.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1633.1478576660156 MB,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv,107029978,2024-03-14 23:42:57.272652,2024-03-14 23:43:24.527655,0:00:27.255003,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-9.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1531.0761165618896 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-10.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1429.0043754577637 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-11.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1326.9326343536377 MB,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv,107029978,2024-03-14 23:42:59.295424,2024-03-14 23:43:27.660218,0:00:28.364794,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-12.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1224.8608932495117 MB,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv,107029978,2024-03-14 23:43:00.341754,2024-03-14 23:43:28.523921,0:00:28.182167,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-13.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1122.7891521453857 MB,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv,107029978,2024-03-14 23:43:01.362274,2024-03-14 23:43:29.482290,0:00:28.120016,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-14.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1020.7174110412598 MB,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv,107029978,2024-03-14 23:42:58.283137,2024-03-14 23:43:31.199130,0:00:32.915993,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-15.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 918.6456699371338 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-16.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 816.5739288330078 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-17.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 714.5021877288818 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-18.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 612.4304466247559 MB,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv,107029978,2024-03-14 23:43:02.386461,2024-03-14 23:43:35.551837,0:00:33.165376,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-21.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-22.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-23.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-12.csv,107029978,2024-03-14 23:43:03.402215,2024-03-14 23:43:43.082469,0:00:39.680254,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-13.csv,107029978,2024-03-14 23:43:04.440434,2024-03-14 23:43:45.608208,0:00:41.167774,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-14.csv,107029978,2024-03-14 23:43:05.507868,2024-03-14 23:43:46.060242,0:00:40.552374,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-16.csv,107029978,2024-03-14 23:43:07.644077,2024-03-14 23:43:51.807093,0:00:44.163016,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-15.csv,107029978,2024-03-14 23:43:06.546458,2024-03-14 23:43:52.099815,0:00:45.553357,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-18.csv,107029978,2024-03-14 23:43:09.807308,2024-03-14 23:43:53.028360,0:00:43.221052,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-17.csv,107029978,2024-03-14 23:43:08.713235,2024-03-14 23:43:53.094770,0:00:44.381535,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-19.csv,107029978,2024-03-14 23:43:10.864172,2024-03-14 23:43:57.166139,0:00:46.301967,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-21.csv,107029978,2024-03-14 23:43:12.915720,2024-03-14 23:43:57.321039,0:00:44.405319,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-20.csv,107029978,2024-03-14 23:43:11.880076,2024-03-14 23:43:57.454103,0:00:45.574027,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-22.csv,107029978,2024-03-14 23:43:13.957182,2024-03-14 23:43:58.295551,0:00:44.338369,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-23.csv,107029978,2024-03-14 23:43:15.007260,2024-03-14 23:44:00.166873,0:00:45.159613,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-19.csv,107029978,2024-03-14 23:43:35.505453,2024-03-14 23:44:02.993257,0:00:27.487804,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-20.csv,107029978,2024-03-14 23:43:36.544514,2024-03-14 23:44:03.416848,0:00:26.872334,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\test.json,18997350,,,,Filetype JSON not supported for tenant1. Supported filetypes: ['CSV'],1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data.csv,428118778,,,,File data\client-staging-input-directories\tenant2\taxi_data\taxi-data.csv is too large (428118778 > 350MB).,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:44:12.356545,2024-03-14 23:44:22.269776,0:00:09.913231,True,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:44:13.360723,2024-03-14 23:44:23.273733,0:00:09.913010,True,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2-0.csv,321089178,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 612.4290046691895 MB,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2-1.csv,321089178,2024-03-14 23:44:28.550348,2024-03-14 23:44:50.648093,0:00:22.097745,True,1.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:49:08.813262,2024-03-14 23:49:18.667230,0:00:09.853968,True,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:49:09.819059,2024-03-14 23:49:19.817334,0:00:09.998275,True,1.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:49:23.909271,2024-03-14 23:49:33.816564,0:00:09.907293,True,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:49:24.913957,2024-03-14 23:49:35.217313,0:00:10.303356,True,1.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:49:39.004045,2024-03-14 23:49:48.607661,0:00:09.603616,True,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:49:40.007100,2024-03-14 23:49:49.568827,0:00:09.561727,True,1.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:49:54.101815,2024-03-14 23:50:03.703823,0:00:09.602008,True,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:49:55.111040,2024-03-14 23:50:04.727381,0:00:09.616341,True,1.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:50:09.198269,2024-03-14 23:50:18.681990,0:00:09.483721,True,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:50:10.205159,2024-03-14 23:50:19.959514,0:00:09.754355,True,1.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:50:24.290589,2024-03-14 23:50:33.785598,0:00:09.495009,True,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:50:25.298387,2024-03-14 23:50:35.058490,0:00:09.760103,True,1.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:50:39.395538,2024-03-14 23:50:49.517263,0:00:10.121725,True,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:50:40.399411,2024-03-14 23:50:50.066324,0:00:09.666913,True,1.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:50:54.492018,2024-03-14 23:51:04.043980,0:00:09.551962,True,1.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:50:55.498768,2024-03-14 23:51:05.032038,0:00:09.533270,True,1.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:51:09.591111,2024-03-14 23:51:20.830617,0:00:11.239506,True,2.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:51:10.601519,2024-03-14 23:51:22.010324,0:00:11.408805,True,2.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:51:11.605536,2024-03-14 23:51:23.638532,0:00:12.032996,True,2.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:51:12.612402,2024-03-14 23:51:24.293285,0:00:11.680883,True,2.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:51:29.793087,2024-03-14 23:51:40.264751,0:00:10.471664,True,2.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:51:30.799275,2024-03-14 23:51:41.765660,0:00:10.966385,True,2.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:51:31.802723,2024-03-14 23:51:43.501530,0:00:11.698807,True,2.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:51:32.806640,2024-03-14 23:51:44.539067,0:00:11.732427,True,2.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:51:49.986541,2024-03-14 23:52:00.563499,0:00:10.576958,True,2.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:51:50.994629,2024-03-14 23:52:02.333944,0:00:11.339315,True,2.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:51:51.996511,2024-03-14 23:52:03.782141,0:00:11.785630,True,2.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:51:53.002399,2024-03-14 23:52:04.816580,0:00:11.814181,True,2.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:52:10.177253,2024-03-14 23:52:20.957051,0:00:10.779798,True,2.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:52:11.181207,2024-03-14 23:52:22.405869,0:00:11.224662,True,2.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:52:12.185543,2024-03-14 23:52:23.789751,0:00:11.604208,True,2.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:52:13.189937,2024-03-14 23:52:24.355962,0:00:11.166025,True,2.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,4.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-3.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,4.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:52:30.380309,2024-03-14 23:52:41.228923,0:00:10.848614,True,4.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:52:31.392410,2024-03-14 23:52:43.150676,0:00:11.758266,True,4.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv,107029978,2024-03-14 23:52:32.398427,2024-03-14 23:52:45.871466,0:00:13.473039,True,4.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv,107029978,2024-03-14 23:52:33.401836,2024-03-14 23:52:47.160361,0:00:13.758525,True,4.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:52:34.406500,2024-03-14 23:52:48.197401,0:00:13.790901,True,4.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:52:35.411161,2024-03-14 23:52:48.870375,0:00:13.459214,True,4.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,4.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-3.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,4.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:52:55.793545,2024-03-14 23:53:06.223977,0:00:10.430432,True,4.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:52:56.801951,2024-03-14 23:53:08.413807,0:00:11.611856,True,4.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv,107029978,2024-03-14 23:52:57.806434,2024-03-14 23:53:10.649686,0:00:12.843252,True,4.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv,107029978,2024-03-14 23:52:58.810200,2024-03-14 23:53:12.225046,0:00:13.414846,True,4.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:52:59.816211,2024-03-14 23:53:13.971119,0:00:14.154908,True,4.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:53:00.820080,2024-03-14 23:53:14.236123,0:00:13.416043,True,4.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 816.5739288330078 MB,8.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 714.5021877288818 MB,8.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 612.4304466247559 MB,8.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-5.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,8.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-6.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,8.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:53:21.215249,2024-03-14 23:53:35.819209,0:00:14.603960,True,8.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-7.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,8.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:53:22.219629,2024-03-14 23:53:38.813837,0:00:16.594208,True,8.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv,107029978,2024-03-14 23:53:23.232322,2024-03-14 23:53:43.351261,0:00:20.118939,True,8.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv,107029978,2024-03-14 23:53:24.236470,2024-03-14 23:53:45.633217,0:00:21.396747,True,8.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv,107029978,2024-03-14 23:53:25.242768,2024-03-14 23:53:47.229083,0:00:21.986315,True,8.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv,107029978,2024-03-14 23:53:26.249349,2024-03-14 23:53:48.371151,0:00:22.121802,True,8.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv,107029978,2024-03-14 23:53:27.255479,2024-03-14 23:53:50.040692,0:00:22.785213,True,8.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv,107029978,2024-03-14 23:53:28.261361,2024-03-14 23:53:50.540261,0:00:22.278900,True,8.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-3.csv,107029978,2024-03-14 23:53:32.430701,2024-03-14 23:53:53.517948,0:00:21.087247,True,8.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-4.csv,107029978,2024-03-14 23:53:33.461557,2024-03-14 23:53:53.598663,0:00:20.137106,True,8.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1224.8608932495117 MB,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1122.7891521453857 MB,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1020.7174110412598 MB,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-3.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 918.6456699371338 MB,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-4.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 816.5739288330078 MB,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-5.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 714.5021877288818 MB,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-6.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 612.4304466247559 MB,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-9.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-10.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-11.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:53:57.119163,2024-03-14 23:54:30.141642,0:00:33.022479,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv,107029978,2024-03-14 23:53:59.128343,2024-03-14 23:54:34.854354,0:00:35.726011,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:53:58.123476,2024-03-14 23:54:35.133744,0:00:37.010268,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv,107029978,2024-03-14 23:54:00.134451,2024-03-14 23:54:38.355280,0:00:38.220829,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv,107029978,2024-03-14 23:54:01.142418,2024-03-14 23:54:44.563145,0:00:43.420727,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv,107029978,2024-03-14 23:54:02.151239,2024-03-14 23:54:47.283870,0:00:45.132631,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv,107029978,2024-03-14 23:54:03.159013,2024-03-14 23:54:48.809346,0:00:45.650333,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv,107029978,2024-03-14 23:54:04.168745,2024-03-14 23:54:51.601040,0:00:47.432295,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv,107029978,2024-03-14 23:54:05.178191,2024-03-14 23:54:56.126244,0:00:50.948053,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv,107029978,2024-03-14 23:54:06.191451,2024-03-14 23:54:56.972852,0:00:50.781401,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv,107029978,2024-03-14 23:54:07.203518,2024-03-14 23:54:59.055245,0:00:51.851727,True,12.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv,107029978,2024-03-14 23:54:08.218573,2024-03-14 23:54:59.812639,0:00:51.594066,True,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-7.csv,107029978,2024-03-14 23:54:16.740627,2024-03-14 23:55:08.802197,0:00:52.061570,True,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-8.csv,107029978,2024-03-14 23:54:17.794471,2024-03-14 23:55:09.604267,0:00:51.809796,True,12.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1633.1478576660156 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1531.0761165618896 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1429.0043754577637 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-3.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1326.9326343536377 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-4.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1224.8608932495117 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-5.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1122.7891521453857 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-6.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1020.7174110412598 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-7.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 918.6456699371338 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-8.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 816.5739288330078 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-9.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 714.5021877288818 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-10.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 612.4304466247559 MB,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-13.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-14.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-15.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:55:14.905588,2024-03-14 23:55:56.761081,0:00:41.855493,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv,107029978,2024-03-14 23:55:17.973993,2024-03-14 23:56:08.454611,0:00:50.480618,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv,107029978,2024-03-14 23:55:18.987345,2024-03-14 23:56:12.344249,0:00:53.356904,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:55:15.917317,2024-03-14 23:56:12.362974,0:00:56.445657,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv,107029978,2024-03-14 23:55:16.928046,2024-03-14 23:56:13.615468,0:00:56.687422,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv,107029978,2024-03-14 23:55:21.082816,2024-03-14 23:56:13.681398,0:00:52.598582,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv,107029978,2024-03-14 23:55:22.100887,2024-03-14 23:56:14.353233,0:00:52.252346,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv,107029978,2024-03-14 23:55:20.002482,2024-03-14 23:56:17.842923,0:00:57.840441,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv,107029978,2024-03-14 23:55:23.117289,2024-03-14 23:56:18.802355,0:00:55.685066,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv,107029978,2024-03-14 23:55:26.199824,2024-03-14 23:56:19.240376,0:00:53.040552,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv,107029978,2024-03-14 23:55:25.160914,2024-03-14 23:56:19.362080,0:00:54.201166,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv,107029978,2024-03-14 23:55:24.136471,2024-03-14 23:56:19.597394,0:00:55.460923,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-12.csv,107029978,2024-03-14 23:55:27.226316,2024-03-14 23:56:21.306872,0:00:54.080556,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-13.csv,107029978,2024-03-14 23:55:28.288809,2024-03-14 23:56:29.603174,0:01:01.314365,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-14.csv,107029978,2024-03-14 23:55:29.340185,2024-03-14 23:56:32.360776,0:01:03.020591,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-15.csv,107029978,2024-03-14 23:55:30.429453,2024-03-14 23:56:32.755028,0:01:02.325575,True,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-11.csv,107029978,2024-03-14 23:55:43.609486,2024-03-14 23:56:32.882725,0:00:49.273239,True,16.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-12.csv,107029978,2024-03-14 23:55:44.762152,2024-03-14 23:56:33.154835,0:00:48.392683,True,16.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:56:39.232379,2024-03-14 23:56:54.016125,0:00:14.783746,True,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 2041.4348220825195 MB,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:56:40.822544,2024-03-14 23:57:01.423901,0:00:20.601357,True,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1939.3630809783936 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1837.2913398742676 MB,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv,107029978,2024-03-14 23:56:41.826813,2024-03-14 23:57:02.999680,0:00:21.172867,True,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-3.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1735.2195987701416 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-4.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1633.1478576660156 MB,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv,107029978,2024-03-14 23:56:42.842217,2024-03-14 23:57:05.351496,0:00:22.509279,True,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-5.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1531.0761165618896 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-6.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1429.0043754577637 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-7.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1326.9326343536377 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-8.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1224.8608932495117 MB,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv,107029978,2024-03-14 23:56:43.849455,2024-03-14 23:57:09.444098,0:00:25.594643,True,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-9.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1122.7891521453857 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-10.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1020.7174110412598 MB,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv,107029978,2024-03-14 23:56:45.865654,2024-03-14 23:57:10.670368,0:00:24.804714,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv,107029978,2024-03-14 23:56:44.856375,2024-03-14 23:57:11.614376,0:00:26.758001,True,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-11.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 918.6456699371338 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-12.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 816.5739288330078 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-13.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 714.5021877288818 MB,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-14.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 612.4304466247559 MB,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv,107029978,2024-03-14 23:56:48.899438,2024-03-14 23:57:14.853678,0:00:25.954240,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv,107029978,2024-03-14 23:56:46.876651,2024-03-14 23:57:15.579061,0:00:28.702410,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv,107029978,2024-03-14 23:56:47.886905,2024-03-14 23:57:16.252523,0:00:28.365618,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv,107029978,2024-03-14 23:56:49.918735,2024-03-14 23:57:16.266039,0:00:26.347304,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv,107029978,2024-03-14 23:56:50.938242,2024-03-14 23:57:17.435757,0:00:26.497515,True,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-17.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-18.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-19.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-12.csv,107029978,2024-03-14 23:56:51.968359,2024-03-14 23:57:20.827290,0:00:28.858931,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-13.csv,107029978,2024-03-14 23:56:53.003740,2024-03-14 23:57:25.817600,0:00:32.813860,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-14.csv,107029978,2024-03-14 23:56:54.026122,2024-03-14 23:57:26.354670,0:00:32.328548,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-15.csv,107029978,2024-03-14 23:56:55.170963,2024-03-14 23:57:28.144748,0:00:32.973785,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-16.csv,107029978,2024-03-14 23:56:56.211622,2024-03-14 23:57:31.672242,0:00:35.460620,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-17.csv,107029978,2024-03-14 23:56:57.226294,2024-03-14 23:57:32.665030,0:00:35.438736,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-18.csv,107029978,2024-03-14 23:56:58.376465,2024-03-14 23:57:33.564532,0:00:35.188067,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-19.csv,107029978,2024-03-14 23:56:59.416844,2024-03-14 23:57:34.948739,0:00:35.531895,True,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-15.csv,107029978,2024-03-14 23:57:15.677705,2024-03-14 23:57:35.263998,0:00:19.586293,True,20.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-16.csv,107029978,2024-03-14 23:57:16.694412,2024-03-14 23:57:35.776825,0:00:19.082413,True,20.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:57:41.207514,2024-03-14 23:57:58.925753,0:00:17.718239,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:57:42.616377,2024-03-14 23:58:05.839592,0:00:23.223215,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 2449.7217864990234 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 2347.6500453948975 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 2245.5783042907715 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-3.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 2143.5065631866455 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-4.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 2041.4348220825195 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-5.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1939.3630809783936 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-6.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1837.2913398742676 MB,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-2.csv,107029978,2024-03-14 23:57:43.622061,2024-03-14 23:58:12.795526,0:00:29.173465,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-7.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1735.2195987701416 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-8.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1633.1478576660156 MB,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-4.csv,107029978,2024-03-14 23:57:45.682079,2024-03-14 23:58:15.681321,0:00:29.999242,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-9.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1531.0761165618896 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-10.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1429.0043754577637 MB,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-3.csv,107029978,2024-03-14 23:57:44.627739,2024-03-14 23:58:16.800306,0:00:32.172567,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-11.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1326.9326343536377 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-12.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1224.8608932495117 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-13.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1122.7891521453857 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-14.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 1020.7174110412598 MB,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-7.csv,107029978,2024-03-14 23:57:48.714980,2024-03-14 23:58:21.443496,0:00:32.728516,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-15.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 918.6456699371338 MB,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-5.csv,107029978,2024-03-14 23:57:46.692177,2024-03-14 23:58:22.611580,0:00:35.919403,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-16.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 816.5739288330078 MB,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-8.csv,107029978,2024-03-14 23:57:49.740391,2024-03-14 23:58:23.590506,0:00:33.850115,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-17.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 714.5021877288818 MB,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-6.csv,107029978,2024-03-14 23:57:47.702865,2024-03-14 23:58:24.414091,0:00:36.711226,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-18.csv,107029978,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 612.4304466247559 MB,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-21.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-9.csv,107029978,2024-03-14 23:57:50.753094,2024-03-14 23:58:28.405907,0:00:37.652813,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-22.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-23.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-10.csv,107029978,2024-03-14 23:57:51.763435,2024-03-14 23:58:30.925466,0:00:39.162031,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-11.csv,107029978,2024-03-14 23:57:52.789183,2024-03-14 23:58:32.377016,0:00:39.587833,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-12.csv,107029978,2024-03-14 23:57:53.829732,2024-03-14 23:58:38.194404,0:00:44.364672,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-13.csv,107029978,2024-03-14 23:57:54.851727,2024-03-14 23:58:50.068952,0:00:55.217225,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-14.csv,107029978,2024-03-14 23:57:55.905848,2024-03-14 23:59:04.044767,0:01:08.138919,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-16.csv,107029978,2024-03-14 23:57:58.027569,2024-03-14 23:59:06.284845,0:01:08.257276,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-15.csv,107029978,2024-03-14 23:57:56.956844,2024-03-14 23:59:08.375692,0:01:11.418848,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-17.csv,107029978,2024-03-14 23:57:59.112412,2024-03-14 23:59:18.260084,0:01:19.147672,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-19.csv,107029978,2024-03-14 23:58:01.196427,2024-03-14 23:59:19.640170,0:01:18.443743,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-18.csv,107029978,2024-03-14 23:58:00.158898,2024-03-14 23:59:20.602827,0:01:20.443929,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-20.csv,107029978,2024-03-14 23:58:02.271139,2024-03-14 23:59:21.435856,0:01:19.164717,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-21.csv,107029978,2024-03-14 23:58:03.293966,2024-03-14 23:59:26.910451,0:01:23.616485,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-22.csv,107029978,2024-03-14 23:58:04.337801,2024-03-14 23:59:30.757753,0:01:26.419952,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\taxi-data-23.csv,107029978,2024-03-14 23:58:05.385163,2024-03-14 23:59:31.825173,0:01:26.440010,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-19.csv,107029978,2024-03-14 23:58:25.917327,2024-03-14 23:59:34.406001,0:01:08.488674,True,24.0
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-20.csv,107029978,2024-03-14 23:58:26.957584,2024-03-14 23:59:38.442723,0:01:11.485139,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\test.json,18997350,,,,Filetype JSON not supported for tenant1. Supported filetypes: ['CSV']
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data.csv,428118778,,,,File data\client-staging-input-directories\tenant2\taxi_data\taxi-data.csv is too large (428118778 > 350MB).
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:59:48.783103,2024-03-15 00:00:02.668636,0:00:13.885533,True
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:59:49.789325,2024-03-15 00:00:04.172011,0:00:14.382686,True
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2-0.csv,321089178,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 612.4290046691895 MB
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2-1.csv,321089178,2024-03-15 00:00:10.115379,2024-03-15 00:00:38.014462,0:00:27.899083,True

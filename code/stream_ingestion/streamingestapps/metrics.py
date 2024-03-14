@@ -23,6 +23,7 @@ class Metrics:
         self.metrics['measurement_start_time'] = datetime.datetime.now()
 
     def generate_report(self):
+        print("Generating report")
         report = {
             "metrics": {
                 "processing_rate": f"{round(self.metrics['processing_rate'], 2)} msg/s",

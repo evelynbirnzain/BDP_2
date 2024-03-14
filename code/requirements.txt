@@ -1,6 +1,10 @@
-dask~=2024.2.1
+pandas~=2.2.1
+dask~=2024.3.0
+dask-expr~=1.0.1
 dask-mongo~=2022.5.0
 flask~=3.0.2
 python-dotenv~=1.0.1
 requests~=2.31.0
 watchdog~=4.0.0
+matplotlib~=3.8.3
+kafka-python~=2.0.2

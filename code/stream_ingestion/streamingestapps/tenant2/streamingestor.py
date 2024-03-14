@@ -9,14 +9,14 @@ import dotenv
 
 from kafka import KafkaConsumer, KafkaProducer
 
-from ..metrics import Metrics, set_interval
+from code.stream_ingestion.streamingestapps.metrics import Metrics, set_interval
 
 dotenv.load_dotenv()
-KAFKA_BROKERS = os.getenv('KAFKA_BROKERS')
+KAFKA_BROKER = os.getenv('KAFKA_BROKER')
 MONGO_URL = os.getenv('MONGO_URL')
 
-if not KAFKA_BROKERS or not MONGO_URL:
-    raise Exception("KAFKA_BROKERS and MONGO_URL must be set as environment variables")
+if not KAFKA_BROKER or not MONGO_URL:
+    raise Exception("KAFKA_BROKER and MONGO_URL must be set as environment variables")
 
 if len(sys.argv) < 3:
     raise Exception("TENANT and KAFKA_TOPIC must passed as command line arguments")
@@ -28,8 +28,8 @@ logging.basicConfig(level=logging.INFO,
                     handlers=[logging.StreamHandler(sys.stdout),
                               logging.FileHandler(f'logs/streamingestapp_{TENANT}_{os.getppid()}.log')])
 
-consumer = KafkaConsumer(KAFKA_TOPIC, bootstrap_servers=KAFKA_BROKERS, group_id="ingestor")
-monitoring_producer = KafkaProducer(bootstrap_servers=KAFKA_BROKERS)
+consumer = KafkaConsumer(KAFKA_TOPIC, bootstrap_servers=KAFKA_BROKER, group_id="ingestor")
+monitoring_producer = KafkaProducer(bootstrap_servers=KAFKA_BROKER)
 
 db_client = pymongo.MongoClient(MONGO_URL)
 db = db_client[TENANT]
@@ -54,7 +54,7 @@ def main():
     metrics = Metrics(tenant_id=TENANT)
     metrics.start()
 
-    set_interval(report_metrics(metrics), 10)
+    set_interval(lambda: report_metrics(metrics), 10)
 
     for message in consumer:
         start = time.time()
@@ -75,6 +75,7 @@ def main():
         db['trips'].insert_one(data)
 
         end = time.time()
+
         metrics.update(sys.getsizeof(data), end - start)
 
     logging.info("Ingestion complete")

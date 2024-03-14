@@ -45,23 +45,20 @@ storage space the tenant is allowed to use in the `coredms`).
   pipeline may run) but decided against it; I think it might make sense to suspend execution after a certain amount of
   time so that other tenant's tasks can be scheduled, but not to stop the ingestor completely.
 
-# TODO explain cores and memory
-
 Examples:
 
 ```yaml
 # tenant1-constraints.yaml
 data_constraints:
   file_types:
-    - CSV
-    - JSON
-  max_file_size: 10GB
+    - CSV # only CSV files are supported
+  max_file_size: 500GB # each file may not exceed 500GB
 
 service_agreement:
-  max_throughput: 100MB/s # the tenant can ingest at most 100MB/s (and needs to pay more otherwise)
-  max_concurrent_ingestions: 5 # the tenant can have at most 5 ingestions running at the same time
-  storage_space_staging: 1TB # the tenant can have at most 1TB of files in the staging directory
-  max_memory: 16GB
+  max_throughput: 100MB/s # the ingestions speed is capped at 100MB/s
+  max_concurrent_ingestions: 16 # the tenant can have at most 16 ingestions running at the same time
+  storage_space_staging: 900GB # the tenant can have at most 900GB of files in the staging directory
+  max_memory: 16GB # the tenant's ingestor can use at most 16GB of memory
 ```
 
 ```yaml
@@ -71,12 +68,12 @@ data_constraints:
     - CSV
     - JSON
     - XML
-  max_file_size: 50MB
+  max_file_size: 350MB
 
 service_agreement:
   max_throughput: 5MB/s
-  max_concurrent_ingestions: 1
-  storage_space_staging: 50GB
+  max_concurrent_ingestions: 2
+  storage_space_staging: 0.5GB
   max_memory: 2GB
 ```
 
@@ -88,7 +85,7 @@ service_agreement:
    ingestion. As a tenant, explain the design of `clientbatchingestapp` and provide one implementation. Note
    that `clientbatchingestapp` follows the guideline of `mysimbdp` given in the next Point 3. (1 point)_
 
-The [clientbatchingestapp](code/batch_ingestion/batchingestapps/tenant1/clientbatchingestapp.py) is a Python script
+The [clientbatchingestapp](../code/batch_ingestion/batchingestapps/tenant1/batchingestapp.py) is a Python script
 that uses Dask and dask-mongo to efficiently ingest CSV files into MongoDB. Each row in the CSV is mapped to a document
 based on the file's header; any fields with missing values are dropped before ingesting into the `coredms`.
 
@@ -100,21 +97,23 @@ based on the file's header; any fields with missing values are dropped before in
    how `mysimbdp-batchingestmanager` knows the list of `clientbatchingestapp` and decides/schedules the execution
    of `clientbatchingestapp` for different tenants. (1 point)_
 
-In this implementation, the [batchingestmanager](code/batch_ingestion/batchingestmanager.py) is a Python script that
+In this implementation, the [batchingestmanager](../code/batch_ingestion/batchingestmanager.py) is a Python script that
 uses the "watchdog" library to monitor each tenant's `client-staging-input-directory` for newly uploaded files.
 
 *Scheduling*: For now, the `clientbatchingestapp`s are scheduled on a first-come-first-served basis;
 the `batchingestmanager` will start an appropriate new `clientbatchingestapp` for each new file in the tenants staging
-directories. Ideally, I would like to do the scheduling based on the tenant service agreements (e.g. if a tenant is
-paying for a higher throughput, they may be prioritized) and making sure that noone is completely starved of resources
-because of long-running ingestions.
+directories by submitting it to a process pool on upload. Ideally, I would like to do the scheduling based on the tenant
+service agreements (e.g. if a tenant is paying for a higher throughput, they may be prioritized) and making sure that
+noone is completely starved of resources because of long-running ingestions (i.e. introducing a timeout for the
+ingestors).
 
 *Registration*: For an okay balance between flexibility and ease of implementation, a tenant can register
 one `clientbatchingestapp` per subdirectory in their `client-staging-input-directory`; like this, they can have
 multiple `clientbatchingestapp`s in general, and also have different `clientbatchingestapp`s for the same file type (
 e.g. if the wrangling is different for different datasets, but both are given as CSVs and should be ingested in
 parallel). Registration is done using a configuration file that gives the mapping between directory and the
-responsible `clientbatchingestapp`; the `batchingestmanager` will check there for the app to run.
+responsible `clientbatchingestapp`; the `batchingestmanager` will check there for the app to run. An example config
+is [here](../code/batch_ingestion/batchingestapps/tenant1/config.yaml).
 
 For now, the `clientbatchingestapp`s must follow the following constraints:
 
@@ -133,17 +132,53 @@ For now, the `clientbatchingestapp`s must follow the following constraints:
    the maximum amount of data per second you can ingest in your tests. (1 point)_
 
 * Each tenant gets their own `client-staging-input-directory` which they can upload their files to. This ensures
-  isolation between tenants' data. If a tenant is removed, their directory can be deleted so they can't upload any more
-  files.
+  isolation between tenants' data. If a tenant is removed, their directory can be deleted so that they can't upload any
+  more files.
 * The `batchingestmanager` is shared among all tenants; its responsibility is to start the
   appropriate `clientbatchingestapp` for each newly uploaded file, so it should be aware of the overall load on the
   system to make the appropriate scheduling decisions based on the tenant service agreements (e.g. if a tenant is paying
   for a higher throughput, they may be prioritized).
-* The `coredms` as a whole will be shared; each tenant gets their own database where they can create
+* The `coredms` as a whole will be shared but each tenant gets their own database where they can create
   their own collections as they see fit. This is a straightforward way to ensure isolation between tenants' data and
   also allows for easy removal of a tenant by deleting their database.
 
-# TODO: performance and constraints tests
+I chose two example tenants profiles; one with pretty loose constraints that can be used for performance
+testing ([here](../code/batch_ingestion/batchingestapps/tenant1/config.yaml)) and on with unrealistically tight
+constraints ([here](../code/batch_ingestion/batchingestapps/tenant2/config.yaml)). The second one can be used to check
+that the system catches the constraints and does not ingest the data if e.g. there is more data in the staging directory
+than the tenant is paying for as per the service agreement. The tests are semi-automated and shown
+in [this](../code/batch_ingestion/test_batchingestion.py) script.
+
+The tests demonstrate that data may not be ingested due to a violation of constraints on the data file itself or on the
+tenant service agreement. Excerpt from [logs/batchingestion_metrics.log](../logs/batchingestion_metrics.log):
+
+````csv
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-20.csv,107029978,2024-03-14 23:43:36.544514,2024-03-14 23:44:03.416848,0:00:26.872334,True,24.0
+tenant1,data\client-staging-input-directories\tenant1\taxi_data\test.json,18997350,,,,Filetype JSON not supported for tenant1. Supported filetypes: ['CSV']
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data.csv,428118778,,,,File data\client-staging-input-directories\tenant2\taxi_data\taxi-data.csv is too large (428118778 > 350MB).
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2.csv,107029978,,,,Too many concurrent ingestions for tenant2. Max: 2 Current: 2.
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-0.csv,107029978,2024-03-14 23:44:12.356545,2024-03-14 23:44:22.269776,0:00:09.913231,True
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-1.csv,107029978,2024-03-14 23:44:13.360723,2024-03-14 23:44:23.273733,0:00:09.913010,True
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2-0.csv,321089178,,,,Too much data in staging directory. Allowed: 512.0 MB. Current: 612.4290046691895 MB
+tenant2,data\client-staging-input-directories\tenant2\taxi_data\taxi-data-2-1.csv,321089178,2024-03-14 23:44:28.550348,2024-03-14 23:44:50.648093,0:00:22.097745,True
+````
+
+Overall, the performance tests show that the testing setup of the system can ingest up to 65 MB/s of data with an
+average of 40 MB/s. While the throughput per ingestor app goes down with the number of concurrent ingestions, the
+overall throughput increases.
+
+![Throughput per ingestor](throughput_vs_concurrent_ingestions.png)
+![Total throughput](total_throughput_vs_concurrent_ingestions.png)
+
+As an overview, it can also be seen that most jobs for tenant 1 succeeded, while most for tenant 2 failed as they didn't
+meet the service agreement constraints.
+
+```
+success  False  True
+tenant
+tenant1      2   208
+tenant2    154    66
+```
 
 5. _Implement and provide logging features for capturing successful/failed ingestion as well as metrics about
    ingestion time, data size, etc., for files which have been ingested into `mysimbdp`. Logging information must be
@@ -213,7 +248,7 @@ fulfill the following constraints:
 
 * Must be a Python script.
 * Can only use the libraries provided by `mysimbdp` (e.g. kafka-python, pymongo, etc.).
-* Should use the environment variables KAFKA_BROKERS and MONGO_URL to connect to the `mysimbdp-messagingsystem`
+* Should use the environment variables KAFKA_BROKER and MONGO_URL to connect to the `mysimbdp-messagingsystem`
   and `mysimbdp-coredms` respectively. These environment variables will be provided by `mysimbdp`.
 * May take additional parameters as positional command line arguments. Arguments may include e.g. the tenant id,
   name of the database to connect to, or collection name that the data should be ingested into.
@@ -243,7 +278,11 @@ format. They use their `producer` script to stream the data line-by-line to `mys
 their `clientstreamingestapp` transforms each line into a JSON object, grouping e.g. the location data together
 into a subdocument, and stores it in a collection in `mysimbdp-coredms`.
 
-# TODO: performance tests
+A sample scenario can be read from the logs. I ran the streamingestmanager and -monitor; I also ran the ingestors for
+both tenants. I ran the producers with a 1s delay each, then stopped them and restarted with 0.1s delays, and stopped
+again after a while. From the logs, it can be seen that the monitor sent alerts to the manager when the average
+ingestion time was too high. Performance metrics can also be seen in the logs of the ingestors and the monitor; I logged
+the ones discussed below.
 
 4. _`clientstreamingestapp` decides to report its processing rate, including average ingestion time, total
    ingestion data size, and number of messages to `mysimbdp-streamingestmonitor` within a predefined period of time.

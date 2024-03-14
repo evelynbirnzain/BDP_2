@@ -39,14 +39,27 @@ def on_complete(tenant, file, file_size, ingestion_start_time, success):
     metrics.info(f"{tenant},{file},{file_size},{ingestion_start_time},{end_time},{ingestion_time},{success}")
     logging.info(f"Ingestion of {file} complete in {ingestion_time}")
     running[tenant] -= 1
+    logging.info(f"Ingestions still running for this tenant: {running[tenant]}")
+
     if success:
-        logging.info(f"Removing {file}")
-        try:
-            os.remove(file)
-        except Exception as e:
-            logging.error(f"Failed to remove {file}: {e}")
+        logging.info(f"Ingestion of {file} successful")
     else:
         logging.error(f"Ingestion of {file} failed")
+
+    logging.info(f"Removing {file}.")
+    try:
+        os.remove(file)
+    except Exception as e:
+        logging.error(f"Failed to remove {file}: {e}")
+
+
+def on_constraint_violation(tenant, file, message):
+    logging.error(f"Constraint violation for {tenant}: {message}")
+    metrics.info(f"{tenant},{file},{os.path.getsize(file)},,,,{message}")
+    try:
+        os.remove(file)
+    except Exception as e:
+        logging.error(f"Failed to remove {file}: {e}")
 
 
 def ingest_file(event):
@@ -62,14 +75,11 @@ def ingest_file(event):
         config_path = pathlib.Path(BATCHINGESTAPPS_DIR, tenant, 'config.yaml')
         logging.info(f"Checking config for {tenant} at {config_path}")
         if not os.path.exists(config_path):
-            logging.error(f"No config found for {tenant}")
+            on_constraint_violation(tenant, src_path, f"No config found for {tenant}")
             return
 
         with open(config_path, 'r') as f:
             config = yaml.safe_load(f)
-
-        logging.info(f"Config: {config}")
-        logging.info(f"Subdir: {subdir}")
 
         # wait while file is being "uploaded" (only needed for the tests)
         fs = os.path.getsize(src_path)
@@ -81,24 +91,18 @@ def ingest_file(event):
             fs = fs_new
 
         total_size = sum(os.path.getsize(f) for f in src_path.parent.glob('**/*') if os.path.isfile(f))
-        logging.info(list(src_path.parent.glob('**/*')))
         allowed = float(config['service_agreement']['storage_space_staging'][:-2]) * 1024 * 1024 * 1024
         if total_size > allowed:
-            logging.error(
-                f"Too much data in staging directory. Allowed: {allowed}, Current: {total_size}. Removing {src_path}.")
-            os.remove(src_path)
+            on_constraint_violation(tenant, src_path, f"Too much data in staging directory. Allowed: {allowed / 1024 / 1024} MB. Current: {total_size / 1024 / 1024} MB")
             return
 
         if subdir not in config['executables']:
-            logging.error(
-                f"Subdir {subdir} does not have an executable for {tenant}. Registered: {config['executables']}")
+            on_constraint_violation(tenant, src_path, f"Subdir {subdir} does not have an executable for {tenant}. Registered: {config['executables']}")
             return
 
         filetype = src_path.suffix[1:].upper()
         if filetype not in config['data_constraints']['file_types']:
-            logging.error(
-                f"Filetype {filetype} not supported for {tenant}. Supported filetypes: {config['data_constraints']['file_types']}. Removing {src_path}")
-            os.remove(src_path)
+            on_constraint_violation(tenant, src_path, f"Filetype {filetype} not supported for {tenant}. Supported filetypes: {config['data_constraints']['file_types']}")
             return
 
         filesize = os.path.getsize(src_path)
@@ -110,15 +114,11 @@ def ingest_file(event):
 
         logging.info(f"Filesize: {filesize}, Max filesize: {max_filesize}")
         if filesize > max_filesize:
-            logging.error(
-                f"File {src_path} is too large ({filesize} > {config['data_constraints']['max_file_size']}). Removing {src_path}")
-            os.remove(src_path)
+            on_constraint_violation(tenant, src_path, f"File {src_path} is too large ({filesize} > {config['data_constraints']['max_file_size']}).")
             return
 
         if tenant in running and running[tenant] >= config['service_agreement']['max_concurrent_ingestions']:
-            logging.error(
-                f"Too many concurrent ingestions for {tenant}. Max: {config['service_agreement']['max_concurrent_ingestions']} Current: {running[tenant]}. Removing {src_path}")
-            os.remove(src_path)
+            on_constraint_violation(tenant, src_path, f"Too many concurrent ingestions for {tenant}. Max: {config['service_agreement']['max_concurrent_ingestions']} Current: {running[tenant]}.")
             return
 
         executable = pathlib.Path(BATCHINGESTAPPS_DIR, tenant, config['executables'][subdir])
@@ -131,7 +131,7 @@ def ingest_file(event):
             f.add_done_callback(
                 lambda f: on_complete(tenant, src_path, filesize, start_time, f.result() == 0))
         else:
-            logging.error(f"Executable {executable} does not exist")
+            on_constraint_violation(tenant, src_path, f"No executable found for {subdir} in {tenant}")
 
 
 class EventHandler(FileSystemEventHandler):

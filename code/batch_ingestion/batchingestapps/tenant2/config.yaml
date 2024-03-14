@@ -1,12 +1,14 @@
 data_constraints:
   file_types:
     - CSV
-  max_file_size: 100GB
+    - JSON
+    - XML
+  max_file_size: 350MB
 
 service_agreement:
   max_throughput: 5MB/s
-  max_concurrent_ingestions: 16
-  storage_space_staging: 500GB
+  max_concurrent_ingestions: 2
+  storage_space_staging: 0.5GB
   max_memory: 2GB
 
 executables:
