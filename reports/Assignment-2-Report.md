@@ -200,7 +200,6 @@ they can improve their code and to the platform provider if there are unusual fl
 looking at it from a multitenancy/pay-per-use perspective the data could also be used to target specific tenants with
 offers for a "better" (and more expensive) tenant service agreement if they are frequently maxing out their constraints.
 
-# TODO show stats and data
 
 ## Part 2 - Near real-time data ingestion (weighted factor for grades = 3)
 
